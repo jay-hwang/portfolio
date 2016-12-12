@@ -1,0 +1,59 @@
+import {
+  CREATE_MESSAGE,
+  DELETE_MESSAGE,
+  REQUEST_MESSAGE,
+  REQUEST_MESSAGES,
+  requestMessages,
+  removeMessage,
+  receiveMessage,
+  receiveMessages,
+  receiveMessageErrors
+} from '../actions/spot_actions';
+
+import {
+  createMessage,
+  deleteMessage,
+  fetchMessage,
+  fetchMessages
+} from '../util/message_api_util';
+
+const MessagesMiddleware = ({ getState, dispatch }) => next => action => {
+  const messageSuccess = data => {
+    dispatch(receiveMessage(data));
+  };
+
+  const messagesSuccess = data => {
+    dispatch(receiveMessages(data));
+  };
+
+  const deleteMessageSuccess = data => {
+    dispatch(removeMessage(data));
+  };
+
+  const errorCallback = errors => {
+    dispatch(receiveMessageErrors(errors.responseJSON));
+  };
+
+  switch(action.type) {
+    case CREATE_MESSAGE:
+      createMessage(action.message, messageSuccess, errorCallback);
+      return next(action);
+
+    case DELETE_MESSAGE:
+      deleteMessage(action.id, deleteMessageSuccess, errorCallback);
+      return next(action);
+
+    case REQUEST_MESSAGE:
+      fetchSpot(action.messageId, messageSuccess, errorCallback);
+      return next(action);
+
+    case REQUEST_MESSAGES:
+      fetchMessages(messagesSuccess, errorCallback);
+      return next(action);
+
+    default:
+      return next(action);
+  }
+};
+
+export default MessagesMiddleware;

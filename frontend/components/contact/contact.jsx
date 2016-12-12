@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+import MessageFormContainer from '../messages/message_form_container';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -25,6 +26,8 @@ class Contact extends React.Component {
         </div>
 
         <h3 className='modal-header'>Contact</h3>
+
+        <MessageFormContainer />
       </div>
     );
   }

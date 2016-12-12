@@ -1,3 +1,86 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.root-container {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: filter .2s ease-in;
+}
+
+.app-content {
+  width: 55%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  filter: visibility .2s ease-in;
+}
+
+.divider {
+  width: 1px;
+  height: 10%;
+  background-color: whitesmoke;
+
+  margin: 0;
+  padding: 0;
+}
+
+.border {
+  width: 22.5%;
+  height: 100%;
+}
+
+.blur {
+  filter: blur(4px);
+  transition: filter .2s ease-in;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}

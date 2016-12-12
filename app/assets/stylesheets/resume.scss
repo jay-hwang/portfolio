@@ -1,0 +1,43 @@
+.resume {
+  width: 80%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+  text-shadow: #000 0 0 10px;
+
+  transition: display .2s ease-in;
+}
+
+.resume-button {
+  height: 100%;
+  width: 40%;
+
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.15);
+
+  transition: background .15s ease-in;
+
+  display: flex;
+  align-items: center;
+}
+
+.resume-button:hover {
+  background: rgba(255,255,255,0.3);
+  transition: background .15s ease-in;
+  cursor: pointer;
+}
+
+.resume-button-icon {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid whitesmoke;
+}
+
+.resume-button-text {
+  width: 75%;
+}

@@ -5,12 +5,12 @@ import {
   requestProjects,
   receiveProject,
   receiveProjects
-} from '../actions/message_actions';
+} from '../actions/project_actions';
 
 import {
   fetchProject,
   fetchProjects
-} from '../util/message_api_util';
+} from '../util/project_api_util';
 
 const ProjectsMiddleware = ({getState, dispatch}) => next => action => {
   const projectSuccess = data => {

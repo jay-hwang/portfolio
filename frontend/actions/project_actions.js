@@ -1,4 +1,4 @@
-export const RECEIVE_PROJECT = "RECEIVE_MESSAGE";
+export const RECEIVE_PROJECT = "RECEIVE_PROJECT";
 export const receiveProject = project => ({
   type: RECEIVE_PROJECT,
   project

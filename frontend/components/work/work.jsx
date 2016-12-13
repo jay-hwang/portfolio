@@ -17,6 +17,13 @@ class Work extends React.Component {
   }
 
   render() {
+    let projects = this.props.projects;
+    let workLis = Object.keys(projects).map(k => {
+      return (
+        <WorkItem key={k} project={projects[k]}/>
+      );
+    });
+
     return (
       <div className='work-container modal hide'>
         <div
@@ -28,12 +35,7 @@ class Work extends React.Component {
         <h3 className='modal-header'>WORK</h3>
 
         <ul className='work-items'>
-          <WorkItem />
-          <WorkItem />
-          <WorkItem />
-          <WorkItem />
-          <WorkItem />
-          <WorkItem />
+          { workLis }
         </ul>
       </div>
     );

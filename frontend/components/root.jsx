@@ -5,7 +5,15 @@ import App from './app';
 import Work from './work/work';
 import Contact from './contact/contact';
 
+import {
+  requestProjects
+} from '../actions/project_actions';
+
 const Root = ({ store }) => {
+  const _getProjects = () => {
+    store.dispatch(requestProjects());
+  };
+
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
@@ -13,6 +21,7 @@ const Root = ({ store }) => {
 
           <Route
             path='/work'
+            onEnter={_getProjects}
             component={Work}>
           </Route>
 

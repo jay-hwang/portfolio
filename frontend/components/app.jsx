@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './navbar/navbar';
 import About from './about/about';
 import Globe from './globe/globe';
-import Work from './work/work';
+import WorkContainer from './work/work_container';
 import Contact from './contact/contact';
 
 class App extends React.Component {
@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='root-container'>
-        <Work />
+        <WorkContainer />
         <Contact />
         <div className="app-container">
           <div

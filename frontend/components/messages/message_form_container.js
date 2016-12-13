@@ -8,7 +8,7 @@ import {
 const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
   loggedIn: state.session.currentUser ? true : false,
-  errors: []
+  errors: state.messages.errors || []
 });
 
 const mapDispatchToProps = (dispatch) => ({

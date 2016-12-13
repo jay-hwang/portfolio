@@ -15,23 +15,45 @@ class MessageForm extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   handleInputChange(field) {
     return (e) => {
-      this.setstate({ [field]: e.target.value });
+      this.setState({ [field]: e.target.value });
     };
+  }
+
+  handleClose() {
+    this.props.router.push('/');
+    $(".app-container").removeClass("blur");
+    $(".app-content").removeClass("hide");
+    $(".contact-container").addClass("hide");
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const message = this.state;
-    alert('you submitted a mesage!');
+    this.props.createMessage(message);
+    alert('Thank you! Your message has been received.');
   }
 
   render() {
+    const errors = this.props.errors;
+    let errorsLi;
+    if (errors) {
+      errorsLi = errors.map((error,i) => (
+        <li key={i}>{error}</li>
+      ));
+    }
+
     return (
       <form className="message-form" onSubmit={this.handleSubmit}>
+
+        <ul className="errors">
+          { errorsLi }
+        </ul>
+
         <input
           type="text"
           value={this.state.author_name}

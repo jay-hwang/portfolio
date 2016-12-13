@@ -15,11 +15,11 @@ const MessagesReducer = (oldState = _defaultState, action) => {
   let newState = merge({}, oldState);
 
   switch(action.type) {
-    case  RECEIVE_SPOTS:
+    case RECEIVE_MESSAGES:
       newState.index = action.messages;
       return newState;
 
-    case RECEIVE_SPOT:
+    case RECEIVE_MESSAGE:
       newState.index[action.message.id] = action.message;
       newState.errors = [];
       return newState;
@@ -33,4 +33,4 @@ const MessagesReducer = (oldState = _defaultState, action) => {
   }
 };
 
-export default MesagesReducer;
+export default MessagesReducer;

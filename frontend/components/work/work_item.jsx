@@ -1,8 +1,8 @@
 import React from 'react';
 
-const WorkItem = () => (
+const WorkItem = ({ imageUrl }) => (
   <li className='work-item'>
-
+    
   </li>
 );
 

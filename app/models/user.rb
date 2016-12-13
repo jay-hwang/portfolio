@@ -11,6 +11,7 @@ class User < ApplicationRecord
             length: { minimum: 6, allow_nil: true }
 
   has_many :messages
+  has_many :projects
 
   after_initialize :ensure_session_token
 

@@ -8,7 +8,7 @@ import {
   receiveMessage,
   receiveMessages,
   receiveMessageErrors
-} from '../actions/spot_actions';
+} from '../actions/message_actions';
 
 import {
   createMessage,
@@ -44,7 +44,7 @@ const MessagesMiddleware = ({ getState, dispatch }) => next => action => {
       return next(action);
 
     case REQUEST_MESSAGE:
-      fetchSpot(action.messageId, messageSuccess, errorCallback);
+      fetchMessage(action.messageId, messageSuccess, errorCallback);
       return next(action);
 
     case REQUEST_MESSAGES:

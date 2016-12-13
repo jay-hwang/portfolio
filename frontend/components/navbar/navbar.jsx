@@ -35,7 +35,6 @@ class Navbar extends React.Component {
   }
 
   toggleResume() {
-    // Show pdf resume and link to download
     // this.props.router.push('/resume');
     $(".about-me").addClass("display-none");
     $(".resume").removeClass("display-none");

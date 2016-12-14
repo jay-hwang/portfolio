@@ -1,7 +1,2 @@
 TODO:
-  - Make an actual 'about' section and link the home page to your face
   - Add better descriptions to projects
-  - Make better styled buttons for GITHUB and LIVE in project_show
-  - fadeOut and fadeIn between about and resume
-  - Show resume.pdf in resume component
-  - Download resume.pdf in resume component

@@ -15,14 +15,27 @@ const WorkItemDetail = ({ project }) => {
     if (live) {
       return (
         <div className='side'>
-          <span className='flex-link'>GITHUB</span>
-          <span className='flex-link'>LIVE</span>
+          <a
+            target="_blank"
+            href={project.github_url}>
+            <span className='flex-link'>GITHUB</span>
+          </a>
+
+          <a
+            target="_blank"
+            href={project.live_url}>
+            <span className='flex-link'>LIVE</span>
+          </a>
         </div>
       );
     } else {
       return (
         <div className='side'>
-          <span className='flex-link'>GITHUB</span>
+          <a
+            target="_blank"
+            href={project.github_url}>
+            <span className='flex-link'>GITHUB</span>
+          </a>
         </div>
       );
     }
@@ -39,13 +52,9 @@ const WorkItemDetail = ({ project }) => {
 
       <div className='flex-details'>
         <div className='flex-links'>
-          {_getLinks()}
-
           <span className='project-detail-header'>
             {project.title.toUpperCase()}
           </span>
-
-          <div className='side'></div>
         </div>
 
         <img
@@ -56,6 +65,7 @@ const WorkItemDetail = ({ project }) => {
           {project.description}
         </p>
 
+        <span className='margin-bottom'>{_getLinks()}</span>
 
       </div>
 

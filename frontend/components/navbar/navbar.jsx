@@ -48,6 +48,7 @@ class Navbar extends React.Component {
     $(".app-container").addClass("blur");
     $(".app-content").addClass("hide");
     $(".work-container").removeClass("hide");
+    $('.work-container').fadeIn();
   }
 
   toggleContact() {

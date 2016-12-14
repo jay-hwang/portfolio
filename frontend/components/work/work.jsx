@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import WorkItem from './work_item';
+import WorkItemDetail from './work_item_detail';
 
 class Work extends React.Component {
   constructor(props) {
@@ -24,6 +25,12 @@ class Work extends React.Component {
       );
     });
 
+    let workItemDetails = Object.keys(projects).map(k => {
+      return (
+        <WorkItemDetail key={k} project={projects[k]}/>
+      );
+    });
+
     return (
       <div className='work-container modal hide'>
         <div
@@ -36,6 +43,10 @@ class Work extends React.Component {
 
         <ul className='work-items'>
           { workLis }
+        </ul>
+
+        <ul className='work-item-details'>
+          { workItemDetails }
         </ul>
       </div>
     );

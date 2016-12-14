@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../carousel/carousel';
 
 class Globe extends React.Component {
   constructor(props) {
@@ -8,18 +9,15 @@ class Globe extends React.Component {
   }
 
   toggleImage() {
-    $(".github-image").click(() => {
-      $(".github-image").fadeOut();
-    });
+
   }
 
   render() {
+    debugger;
     return (
       <div className='globe-container'
            onClick={this.toggleImage}>
-        <div className='profile-image display-none'></div>
-        <div className='github-image display-none'></div>
-        <div className='linkedin-image display-none'></div>
+        <Carousel />
       </div>
     );
   }

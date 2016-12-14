@@ -28,3 +28,19 @@ Project.create({
   github_url: "https://github.com/jay-hwang",
   live_url: "https://jay-hwang.github.io/space_invaders/"
 })
+
+Project.create({
+  user_id: 1,
+  title: "Pabang",
+  description: "A script that automates job applications. Built with Ruby and Selenium, it crawls the web and applies to jobs specified by the user. Follow the link to see the source code or to install it.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481678753/Screen_Shot_2016-12-13_at_5.25.14_PM_xdfu9n.png",
+  github_url: "https://github.com/Aelho-Pak/pabang"
+})
+
+Project.create({
+  user_id: 1,
+  title: "Minesweeper",
+  description: "This is a remake of the classic game, Minesweeper. Built with Ruby, you can play it directly in your terminal!",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481681935/genesis_dhfvfg.png",
+  github_url: "https://github.com/jay-hwang/minesweeper"
+})

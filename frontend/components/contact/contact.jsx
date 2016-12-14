@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router';
 import MessageFormContainer from '../messages/message_form_container';
 
 class Contact extends React.Component {
@@ -10,7 +9,6 @@ class Contact extends React.Component {
   }
 
   handleClose() {
-    this.props.router.push('/');
     $(".app-container").removeClass("blur");
     $(".app-content").removeClass("hide");
     $(".contact-container").addClass("hide");
@@ -33,4 +31,4 @@ class Contact extends React.Component {
   }
 }
 
-export default withRouter(Contact);
+export default Contact;

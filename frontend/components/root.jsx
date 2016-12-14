@@ -18,18 +18,11 @@ const Root = ({ store }) => {
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
-        <Route path='/' component={App}>
+        <Route
+          path='/'
+          onEnter={_getProjects}
+          component={App}>
 
-          <Route
-            path='/work'
-            onEnter={_getProjects}
-            component={Work}>
-          </Route>
-
-          <Route
-            path='/contact'
-            component={Contact}>
-          </Route>
 
         </Route>
       </Router>

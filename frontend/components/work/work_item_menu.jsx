@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router';
 
 class WorkItemMenu extends React.Component {
   constructor(props) {
@@ -27,4 +26,4 @@ class WorkItemMenu extends React.Component {
   }
 }
 
-export default withRouter(WorkItemMenu);
+export default WorkItemMenu;

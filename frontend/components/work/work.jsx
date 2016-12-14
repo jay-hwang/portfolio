@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router';
 import WorkItem from './work_item';
 import WorkItemDetail from './work_item_detail';
 
@@ -11,7 +10,6 @@ class Work extends React.Component {
   }
 
   handleClose() {
-    this.props.router.push('/');
     $(".app-container").removeClass("blur");
     $(".app-content").removeClass("hide");
     $(".work-container").addClass("hide");
@@ -53,4 +51,4 @@ class Work extends React.Component {
   }
 }
 
-export default withRouter(Work);
+export default Work;

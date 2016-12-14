@@ -20,7 +20,7 @@ const Resume = () => (
           src="https://res.cloudinary.com/ddgtwtbre/image/upload/v1481592433/download_avxquf.png"/>
       </div>
       <span className='resume-button-text'>
-        DOWNLOAD
+        <a target="_blank" href="resume.pdf">DOWNLOAD</a>
       </span>
     </div>
 

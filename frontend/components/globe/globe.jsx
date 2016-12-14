@@ -4,19 +4,11 @@ import Carousel from '../carousel/carousel';
 class Globe extends React.Component {
   constructor(props) {
     super(props);
-
-    this.toggleImage = this.toggleImage.bind(this);
-  }
-
-  toggleImage() {
-
   }
 
   render() {
-    debugger;
     return (
-      <div className='globe-container'
-           onClick={this.toggleImage}>
+      <div className='globe-container'>
         <Carousel />
       </div>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -8,11 +7,14 @@ class Navbar extends React.Component {
     this.toggleAbout = this.toggleAbout.bind(this);
     this.toggleWork = this.toggleWork.bind(this);
     this.toggleContact = this.toggleContact.bind(this);
-    this.toggleResume = this.toggleResume.bind(this);
+    this.toggleAboutDetail = this.toggleAboutDetail.bind(this);
+
+    this.state = {
+      showAboutDetail: false
+    };
   }
 
   toggleAbout() {
-    this.props.router.push('/');
     $(".app-container").removeClass("blur");
     $(".app-content").removeClass("hide");
     $(".about-me").removeClass("display-none");
@@ -20,31 +22,45 @@ class Navbar extends React.Component {
     $(".resume").addClass("display-none");
   }
 
+  toggleAboutDetail() {
+    if (this.state.showAboutDetail) {
+      setTimeout(() => {
+        $(".name").fadeIn();
+        $(".intro").fadeIn();
+      }, 400);
+
+      $(".about-detail").slideUp();
+
+      this.state.showAboutDetail = false;
+    } else {
+      $(".name").fadeOut();
+      $(".intro").fadeOut();
+
+      setTimeout(() => (
+        $(".about-detail").slideDown()
+      ), 400);
+
+      this.state.showAboutDetail = true;
+    }
+  }
+
   toggleWork() {
-    this.props.router.push('/work');
     $(".app-container").addClass("blur");
     $(".app-content").addClass("hide");
     $(".work-container").removeClass("hide");
   }
 
   toggleContact() {
-    this.props.router.push('/contact');
     $(".app-container").addClass("blur");
     $(".app-content").addClass("hide");
     $(".contact-container").removeClass("hide");
-  }
-
-  toggleResume() {
-    // this.props.router.push('/resume');
-    $(".about-me").addClass("display-none");
-    $(".resume").removeClass("display-none");
   }
 
   render() {
     return (
       <div className='navbar'>
         <div
-          onClick={this.toggleAbout}
+          onClick={this.toggleAboutDetail}
           className='navbar-item'>
           <span>ABOUT</span>
         </div>
@@ -58,14 +74,14 @@ class Navbar extends React.Component {
           className='navbar-item'>
           <span>CONTACT</span>
         </div>
-        <div
-          onClick={this.toggleResume}
-          className='navbar-item'>
-          <span>RESUME</span>
-        </div>
+        <a
+          className='navbar-item resume-link'
+          target="_blank"
+          href="resume.pdf">RESUME
+        </a>
       </div>
     );
   }
 }
 
-export default withRouter(Navbar);
+export default Navbar;

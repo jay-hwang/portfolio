@@ -1,5 +1,6 @@
 import React from 'react';
 import Resume from '../resume/resume';
+import AboutDetail from './about_detail';
 
 const About = () => (
   <div className='about'>
@@ -17,6 +18,7 @@ const About = () => (
         JQUERY | JAVASCRIPT | REACT.JS | NODE.JS | SQL | RUBY ON RAILS | HTML | CSS
       </p>
     </p>
+    <AboutDetail />
   </div>
 );
 

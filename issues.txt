@@ -1,2 +1,3 @@
 TODO:
   - Add better descriptions to projects
+  - add dyno or figure out how to mirror gh-pages

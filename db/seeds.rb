@@ -44,3 +44,12 @@ Project.create({
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481681935/genesis_dhfvfg.png",
   github_url: "https://github.com/jay-hwang/minesweeper"
 })
+
+Project.create({
+  user_id: 1,
+  title: "ActiveRecord Lite",
+  description: "This is my 'lite' version of Rails ActiveRecord. It features the basic functionality of ActiveRecord. You can create attr_accessor/reader/writer, make database queries like Object.all, Object.find, and you can also make belongs_to, has_many, has_one_through associations.
+  As no project is fully complete without tests, this rendition of ActiveRecord comes with RSpec tests.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1482125984/Active-record-lite_cyh1vu.png",
+  github_url: "https://github.com/jay-hwang/active-record"
+})

@@ -31,6 +31,24 @@ Project.create({
 
 Project.create({
   user_id: 1,
+  title: "ActiveRecord Lite",
+  description: "This is my 'lite' version of Rails ActiveRecord. It features the basic functionality of ActiveRecord. You can create attr_accessor/reader/writer, make database queries like Object.all, Object.find, and you can also make belongs_to, has_many, has_one_through associations.
+  As no project is fully complete without tests, this rendition of ActiveRecord comes with RSpec tests.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1482125984/Active-record-lite_cyh1vu.png",
+  github_url: "https://github.com/jay-hwang/active-record"
+})
+
+Project.create({
+  user_id: 1,
+  title: "LRU Cache",
+  description: "This is my LRU Cache. It comes with tests written in RSpec.
+  The LRU Cache is made up of a Hash Map and a Linked List, so I created my own rendition of a Hash Map and a Linked List as well. The hash map needs a hashing function to hash different types into a deterministic hash, so I also created the necessary hashing functions to hash different data types.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/c_scale,w_1486/v1482191635/lru-cache_rwxlfx.png",
+  github_url: "https://github.com/jay-hwang/lru_cache"
+})
+
+Project.create({
+  user_id: 1,
   title: "Pabang",
   description: "A script that automates job applications. Built with Ruby and Selenium, it crawls the web and applies to jobs specified by the user. Follow the link to see the source code or to install it.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481678753/Screen_Shot_2016-12-13_at_5.25.14_PM_xdfu9n.png",
@@ -43,13 +61,4 @@ Project.create({
   description: "This is a remake of the classic game, Minesweeper. Built with Ruby, you can play it directly in your terminal!",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481681935/genesis_dhfvfg.png",
   github_url: "https://github.com/jay-hwang/minesweeper"
-})
-
-Project.create({
-  user_id: 1,
-  title: "ActiveRecord Lite",
-  description: "This is my 'lite' version of Rails ActiveRecord. It features the basic functionality of ActiveRecord. You can create attr_accessor/reader/writer, make database queries like Object.all, Object.find, and you can also make belongs_to, has_many, has_one_through associations.
-  As no project is fully complete without tests, this rendition of ActiveRecord comes with RSpec tests.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1482125984/Active-record-lite_cyh1vu.png",
-  github_url: "https://github.com/jay-hwang/active-record"
 })

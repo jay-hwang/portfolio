@@ -20,6 +20,7 @@ import {
 const MessagesMiddleware = ({ getState, dispatch }) => next => action => {
   const messageSuccess = data => {
     dispatch(receiveMessage(data));
+    alert('Thank you! Your message has been received.');
   };
 
   const messagesSuccess = data => {

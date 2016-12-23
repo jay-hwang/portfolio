@@ -42,7 +42,7 @@ Project.create({
   user_id: 1,
   title: "LRU Cache",
   description: "This is my LRU Cache. It comes with tests written in RSpec.
-  The LRU Cache is made up of a Hash Map and a Linked List, so I created my own rendition of a Hash Map and a Linked List as well. The hash map needs a hashing function to hash different types into a deterministic hash, so I also created the necessary hashing functions to hash different data types.",
+  The LRU Cache is made up of a Hash Map and a Linked List, so I created my own rendition of a Hash Map and a Linked List as well. The hash map needs a hashing function to hash different data types into a deterministic hash, so I also created the necessary hashing functions to hash different data types.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/c_scale,w_1486/v1482191635/lru-cache_rwxlfx.png",
   github_url: "https://github.com/jay-hwang/lru_cache"
 })

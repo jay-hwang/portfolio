@@ -33,7 +33,6 @@ class MessageForm extends React.Component {
     e.preventDefault();
     const message = this.state;
     this.props.createMessage(message);
-    alert('Thank you! Your message has been received.');
   }
 
   render() {

@@ -72,6 +72,26 @@
   background: rgba(255,255,255,0.2);
 }
 
-.about-detail p {
+.about-detail div {
   padding: 20px;
+}
+
+.contact-item {
+  margin: 10px;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  transition: filter .15s ease-in;
+}
+
+.contact-item a {
+  color: whitesmoke;
+}
+
+.contact-item:hover {
+  cursor: pointer;
+  filter: brightness(200%);
+  transition: filter .15s ease-in;
+
+  font-weight: 400;
+  transition: font-weight .2s ease-in;
 }

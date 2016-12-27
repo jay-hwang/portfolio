@@ -73,7 +73,7 @@ class Navbar extends React.Component {
         <div
           onClick={this.toggleContact}
           className='navbar-item'>
-          <span>CONTACT</span>
+          <span>MESSAGE</span>
         </div>
         <a
           className='navbar-item resume-link'

@@ -14,12 +14,29 @@ const About = () => (
 
       <br/><br/>
 
-      <p className='skills'>
-        JQUERY | JAVASCRIPT | REACT.JS | NODE.JS | SQL | RUBY ON RAILS | HTML | CSS
-      </p>
+      <div className='skills'>
+        <span>
+          RUBY | RSPEC | RUBY ON RAILS | PYTHON | SQL | POSTGRESQL
+        </span>
+
+        <span>
+          JAVASCRIPT | ES6 | REACT.JS | ANGULAR.JS | NODE.JS | HTML5 | CSS
+        </span>
+      </div>
     </div>
     <AboutDetail />
   </div>
 );
 
 export default About;
+
+
+// <span>
+//   RUBY | RUBY ON RAILS | RSPEC | PYTHON | SQL | POSTGRESQL
+// </span>
+// <span>
+//   JAVASCRIPT | ES6 | REACT.JS | ANGULAR.JS | EXPRESS.JS | NODE.JS | JQUERY
+// </span>
+// <span>
+//   GIT | HTML5 | CSS | PHOTOSHOP | WEBPACK
+// </span>

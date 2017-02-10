@@ -12,7 +12,7 @@ const About = () => (
 
       <Resume />
 
-      <br/><br/>
+      <br/>
 
       <div className='skills'>
         <span>

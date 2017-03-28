@@ -37,7 +37,7 @@ class Work extends React.Component {
           x
         </div>
 
-        <h3 className='modal-header'>WORK</h3>
+        <h3 className='modal-header'>PROJECTS</h3>
 
         <ul className='work-items'>
           { workLis }

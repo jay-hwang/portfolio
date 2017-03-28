@@ -68,7 +68,7 @@ class Navbar extends React.Component {
         <div
           onClick={this.toggleWork}
           className='navbar-item'>
-          <span>WORK</span>
+          <span>PROJECTS</span>
         </div>
         <div
           onClick={this.toggleContact}

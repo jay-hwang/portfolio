@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  min-width: 900px;
+  width: 900px;
 
   padding-bottom: 60px;
   box-sizing: border-box;
@@ -68,8 +68,8 @@
 
 .CouchBnB {
   background-color: red;
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481615687/Screen_Shot_2016-12-12_at_11.54.15_PM_eqt5az.png");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481615687/Screen_Shot_2016-12-12_at_11.54.15_PM_eqt5az.png") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -78,8 +78,8 @@
 }
 
 .Space {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481593853/Screen_Shot_2016-12-12_at_5.49.38_PM_mrrvq7.png");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481593853/Screen_Shot_2016-12-12_at_5.49.38_PM_mrrvq7.png") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -89,8 +89,8 @@
 
 .Pabang {
   background:
-  url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481678753/Screen_Shot_2016-12-13_at_5.25.14_PM_xdfu9n.png");
-  background-size: cover;
+  url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490671817/Screen_Shot_2017-03-27_at_8.29.50_PM_jwbfso.png") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -99,8 +99,8 @@
 }
 
 .Minesweeper {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490658805/minesweeper_v0mzel.png");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490658805/minesweeper_v0mzel.png") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -109,8 +109,8 @@
 }
 
 .ActiveRecord {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661548/activerecord_qfxxgm.jpg");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661548/activerecord_qfxxgm.jpg") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -119,8 +119,8 @@
 }
 
 .LRU {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -129,8 +129,8 @@
 }
 
 .Site-Blocker {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659657/Screen_Shot_2017-03-27_at_5.01.48_PM_stdtny.png");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659657/Screen_Shot_2017-03-27_at_5.01.48_PM_stdtny.png") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -139,8 +139,8 @@
 }
 
 .Tackling {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;
@@ -149,8 +149,8 @@
 }
 
 .Rails {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659083/rails-lite_jzfacs.jpg");
-  background-size: cover;
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490672152/Screen_Shot_2017-03-27_at_8.34.59_PM_ylguwz.png") no-repeat;
+  background-size: contain;
   background-position: 50% 50%;
 
   position: absolute;

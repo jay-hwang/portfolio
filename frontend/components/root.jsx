@@ -23,7 +23,6 @@ const Root = ({ store }) => {
           onEnter={_getProjects}
           component={App}>
 
-
         </Route>
       </Router>
     </Provider>

@@ -42,7 +42,7 @@ Project.create({
   user_id: 1,
   title: "ActiveRecord Lite",
   description: "This is my 'lite' version of Rails ActiveRecord. It features the basic functionality of ActiveRecord. You can create attr_accessor/reader/writer, make database queries like Object.all, Object.find, and you can also make belongs_to, has_many, has_one_through associations.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1482125984/Active-record-lite_cyh1vu.png",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661548/activerecord_qfxxgm.jpg",
   github_url: "https://github.com/jay-hwang/active-record"
 })
 
@@ -56,7 +56,7 @@ Project.create({
   Rails' ControllerBase class
   Cookies
   Custom Router",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659083/rails-lite_jzfacs.jpg",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490672152/Screen_Shot_2017-03-27_at_8.34.59_PM_ylguwz.png",
   github_url: "https://github.com/jay-hwang/rails-lite",
   live_url: ""
 })
@@ -65,7 +65,7 @@ Project.create({
   user_id: 1,
   title: "LRU Cache",
   description: "This is my LRU Cache. The LRU Cache is made up of a Hash Map and a Linked List, so I created my own rendition of a Hash Map and a Linked List as well. The hash map needs a hashing function to hash different data types into a deterministic hash, so I also created the necessary hashing functions to hash different data types.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/c_scale,w_1486/v1482191635/lru-cache_rwxlfx.png",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png",
   github_url: "https://github.com/jay-hwang/lru_cache"
 })
 
@@ -73,14 +73,16 @@ Project.create({
   user_id: 1,
   title: "Pabang",
   description: "A bot that automates job applications. Built with Ruby and Selenium, it crawls the web and applies to jobs specified by the user. Follow the link to see the source code or to install it.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481678753/Screen_Shot_2016-12-13_at_5.25.14_PM_xdfu9n.png",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490671817/Screen_Shot_2017-03-27_at_8.29.50_PM_jwbfso.png",
   github_url: "https://github.com/Aelho-Pak/pabang"
 })
 
 Project.create({
   user_id: 1,
   title: "Minesweeper",
-  description: "This is a remake of the classic game, Minesweeper. Built with Ruby, you can play it directly in your terminal!",
+  description: "This is a remake of the classic game, Minesweeper. Built with Ruby, you can play it directly in your terminal!
+
+  Coming soon for browsers!",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490658805/minesweeper_v0mzel.png",
   github_url: "https://github.com/jay-hwang/minesweeper"
 })

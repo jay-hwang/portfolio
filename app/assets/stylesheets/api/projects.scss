@@ -19,10 +19,11 @@
 }
 
 .detail-close {
+  font-size: 25px;
   position: absolute;
   z-index: 10;
   top: 10px;
-  right: 10px;
+  right: 20px;
 }
 
 .detail-close:hover {
@@ -51,15 +52,17 @@
 }
 
 .project-detail-header {
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 4px;
   margin-top: 3%;
-  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 4px;
+  border-bottom: 2px solid whitesmoke;
 }
 
 .project-detail-image {
   margin: 30px 0;
-  width: 90%;
+  height: 350px;
 }
 
 .project-detail-desc {
@@ -72,16 +75,28 @@
 }
 
 .flex-link {
-  margin: 0 10px;
   font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
   color: whitesmoke;
-  transition: color .15s ease-in;
+
+  transition: background .15s ease-in;
+
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 2px;
+
+  width: 150px;
+
+  margin: 0 10px;
+  margin-right: 3px;
+  padding: 7px;
 }
 
 .flex-link:hover {
-  color: purple;
+  background: rgba(255,255,255,0.2);
   cursor: pointer;
-  transition: color .15s ease-in;
+  transition: background .15s ease-in;
 }
 
 .side {

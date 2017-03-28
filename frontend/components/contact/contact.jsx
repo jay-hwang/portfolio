@@ -23,7 +23,7 @@ class Contact extends React.Component {
           x
         </div>
 
-        <h3 className='modal-header'>Message</h3>
+        <h3 className='modal-header'>MESSAGE</h3>
 
         <MessageFormContainer />
       </div>

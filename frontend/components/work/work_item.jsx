@@ -9,15 +9,15 @@ const WorkItem = ({ project }) => {
 
   const _showMenu = (projectObj) => (
     () => {
-      $(`#${projectObj.id}`).slideDown();
-      $(`#${projectObj.id}-view`).fadeIn();
+      $(`#${projectObj.id}`).slideDown(200);
+      $(`#${projectObj.id}-view`).fadeIn(200);
     }
   );
 
   const _hideMenu = (projectObj) => (
     () => {
-      $(`#${projectObj.id}`).slideUp();
-      $(`#${projectObj.id}-view`).fadeOut();
+      $(`#${projectObj.id}`).slideUp(200);
+      $(`#${projectObj.id}-view`).fadeOut(200);
     }
   );
 
@@ -26,7 +26,8 @@ const WorkItem = ({ project }) => {
   return (
     <div>
       <li className='work-item'>
-        <div className={project.title} id='work-item-image'>
+        <div className={project.title} id='work-item-image'></div>
+        <div id='work-item-image'>
           <div
             onMouseEnter={_showMenu(project)}
             onMouseLeave={_hideMenu(project)}

@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  min-width: 900px;
+
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .work-items {
@@ -16,8 +21,8 @@
 }
 
 .work-item {
-  height: 300px;
-  width: 275px;
+  height: 250px;
+  width: 250px;
 
   margin: 20px;
 
@@ -26,6 +31,9 @@
   align-items: center;
 
   position: relative;
+
+  font-weight: 700;
+  letter-spacing: 5px;
 }
 
 .project-title {
@@ -35,7 +43,7 @@
 }
 
 #work-item-image {
-  height: 275px;
+  height: 250px;
   width: 100%;
 
   border: 1px solid whitesmoke;
@@ -63,12 +71,20 @@
   background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481615687/Screen_Shot_2016-12-12_at_11.54.15_PM_eqt5az.png");
   background-size: cover;
   background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .Space {
   background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481593853/Screen_Shot_2016-12-12_at_5.49.38_PM_mrrvq7.png");
   background-size: cover;
   background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .Pabang {
@@ -76,39 +92,85 @@
   url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481678753/Screen_Shot_2016-12-13_at_5.25.14_PM_xdfu9n.png");
   background-size: cover;
   background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .Minesweeper {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1481681935/genesis_dhfvfg.png");
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490658805/minesweeper_v0mzel.png");
   background-size: cover;
   background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .ActiveRecord {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1482125984/Active-record-lite_cyh1vu.png");
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661548/activerecord_qfxxgm.jpg");
   background-size: cover;
   background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .LRU {
-  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/c_scale,w_1486/v1482191635/lru-cache_rwxlfx.png");
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png");
   background-size: cover;
   background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Site-Blocker {
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659657/Screen_Shot_2017-03-27_at_5.01.48_PM_stdtny.png");
+  background-size: cover;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Tackling {
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Rails {
+  background: url("https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659083/rails-lite_jzfacs.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .work-item-menu {
-  height: 12%;
+  height: 45px;
   width: 100%;
 
   background: rgba(255,255,255,0.4);
-  text-shadow: #000,0,0,10px;
   z-index: 20;
 
   text-align: center;
   letter-spacing: 1.5px;
 
   display: none;
-  padding-top: 7%;
+  padding-top: 12px;
+  box-sizing: border-box;
 
   transition: background .15s ease-in;
 }
@@ -120,8 +182,8 @@
 }
 
 .view-project {
-  height: 60%;
-  width: 60%;
+  height: 55%;
+  width: 55%;
 
   background: rgba(255,255,255,0.4);
   border-radius: 20px;
@@ -134,6 +196,7 @@
   right: 0;
 
   display: none;
+  transition: background .15s ease-in;
 }
 
 .view-project:hover {

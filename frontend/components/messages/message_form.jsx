@@ -80,7 +80,7 @@ class MessageForm extends React.Component {
           placeholder="How did you hear about Jay?" />
 
         <button className="message-form-button">
-          Send Message
+          SEND MESSAGE
         </button>
 
       </form>

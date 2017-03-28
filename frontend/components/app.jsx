@@ -26,6 +26,7 @@ class App extends React.Component {
       <div className='root-container'>
         <WorkContainer />
         <Contact />
+        <div className='bg'></div>
         <div className="app-container">
           <div
             onClick={this.showAbout}

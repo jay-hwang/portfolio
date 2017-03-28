@@ -1,42 +1,26 @@
 import React from 'react';
 
 const AboutDetail = () => {
-  const toggleContact = () => {
-    $(".app-container").addClass("blur");
-    $(".app-content").addClass("hide");
-    $(".contact-container").removeClass("hide");
-  };
-
   return (
-    <div className='about-detail'>
+    <div className='about-detail display-none'>
       <div>
-        Software engineer by day, musician by night, Jay is an innovative individual who enjoys creating things that make life more simple whether it be by building practical software or through playing music.
+        I remember watching hacking scenes in movies as a kid wishing I could do that. Today, I still do. Only now, I know how to code. I took my first programming course when I was in college studying music.
 
         <br/><br/>
 
-        You can usually find him fiddling with different instruments or cruising around the city on two wheels when he's not telling computers what to do.
+        Needless to say, I fell in love.
 
         <br/><br/>
 
-        <section className='about-contact'>
+        The fact that you can punch some letters/numbers into a text editor, compile it and watch your program come to life is mind blowing. I started building all kinds of widgets and games in my free time. Then I began building websites for friends, which led to me selling myself on Craigslist to the highest bidder as a freelance developer.
 
-          <span className='contact-item'>
-            <a target="_blank" href="https://github.com/jay-hwang/">
-              GitHub
-            </a>
-          </span>
+        <br/><br/>
 
-          <span className='contact-item'>
-            <a target="_blank" href="https://www.linkedin.com/in/jay-hwang">
-              LinkedIn
-            </a>
-          </span>
+        I realized this was something I wanted to pursue full time, so I started intensive studies, attending full-time courses to solidify and formalize my programming skills. I had the opportunity to build and work on dozens of projects ranging across the full-stack, from modern web-apps to games, bots & scripts that automate menial tasks.
 
-          <span onClick={toggleContact} className='contact-item'>
-            Message
-          </span>
+        <br/><br/>
 
-        </section>
+        Check out some of these projects by clicking on the 'WORK' button in the navbar below
       </div>
     </div>
   );

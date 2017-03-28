@@ -35,7 +35,7 @@ Project.create({
   description: "Blog site raising awareness and support for victims of global trafficking, child-labor and modern-day slavery.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
   github_url: "https://github.com/jay-hwang/tackling_trafficking",
-  live_url: "www.tacklingtrafficking.xyz"
+  live_url: "http://www.tacklingtrafficking.xyz"
 })
 
 Project.create({

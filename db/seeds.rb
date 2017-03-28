@@ -29,14 +29,24 @@ Project.create({
   live_url: "https://jay-hwang.github.io/space_invaders/"
 })
 
+
 Project.create({
   user_id: 1,
-  title: "Tackling Trafficking",
-  description: "Blog site raising awareness and support for victims of global trafficking, child-labor and modern-day slavery.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
-  github_url: "https://github.com/jay-hwang/tackling_trafficking",
-  live_url: "http://www.tacklingtrafficking.xyz"
+  title: "Pabang",
+  description: "A bot that automates job applications. Built with Ruby and Selenium, it crawls the web and applies to jobs specified by the user. Follow the link to see the source code or to install it.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490671817/Screen_Shot_2017-03-27_at_8.29.50_PM_jwbfso.png",
+  github_url: "https://github.com/Aelho-Pak/pabang"
 })
+
+
+# Project.create({
+#   user_id: 1,
+#   title: "Tackling Trafficking",
+#   description: "Blog site raising awareness and support for victims of global trafficking, child-labor and modern-day slavery.",
+#   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
+#   github_url: "https://github.com/jay-hwang/tackling_trafficking",
+#   live_url: "http://www.tacklingtrafficking.xyz"
+# })
 
 Project.create({
   user_id: 1,
@@ -67,14 +77,6 @@ Project.create({
   description: "This is my LRU Cache. The LRU Cache is made up of a Hash Map and a Linked List, so I created my own rendition of a Hash Map and a Linked List as well. The hash map needs a hashing function to hash different data types into a deterministic hash, so I also created the necessary hashing functions to hash different data types.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png",
   github_url: "https://github.com/jay-hwang/lru_cache"
-})
-
-Project.create({
-  user_id: 1,
-  title: "Pabang",
-  description: "A bot that automates job applications. Built with Ruby and Selenium, it crawls the web and applies to jobs specified by the user. Follow the link to see the source code or to install it.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490671817/Screen_Shot_2017-03-27_at_8.29.50_PM_jwbfso.png",
-  github_url: "https://github.com/Aelho-Pak/pabang"
 })
 
 Project.create({

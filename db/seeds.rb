@@ -29,6 +29,14 @@ Project.create({
   live_url: "https://jay-hwang.github.io/space_invaders/"
 })
 
+Project.create({
+  user_id: 1,
+  title: "Tackling Trafficking",
+  description: "Blog site raising awareness and support for victims of global trafficking, child-labor and modern-day slavery.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
+  github_url: "https://github.com/jay-hwang/tackling_trafficking",
+  live_url: "http://www.tacklingtrafficking.xyz"
+  })
 
 Project.create({
   user_id: 1,
@@ -37,16 +45,6 @@ Project.create({
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490671817/Screen_Shot_2017-03-27_at_8.29.50_PM_jwbfso.png",
   github_url: "https://github.com/Aelho-Pak/pabang"
 })
-
-
-# Project.create({
-#   user_id: 1,
-#   title: "Tackling Trafficking",
-#   description: "Blog site raising awareness and support for victims of global trafficking, child-labor and modern-day slavery.",
-#   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
-#   github_url: "https://github.com/jay-hwang/tackling_trafficking",
-#   live_url: "http://www.tacklingtrafficking.xyz"
-# })
 
 Project.create({
   user_id: 1,

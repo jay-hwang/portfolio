@@ -12,7 +12,7 @@ const AboutDetail = () => {
 
         <br/><br/>
 
-        I realized this was something I wanted to pursue full time, so I started intensive studies, attending full-time courses to further solidify my programming skills. I had the opportunity to build and work on dozens of projects ranging across the full-stack, from modern web-apps to games and scripts that automate menial tasks.
+        I realized this was something I wanted to pursue full time, so I started independent studies, even taking full-time programming courses. I had the opportunity to build and work on dozens of projects ranging across the full-stack with some of the brightest people I know, ranging from modern web-apps to games and scripts that automate repetetive tasks.
 
         <br/><br/>
 

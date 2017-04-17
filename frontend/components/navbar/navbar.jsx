@@ -14,12 +14,27 @@ class Navbar extends React.Component {
     };
   }
 
+  // toggleAbout() {
+  //   $(".app-container").removeClass("blur");
+  //   $(".app-content").removeClass("hide");
+  //   $(".about-me").removeClass("display-none");
+  //   $(".modal").addClass("hide");
+  //   $(".resume").addClass("display-none");
+  // }
+
   toggleAbout() {
     $(".app-container").removeClass("blur");
     $(".app-content").removeClass("hide");
     $(".about-me").removeClass("display-none");
     $(".modal").addClass("hide");
     $(".resume").addClass("display-none");
+
+    setTimeout(() => {
+      $(".name").fadeIn();
+      $(".intro").fadeIn();
+    }, 400);
+
+    // $(".about-detail").slideUp();
   }
 
   toggleAboutDetail() {

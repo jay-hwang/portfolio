@@ -32,7 +32,7 @@ const About = () => (
       <span className='name-mobile'>JAY HWANG</span>
       <div className='intro-mobile'>
         <p className='about-me-mobile'>
-          SOFTWARE DEVELOPER
+          SOFTWARE ENGINEER
         </p>
 
         <br/>

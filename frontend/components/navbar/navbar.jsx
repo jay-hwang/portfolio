@@ -1,103 +1,20 @@
 import React from 'react';
 
-class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggleAbout = this.toggleAbout.bind(this);
-    this.toggleWork = this.toggleWork.bind(this);
-    this.toggleContact = this.toggleContact.bind(this);
-    this.toggleAboutDetail = this.toggleAboutDetail.bind(this);
-
-    this.state = {
-      showAboutDetail: false
-    };
-  }
-
-  // toggleAbout() {
-  //   $(".app-container").removeClass("blur");
-  //   $(".app-content").removeClass("hide");
-  //   $(".about-me").removeClass("display-none");
-  //   $(".modal").addClass("hide");
-  //   $(".resume").addClass("display-none");
-  // }
-
-  toggleAbout() {
-    $(".app-container").removeClass("blur");
-    $(".app-content").removeClass("hide");
-    $(".about-me").removeClass("display-none");
-    $(".modal").addClass("hide");
-    $(".resume").addClass("display-none");
-
-    setTimeout(() => {
-      $(".name").fadeIn();
-      $(".intro").fadeIn();
-    }, 400);
-
-    // $(".about-detail").slideUp();
-  }
-
-  toggleAboutDetail() {
-    if (this.state.showAboutDetail) {
-      setTimeout(() => {
-        $(".name").fadeIn();
-        $(".intro").fadeIn();
-      }, 400);
-
-      $(".about-detail").slideUp();
-
-      this.state.showAboutDetail = false;
-    } else {
-      $(".name").fadeOut();
-      $(".intro").fadeOut();
-
-      setTimeout(() => (
-        $(".about-detail").slideDown()
-      ), 400);
-
-      this.state.showAboutDetail = true;
-    }
-  }
-
-  toggleWork() {
-    $(".app-container").addClass("blur");
-    $(".app-content").addClass("hide");
-    $(".work-container").removeClass("hide");
-    $('.work-container').fadeIn();
-  }
-
-  toggleContact() {
-    $(".app-container").addClass("blur");
-    $(".app-content").addClass("hide");
-    $(".contact-container").removeClass("hide");
-  }
-
-  render() {
-    return (
-      <div className='navbar'>
-        <div
-          onClick={this.toggleAboutDetail}
-          className='navbar-item'>
-          <span>ABOUT</span>
-        </div>
-        <div
-          onClick={this.toggleWork}
-          className='navbar-item'>
-          <span>PROJECTS</span>
-        </div>
-        <div
-          onClick={this.toggleContact}
-          className='navbar-item'>
-          <span>MESSAGE</span>
-        </div>
-        <a
-          className='navbar-item resume-link'
-          target="_blank"
-          href="resume.pdf">RESUME
-        </a>
+const Navbar = () => {
+  return (
+    <nav className='navbar'>
+      <div className='logo'>
+        <span className='self-name'>Jay Hwang</span>
       </div>
-    );
-  }
-}
+
+      <ul className='navbar-links'>
+        <li className='navbar-link'>Home</li>
+        <li className='navbar-link'>About</li>
+        <li className='navbar-link'>Projects</li>
+        <li className='navbar-link'>Contact</li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;

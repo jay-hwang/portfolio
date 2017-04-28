@@ -1,40 +1,106 @@
 .navbar {
-  width: 70%;
-  min-width: 400px;
-  height: 47px;
+  width: 100%;
+  height: 80px;
 
-  border: 1px solid whitesmoke;
-  border-radius: 5px;
-  // margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 3px 10px #777;
 
-  display: flex;
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
 }
 
-.navbar-item {
-  width: 25%;
+.logo {
   height: 100%;
+  width: 150px;
 
-  border-right: 1px solid whitesmoke;
-  font-size: 12px;
-  letter-spacing: 2px;
-
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  transition: background .15s ease-in;
+.self-img {
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  height: 100%;
+  // width: 50px;
 
-  font-size: 13px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.self-name {
+  color: #111;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: 3px;
 }
 
-.navbar-item:last-child {
-  border: none;
+.navbar-links {
+  height: 100%;
+  width: 275px;
+
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.navbar-item:hover {
-  background: rgba(255,255,255,0.15);
-  transition: background .15s ease-in;
+.navbar-link {
+  list-style-type: none;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.navbar-link:hover {
+  color: #999;
   cursor: pointer;
 }
+
+// .navbar {
+//   width: 70%;
+//   min-width: 400px;
+//   height: 47px;
+//
+//   border: 1px solid whitesmoke;
+//   border-radius: 5px;
+//   // margin: 0 auto;
+//
+//   display: flex;
+// }
+//
+// .navbar-item {
+//   width: 25%;
+//   height: 100%;
+//
+//   border-right: 1px solid whitesmoke;
+//   font-size: 12px;
+//   letter-spacing: 2px;
+//
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//
+//   transition: background .15s ease-in;
+//
+//   font-size: 13px;
+//   font-weight: 700;
+//   letter-spacing: 3px;
+// }
+//
+// .navbar-item:last-child {
+//   border: none;
+// }
+//
+// .navbar-item:hover {
+//   background: rgba(255,255,255,0.15);
+//   transition: background .15s ease-in;
+//   cursor: pointer;
+// }

@@ -1,0 +1,161 @@
+.skills {
+  // height: auto;
+  width: 100%;
+
+  background-color: #383838;
+  perspective: 1000px;
+
+  text-align: center;
+  padding-top: 50px;
+}
+
+.three-d-cube {
+  background-color: #383838;
+  height: 370px;
+  text-align: center;
+  padding-top: 170px;
+}
+
+.cube-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  -webkit-perspective: 800px;
+  margin: auto;
+  line-height: 250px;
+  /*border: 2px solid black;*/
+
+}
+
+/*.cube-container#cube {
+  transition: transform 0.2s ease-in;
+}*/
+
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+
+  animation: rotate 20s infinite linear;
+  /*animation-fill-mode: forwards;*/
+}
+
+#cube figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 196px;
+  height: 196px;
+  /*border: 2px solid lightgrey;*/
+  opacity: 0.3;
+
+  font-size: 30px;
+  color: #3e3e3e;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 200px;
+  // letter-spacing: 1px;
+  /*transform: translateX(100px);*/
+  /*border: 5px solid black;*/
+}
+
+
+#cube .front {
+  transform: rotateY(0deg) translateZ(100px);
+  background-color: white;
+}
+
+#cube .back {
+  transform: rotateX(180deg) translateZ(100px);
+  background-color: white;
+}
+
+#cube .left {
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: white;
+}
+
+#cube .right {
+  transform: rotateY(-90deg) translateZ(100px);
+  background-color: white;
+
+}
+
+#cube .top {
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: white;
+
+}
+
+#cube .bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background-color: white;
+}
+
+#cube:hover .front {
+  animation: expand-front 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+#cube:hover .back {
+  animation: expand-back 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#cube:hover .left {
+  animation: expand-left 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+#cube:hover .right {
+  animation: expand-right 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+#cube:hover .top {
+  animation: expand-top 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+#cube:hover .bottom {
+  animation: expand-bottom 0.5s linear;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes rotate {
+  from { transform: rotateX(0) rotateY(0); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+@keyframes expand-front {
+  from { transform: rotateY(0) translateZ(100px); }
+  to { transform: rotateY(0) translateZ(200px); }
+}
+
+@keyframes expand-back {
+  from { transform: rotateY(180deg) translateZ(100px)}
+  to { transform: rotateY(180deg) translateZ(200px)}
+}
+
+@keyframes expand-left {
+  from { transform: rotateY(90deg) translateZ(100px)}
+  to { transform: rotateY(90deg) translateZ(200px)}
+}
+
+@keyframes expand-right {
+  from { transform: rotateY(-90deg) translateZ(100px)}
+  to { transform: rotateY(-90deg) translateZ(200px)}
+}
+
+@keyframes expand-top {
+  from { transform: rotateX(90deg) translateZ(100px)}
+  to { transform: rotateX(90deg) translateZ(200px)}
+}
+
+@keyframes expand-bottom {
+  from { transform: rotateX(-90deg) translateZ(100px)}
+  to { transform: rotateX(-90deg) translateZ(200px)}
+}

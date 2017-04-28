@@ -3,17 +3,6 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
-import {
-  login,
-  logout,
-  signup
-} from './actions/session_actions';
-
-import {
-  createMessage,
-  deleteMessage
-} from './actions/message_actions';
-
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.getElementById('root');
 
@@ -25,13 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
 
-  window.store = store;
-  window.login = login;
-  window.logout = logout;
-  window.signup = signup;
-
-  window.createMessage = createMessage;
-  window.deleteMessage = deleteMessage;
+  // Toggles hidden nav
+  $(window).scroll(function() {
+    let y = $(this).scrollTop();
+    if (y > 600) {
+      $('.navbar').slideDown();
+    }
+    else {
+      $('.navbar').slideUp();
+    }
+  });
 
   ReactDOM.render(<Root store={store} />, main);
 });

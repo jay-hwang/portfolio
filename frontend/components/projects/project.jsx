@@ -20,7 +20,6 @@ const ProjectLinks = ({ project }) => {
 };
 
 const Project = ({ project }) => {
-
   const projectStack = project.stack.split(',').map((tech, i) => (
     <li key={i}>
       <div className='project-stack'>{tech}</div>

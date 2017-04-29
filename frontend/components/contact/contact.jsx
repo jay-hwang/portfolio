@@ -8,8 +8,12 @@ class Contact extends React.Component {
   render() {
     return (
       <div className='contact-container'>
+        <h3 className='title' id='projects-title'>GET IN TOUCH</h3>
+        <p className='contact-text'>
+          I'm looking for new opportunities and would love to chat.
+          If you're interested in working together, please reach out!
+        </p>
 
-        <h3 className='modal-header'>CONTACT</h3>
       </div>
     );
   }

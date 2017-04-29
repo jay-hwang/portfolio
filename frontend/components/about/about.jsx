@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className='about'>
       <img className='about-img'
-        src='' />
+        src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493442380/IMG_6523_zl5y4a.jpg' />
 
       <div className='about-p'>
         <span className='about-title'>Music Producer turned Computer Programmer</span>

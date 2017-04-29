@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <section className='home'>
       <div className='bg'></div>
+      <div className='veil'></div>
       <span className='home-intro'>
         Hello World!
       </span>

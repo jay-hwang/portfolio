@@ -1,5 +1,4 @@
 .skills {
-  // height: auto;
   width: 100%;
 
   background-color: #383838;
@@ -11,7 +10,7 @@
 
 .three-d-cube {
   background-color: #383838;
-  height: 370px;
+  height: 540px;
   text-align: center;
   padding-top: 170px;
 }
@@ -23,13 +22,8 @@
   -webkit-perspective: 800px;
   margin: auto;
   line-height: 250px;
-  /*border: 2px solid black;*/
 
 }
-
-/*.cube-container#cube {
-  transition: transform 0.2s ease-in;
-}*/
 
 #cube {
   width: 100%;
@@ -39,7 +33,6 @@
   transform: translateZ(-100px);
 
   animation: rotate 20s infinite linear;
-  /*animation-fill-mode: forwards;*/
 }
 
 #cube figure {
@@ -48,7 +41,6 @@
   position: absolute;
   width: 196px;
   height: 196px;
-  /*border: 2px solid lightgrey;*/
   opacity: 0.3;
 
   font-size: 30px;
@@ -56,9 +48,6 @@
   vertical-align: middle;
   text-align: center;
   line-height: 200px;
-  // letter-spacing: 1px;
-  /*transform: translateX(100px);*/
-  /*border: 5px solid black;*/
 }
 
 

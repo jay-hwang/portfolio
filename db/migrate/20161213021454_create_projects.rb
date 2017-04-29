@@ -7,6 +7,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
       t.string :image_url
       t.string :github_url
       t.string :live_url
+      t.string :stack, null: false
 
       t.timestamps
     end

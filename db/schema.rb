@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20161213021454) do
     t.string   "image_url"
     t.string   "github_url"
     t.string   "live_url"
+    t.string   "stack",       null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

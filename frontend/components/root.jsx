@@ -2,9 +2,6 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
-import Work from './work/work';
-import Contact from './contact/contact';
-import WorkItemDetail from './work/work_item_detail';
 
 import {
   requestProjects

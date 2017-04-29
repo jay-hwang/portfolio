@@ -6,6 +6,7 @@
       :description,
       :image_url,
       :github_url,
-      :live_url
+      :live_url,
+      :stack
     end
 end

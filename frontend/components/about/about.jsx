@@ -1,6 +1,5 @@
 import React from 'react';
 import Resume from '../resume/resume';
-import AboutDetail from './about_detail';
 
 const About = () => {
   return (

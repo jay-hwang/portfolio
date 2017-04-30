@@ -5,6 +5,7 @@ import About from './about/about';
 import Skills from './skills/skills';
 import ProjectsContainer from './projects/projects_container';
 import Contact from './contact/contact';
+import Footer from './footer/footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class App extends React.Component {
         <Skills />
         <ProjectsContainer />
         <Contact />
+        <Footer />
       </div>
     );
   }

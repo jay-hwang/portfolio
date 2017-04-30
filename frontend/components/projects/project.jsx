@@ -4,8 +4,12 @@ const ProjectLinks = ({ project }) => {
   if (project.live_url) {
     return (
       <div className='project-links'>
-        <a href={ project.github_url } className='project-link'>GitHub</a>
-        <a href={ project.live_url } className='project-link'>Live</a>
+        <div className='project-link-btn'>
+          <a href={ project.github_url } className='project-link'>GitHub</a>
+        </div>
+        <div className='project-link-btn'>
+          <a href={ project.live_url } className='project-link'>Live</a>
+        </div>
       </div>
     );
   }

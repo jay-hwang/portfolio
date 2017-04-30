@@ -15,28 +15,34 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Toggles hidden nav
+  let y, top;
   $(window).scroll(function() {
-    let y = $(this).scrollTop();
+    y = $(this).scrollTop();
     if (y > 600) {
       $('.navbar').slideDown();
+
+      // Animates skills background-image
+        top = (600 - y) / 3;
+        $('.skills-bg').css('top', top);
+      //
+
     }
     else {
       $('.navbar').slideUp();
     }
   });
 
+
   // Changes Home Component background img
-  // const bgImgs = [
-  //   'https://res.cloudinary.com/ddgtwtbre/image/upload/a_90/v1493442364/IMG_6249_jae9is.jpg',
-  //   'https://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
-  //   'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493442365/Screen_Shot_2017-04-27_at_6.21.58_PM_o48mti.png'
-  // ];
-  // let i = 0;
-  // setInterval(() => {
-  //   if (i >= bgImgs.length) { i = 0; }
-  //   $('.bg').css('background-image', `url(${bgImgs[i]})`);
-  //   i++;
-  // }, 2000);
+  let i = 1, j;
+  setInterval(() => {
+    j = i+1;
+    if (j > 4) { j = 1; }
+    $(`#img${j}`).fadeIn();
+    $(`#img${i}`).fadeOut();
+    i++;
+    if (i > 4) { i = 1; }
+  }, 3000);
 
 
 

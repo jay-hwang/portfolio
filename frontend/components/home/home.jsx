@@ -4,8 +4,6 @@ import Connect from '../connect/connect';
 const Home = () => {
   const arrowBounceClick = () => {
     $("body").animate({ scrollTop: $(window).height() - 70}, 700);
-    // scrolls 100vh each click
-    // $("body").animate({ scrollTop: window.pageYOffset + $(window).height() - 70}, 700);
   };
 
   return (
@@ -42,9 +40,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <img className='bg-img display-none' id='img5'
-//   src='' />
-//
-// <img className='bg-img display-none' id='img6'
-//   src='' />

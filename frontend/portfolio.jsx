@@ -85,12 +85,12 @@ $(window).load(() => {
 
   // Animates Projects Scroll Arrow Image
   const animateArrowGrowth = () => {
-    $('.arrow-img').animate({ height: 40, width: 22 }, 300);
+    $('.arrow-img').animate({ height: 34, width: 18 }, 300);
     setTimeout(() => {
-      $('.arrow-img').animate({ height: 50, width: 30 }, 300);
+      $('.arrow-img').animate({ height: 55, width: 33 }, 300);
     }, 300);
     setTimeout(() => {
-      $('.arrow-img').animate({ height: 40, width: 22 }, 300);
+      $('.arrow-img').animate({ height: 34, width: 18 }, 300);
     }, 300);
     setTimeout(() => {
       $('.arrow-img').animate({ height: 45, width: 25 }, 300);
@@ -110,7 +110,6 @@ $(window).load(() => {
     $(`#img${i}`).fadeOut();
     i++;
     if (i > 5) { i = 1; }
-  // }, 3900);
   }, 3880);
 
   // Home Component typing animation

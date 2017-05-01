@@ -22,7 +22,7 @@ const About = () => {
         </p>
 
         <button className='see-skills' onClick={ skillsClick }>
-          Tech Stack
+          View My Tech Stack
         </button>
       </div>
     </section>

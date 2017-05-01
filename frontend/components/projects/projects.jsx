@@ -8,12 +8,29 @@ const Projects = ({ projects }) => {
     </li>
   ));
 
+  const scrollBalance = {
+    left: 0,
+    right: 4
+  };
+
   const scrollRight = () => {
-    $('.projects-ul').animate({ left: '-=740' }, 200);
+    if (scrollBalance.right > 0) {
+      $('.projects-ul').animate({ left: '-=740' }, 200);
+      scrollBalance.right--;
+      scrollBalance.left++;
+      $('.left-arrow-box').fadeIn();
+    }
+    if (scrollBalance.right <= 0) { $('.right-arrow-box').fadeOut(); }
   };
 
   const scrollLeft = () => {
-    $('.projects-ul').animate({ left: '+=740' }, 200);
+    if (scrollBalance.left > 0) {
+      $('.projects-ul').animate({ left: '+=740' }, 200);
+      scrollBalance.left--;
+      scrollBalance.right++;
+      $('.right-arrow-box').fadeIn();
+    }
+    if (scrollBalance.left <= 0) { $('.left-arrow-box').fadeOut(); }
   };
 
   return (
@@ -22,8 +39,8 @@ const Projects = ({ projects }) => {
 
       <div className='projects-scroll'>
 
-        <div className='left-arrow-box arrow-box'>
-          <div className='backward-circle arrow-circle'
+        <div className='left-arrow-box arrow-box display-none'>
+          <div className='left-circle arrow-circle'
             onClick={ scrollLeft }>
             <img className='arrow-img'
               src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493512202/left-arrow_sbunnt.png' />
@@ -37,7 +54,7 @@ const Projects = ({ projects }) => {
         </div>
 
         <div className='right-arrow-box arrow-box'>
-          <div className='forward-circle arrow-circle'
+          <div className='right-circle arrow-circle'
             onClick={ scrollRight }>
             <img className='arrow-img'
               src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493511005/arrow_r5mjhk.png' />

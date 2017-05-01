@@ -17,7 +17,9 @@ const ProjectLinks = ({ project }) => {
   else {
     return (
       <div className='project-links'>
-        <a href={ project.github_url } className='project-link'>GitHub</a>
+        <div className='project-link-btn'>
+          <a href={ project.github_url } className='project-link'>GitHub</a>
+        </div>
       </div>
     );
   }

@@ -47,9 +47,19 @@
   color: #111;
   font-size: 14px;
   letter-spacing: 1px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #fff;
 }
 
 .navbar-link:hover {
   color: #999;
   cursor: pointer;
+}
+
+.active {
+  color: #999;
+  border-bottom: 5px solid #999;
 }

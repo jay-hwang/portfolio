@@ -50,76 +50,60 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 $(window).load(() => {
-  const clear = $element => {
-    let text     = $element.html(),
-        counterI = $element.html().length,
-        interval = null;
-        interval = setInterval(() => {
-          text = text.substring(0, counterI - 1);
-          // $element.html(text);
-          $('.home-intro').html(text);
-          counterI--;
-          if (counterI <= 0) { clearInterval(interval); }
-        }, 50);
-  };
+  // const clear = $element => {
+  //   let text     = $element.html(),
+  //       counterI = $element.html().length,
+  //       interval = null;
+  //       interval = setInterval(() => {
+  //         text = text.substring(0, counterI - 1);
+  //         // $element.html(text);
+  //         $('.home-intro').html(text);
+  //         counterI--;
+  //         if (counterI <= 0) { clearInterval(interval); }
+  //       }, 50);
+  // };
+  //
+  // const type = ($element, text, shouldClear = true) => {
+  //   let typedText = '',
+  //       counterI  = 0,
+  //       interval  = null;
+  //       interval  = setInterval(() => {
+  //         typedText += text[counterI];
+  //         $('.home-intro').html(typedText);
+  //         counterI++;
+  //         if (counterI === text.length) {
+  //           clearInterval(interval);
+  //           if (shouldClear) {
+  //             setTimeout(() => {
+  //               clear($element);
+  //             }, 1500);
+  //           }
+  //         }
+  //       }, 60);
+  // };
 
-  const type = ($element, text, shouldClear = true) => {
-    let typedText = '',
-        counterI  = 0,
-        interval  = null;
-        interval  = setInterval(() => {
-          typedText += text[counterI];
-          // $element.hmtl(typedText);
-          $('.home-intro').html(typedText);
-          counterI++;
-          if (counterI === text.length) {
-            clearInterval(interval);
-            if (shouldClear) {
-              setTimeout(() => {
-                clear($element);
-              }, 1500);
-            }
-          }
-        }, 60);
-  };
-
-  let intro = [
-      "Hello World! I'm Jay",
-      "I'm a software engineer",
-      "I live in San Francisco",
-      "I also write music",
-      "And love to travel"
-  ];
-
-  type($('.home-intro'), intro[0]);
   let i = 1, j;
   setInterval(() => {
     j = i+1;
     if (j > 5) { j = 1; }
     $(`#img${j}`).fadeIn();
-    console.log(i);
-    if (i === 1) {
-      type($('.home-intro'), intro[0]);
-    }
-    else {
-      type($('.home-intro'), intro[i-1]);
-    }
     $(`#img${i}`).fadeOut();
     i++;
     if (i > 5) { i = 1; }
-  }, 3700);
+  }, 3877);
 
 
-  // $(".home-intro").typed({
-    // strings: [
-    //     "Hi! I'm Jay",
-    //     "I'm a software engineer",
-    //     "I live in San Francisco",
-    //     "I write music",
-    //     "And love to travel"
-    // ],
-  //   typeSpeed: 10,
-  //   loop: true,
-  //   backDelay: 2000
-  // });
+  $(".home-intro").typed({
+    strings: [
+        "Hello! I'm Jay",
+        "I'm a software engineer",
+        "I live in San Francisco",
+        "I enjoy writing music",
+        "And love to travel"//,
+        // "            "
+    ],
+    typeSpeed: 11,
+    loop: true,
+    backDelay: 2000
+  });
 });

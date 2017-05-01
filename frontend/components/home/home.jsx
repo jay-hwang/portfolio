@@ -23,9 +23,7 @@ const Home = () => {
           src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/IMG_6249_rvfpk3.jpg' />
       </div>
 
-      <span className='home-intro'>
-        Hello World!
-      </span>
+      <span className='home-intro'></span>
 
       <Connect />
     </section>

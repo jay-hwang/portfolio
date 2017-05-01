@@ -80,7 +80,8 @@ $(window).load(() => {
     $(`#img${i}`).fadeOut();
     i++;
     if (i > 5) { i = 1; }
-  }, 3877);
+  }, 3900);
+  // }, 3877);
 
   // Home Component typing animation
   $(".home-intro").typed({

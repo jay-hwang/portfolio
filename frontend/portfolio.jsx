@@ -44,6 +44,18 @@ document.addEventListener('DOMContentLoaded', () => {
       clearActive();
       $('#about-nav').addClass('active');
     }
+
+    // Animate about components
+    if (y > wh / 2 - 200) {
+      $('.about-img').animate({ top: -80, opacity: 1 }, 500);
+      setTimeout(() => {
+        $('.about-p').animate({ top: -80, opacity: 1 }, 500);
+      }, 100);
+    }
+    // Animate project lis
+    if (y > wh + 700) {
+      $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
+    }
   });
 
   ReactDOM.render(<Root store={store} />, main);
@@ -71,6 +83,24 @@ $(window).load(() => {
     animateArrowBounce();
   }, 3500);
 
+  // Animates Projects Scroll Arrow Image
+  const animateArrowGrowth = () => {
+    $('.arrow-img').animate({ height: 40, width: 22 }, 300);
+    setTimeout(() => {
+      $('.arrow-img').animate({ height: 50, width: 30 }, 300);
+    }, 300);
+    setTimeout(() => {
+      $('.arrow-img').animate({ height: 40, width: 22 }, 300);
+    }, 300);
+    setTimeout(() => {
+      $('.arrow-img').animate({ height: 45, width: 25 }, 300);
+    }, 300);
+  };
+  animateArrowGrowth();
+  setInterval(() => {
+    animateArrowGrowth();
+  }, 2500);
+
   // Changes Home Component background img
   let i = 1, j;
   setInterval(() => {
@@ -80,8 +110,8 @@ $(window).load(() => {
     $(`#img${i}`).fadeOut();
     i++;
     if (i > 5) { i = 1; }
-  }, 3900);
-  // }, 3877);
+  // }, 3900);
+  }, 3880);
 
   // Home Component typing animation
   $(".home-intro").typed({

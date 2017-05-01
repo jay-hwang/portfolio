@@ -2,11 +2,15 @@ import React from 'react';
 import Project from './project';
 
 const Projects = ({ projects }) => {
-  const projectLis = Object.keys(projects).map(key => (
-    <li key={key} className='project-li'>
-      <Project project={projects[key]} />
-    </li>
-  ));
+  let id = null;
+  const projectLis = Object.keys(projects).map((key, i) => {
+    id = `project${i}`;
+    return (
+      <li key={key} className='project-li transparent' id={id}>
+        <Project project={projects[key]} />
+      </li>
+    );
+  });
 
   const scrollBalance = {
     left: 0,

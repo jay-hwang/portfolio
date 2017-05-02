@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $('.about-img').animate({ top: -80, opacity: 1 }, 500);
       setTimeout(() => {
         $('.about-p').animate({ top: -80, opacity: 1 }, 500);
-      }, 100);
+      }, 300);
     }
     // Animate project lis
     if (y > wh + 700) {
@@ -110,7 +110,7 @@ $(window).load(() => {
     $(`#img${i}`).fadeOut();
     i++;
     if (i > 5) { i = 1; }
-  }, 3880);
+  }, 3885);
 
   // Home Component typing animation
   $(".home-intro").typed({

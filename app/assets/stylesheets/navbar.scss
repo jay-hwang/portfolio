@@ -1,16 +1,12 @@
 .navbar {
   width: 100%;
   height: 70px;
-
   background-color: #fff;
   box-shadow: 0 3px 10px #777;
-
   display: none;
-
   position: fixed;
   top: 0;
   left: 0;
-
   z-index: 1000;
 }
 
@@ -32,7 +28,7 @@
 
 .navbar-links {
   height: 100%;
-  width: 275px;
+  width: 325px;
 
   float: right;
   margin-right: 20px;

@@ -3,12 +3,16 @@ import Resume from '../resume/resume';
 
 const About = () => {
   const wh = $(window).height();
-  const skillsClick = () => $("body").animate({ scrollTop: wh - 70 + 570 }, 700);
+  const skillsClick = () => $("body").animate({ scrollTop: wh + 500 }, 700);
 
   return (
     <section className='about'>
-      <img className='about-img transparent'
-        src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579446/IMG_6326_pjkyzo.jpg' />
+      <div className='about-img-box'>
+        <img className='about-img transparent' id='about-img1'
+          src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579446/IMG_6326_pjkyzo.jpg' />
+        <img className='about-img display-none' id='about-img2'
+          src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579448/IMG_6523_kzkb9e.jpg'/>
+      </div>
 
       <div className='about-p transparent'>
         <span className='about-title'>Music Composer turned Computer Programmer</span>

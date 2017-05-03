@@ -1,26 +1,6 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@media screen and (max-width: 760px) {
-  .desktop {
-    display: none !important;
-  }
-
-  .mobile {
-    display: display !important;
-  }
-}
-
-@media screen and (min-width: 761px) {
-  .desktop {
-    display: flex !important;
-  }
-
-  .mobile {
-    display: none !important;
-  }
-}
-
 .root-container {
   width: 100%;
   overflow: hidden;
@@ -104,4 +84,8 @@
 
 .transparent {
   opacity: 0;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }

@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
       //
 
       // Changes About image
-        l = k+1;
-        if (l > 2) { l = 1; }
-        $(`#about-img${l}`).fadeIn();
-        $(`#about-img${k}`).fadeOut();
-        k++;
-        if (k > 2) { k = 1; }
+        // l = k+1;
+        // if (l > 2) { l = 1; }
+        // $(`#about-img-fade${l}`).fadeIn();
+        // $(`#about-img-fade${k}`).fadeOut();
+        // k++;
+        // if (k > 2) { k = 1; }
       //
     // }, 3881.5 );
     }, 4000);
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Animate about components
       if (y > wh / 2 - 200) {
-        $('.about-img').removeClass('transparent');
+        $('.about-img-scrollIn').removeClass('transparent');
         $('.about-img').animate({ top: -80, opacity: 1 }, 500);
         setTimeout(() => {
           $('.about-p').animate({ top: -80, opacity: 1 }, 500);

@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         k++;
         if (k > 2) { k = 1; }
       //
-    }, 3881);
+    // }, 3881.5 );
+    }, 4000);
   //
 
 

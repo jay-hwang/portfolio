@@ -5,7 +5,10 @@ import AboutDesktop from './about_desktop';
 
 const About = () => {
   const wh = $(window).height();
-  const skillsClick = () => $("body").animate({ scrollTop: wh + 500 }, 700);
+  const skillsClick = () => {
+    let aboutHeight = $('.about').height() + 10;
+    $("body").animate({ scrollTop: wh + aboutHeight  }, 700);
+  };
 
   return (
     <section className='about'>

@@ -14,37 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
 
-  // Image toggle interval
-    let k = 1, l;
-    let i = 1, j;
-    setInterval(() => {
-      // Changes Home Component background img
-        j = i+1;
-        if (j > 5) { j = 1; }
-        $(`#img${j}`).fadeIn();
-        $(`#img${i}`).fadeOut();
-        i++;
-        if (i > 5) { i = 1; }
-      //
-
-      // Changes About image
-        // l = k+1;
-        // if (l > 2) { l = 1; }
-        // $(`#about-img-fade${l}`).fadeIn();
-        // $(`#about-img-fade${k}`).fadeOut();
-        // k++;
-        // if (k > 2) { k = 1; }
-      //
-    // }, 3881.5 );
-    }, 4000);
-  //
-
-
   let y, top;
   $(window).scroll(function() {
+    const wh = $(window).height();
+
     // Toggles hidden nav
       y = $(this).scrollTop();
-      if (y > 600) {
+      if (y > wh - 71) {
         $('.navbar').slideDown();
         // Animates skills background-image
           top = (600 - y) / 3;
@@ -56,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     //
 
     // Toggles Active Navbar link
-      const wh = $(window).height();
       const clearActive = () => $('.navbar-link').removeClass('active');
       if (y > wh + 1600) {
         clearActive();
@@ -138,6 +113,23 @@ $(window).load(() => {
     }, 2500);
   //
 
+  // Changes Home Component background img
+    let homeImgUrls = [
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493620704/Engineering-backgrounds-23_jknlfg.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg'
+    ];
+    let i = 0;
+    setInterval(() => {
+        $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
+        i++;
+        if (i > 4) { i = 0; }
+    // }, 3881.5 );
+  }, 4100);
+  //
+
   // Home Component typing animation
     $(".home-intro").typed({
       strings: [
@@ -148,7 +140,7 @@ $(window).load(() => {
           "And love to travel"//,
           // "            "
       ],
-      typeSpeed: 11,
+      typeSpeed: 10,
       loop: true,
       backDelay: 2000
     });

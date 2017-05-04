@@ -13,28 +13,29 @@ const Projects = ({ projects }) => {
   });
 
   const scrollBalance = {
-    left: 0,
-    right: 4
+    mobile:  { left: 0, right: 10},
+    tablet:  { left: 0, right: 4 },
+    desktop: { left: 0, right: 4 }
   };
 
   const scrollRight = () => {
-    if (scrollBalance.right > 0) {
+    if (scrollBalance.desktop.right > 0) {
       $('.projects-ul').animate({ left: '-=740' }, 200);
-      scrollBalance.right--;
-      scrollBalance.left++;
+      scrollBalance.desktop.right--;
+      scrollBalance.desktop.left++;
       $('.left-arrow-box').fadeIn();
     }
-    if (scrollBalance.right <= 0) { $('.right-arrow-box').fadeOut(); }
+    if (scrollBalance.desktop.right <= 0) { $('.right-arrow-box').fadeOut(); }
   };
 
   const scrollLeft = () => {
-    if (scrollBalance.left > 0) {
+    if (scrollBalance.desktop.left > 0) {
       $('.projects-ul').animate({ left: '+=740' }, 200);
-      scrollBalance.left--;
-      scrollBalance.right++;
+      scrollBalance.desktop.left--;
+      scrollBalance.desktop.right++;
       $('.right-arrow-box').fadeIn();
     }
-    if (scrollBalance.left <= 0) { $('.left-arrow-box').fadeOut(); }
+    if (scrollBalance.desktop.left <= 0) { $('.left-arrow-box').fadeOut(); }
   };
 
   return (

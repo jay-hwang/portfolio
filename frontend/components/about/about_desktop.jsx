@@ -3,10 +3,6 @@ import React from 'react';
 const AboutDesktop = ({ skillsClick }) => (
   <div className='desktop'>
     <div>
-      <img className='about-img-desktop scrollIn transparent' id='about-img1'
-        src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579446/IMG_6326_pjkyzo.jpg' />
-      <img className='about-img-desktop scrollIn display-none' id='about-img2'
-        src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579448/IMG_6523_kzkb9e.jpg' />
     </div>
 
     <div className='about-p-desktop transparent'>

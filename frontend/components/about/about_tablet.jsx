@@ -3,10 +3,6 @@ import React from 'react';
 const AboutTablet = ({ skillsClick }) => (
   <div className='tablet'>
     <div className='tablet-about-img-box'>
-      <img className='about-img transparent' id='about-img1'
-        src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579446/IMG_6326_pjkyzo.jpg' />
-      <img className='about-img display-none' id='about-img2'
-        src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579448/IMG_6523_kzkb9e.jpg' />
     </div>
 
     <div className='desktop-about-p transparent'>

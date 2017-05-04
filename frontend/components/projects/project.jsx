@@ -1,29 +1,5 @@
 import React from 'react';
-
-const ProjectLinks = ({ project }) => {
-  if (project.live_url) {
-    return (
-      <div className='project-links'>
-        <div className='project-link-btn'>
-          <a href={ project.github_url } className='project-link'>GitHub</a>
-        </div>
-        <div className='project-link-btn'>
-          <a href={ project.live_url } className='project-link'>Live</a>
-        </div>
-      </div>
-    );
-  }
-
-  else {
-    return (
-      <div className='project-links'>
-        <div className='project-link-btn'>
-          <a href={ project.github_url } className='project-link'>GitHub</a>
-        </div>
-      </div>
-    );
-  }
-};
+import ProjectMobile from './project_mobile';
 
 const Project = ({ project }) => {
   const projectStack = project.stack.split(',').map((tech, i) => (
@@ -33,20 +9,8 @@ const Project = ({ project }) => {
   ));
 
   return (
-    <div className='project'>
-      <img src={ project.image_url } className='project-img' />
-
-      <div className='project-info'>
-        <h3 className='project-name'>{ project.title }</h3>
-        <p className='project-desc'>{ project.description }</p>
-      </div>
-
-      <h3 className='stack-title'>Stack</h3>
-      <ul className='stack'>
-        { projectStack }
-      </ul>
-
-      <ProjectLinks project={ project } />
+    <div>
+      <ProjectMobile project={ project } projectStack={ projectStack } />
     </div>
   );
 };

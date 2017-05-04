@@ -53,3 +53,32 @@
   height: 45px;
   width: 25px;
 }
+
+.mobile-circle-box {
+
+}
+
+.mobile-circle {
+  position: absolute;
+  top: -50px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-circle-mobile {
+  right: 10px;
+}
+
+.left-circle-mobile {
+  left: 10px;
+}
+
+.arrow-img-mobile {
+  height: 20px;
+  width: 12px;
+}

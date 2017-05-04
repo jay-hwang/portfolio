@@ -10,10 +10,12 @@ const Home = () => {
     <section className='home'>
       <div className='veil'></div>
 
-      <h1><span className='home-intro'></span></h1>
-      <Connect />
-      <div className='arrow-bounce-box' onClick={ arrowBounceClick }>
-        <img className='arrow-bounce' src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493657666/down-arrow_puf3kb.png' />
+      <div className='z1'>
+        <h1><span className='home-intro'></span></h1>
+        <Connect />
+        <div className='arrow-bounce-box' onClick={ arrowBounceClick }>
+          <img className='arrow-bounce' src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493657666/down-arrow_puf3kb.png' />
+        </div>
       </div>
     </section>
   );

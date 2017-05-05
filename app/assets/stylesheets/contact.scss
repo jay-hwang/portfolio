@@ -2,29 +2,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-bottom: 50px;
   background-color: #fff;
   z-index: 10;
 }
 
 .contact-text {
-  width: 450px;
-  height: 50px;
+  min-height: 50px;
   margin-bottom: 10px;
-
   text-align: center;
   color: #555;
   font-size: 14px;
   letter-spacing: 1px;
-  line-height: 17px;
+  line-height: 20px;
 }
 
+.contact-text-mobile {
+  width: 80%;
+}
+
+.contact-text-desktop {
+  width: 450px;
+};
+
 .contact-icons {
-  width: 600px;
-  height: 120px;
+  max-width: 600px;
+  // width: 200px;
+  width: 80%;
+  min-height: 120px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -41,6 +49,7 @@
   height: 70px;
   width: 70px;
 
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 

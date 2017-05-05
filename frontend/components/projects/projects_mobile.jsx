@@ -28,7 +28,7 @@ const ProjectsScrollMobile = ({ projectLis }) => {
   };
 
   const scrollLeft = () => {
-    if (!shouldFreeze.left) {
+    if (!shouldFreeze.left && scrollBalance.left > 0) {
       toggleFreeze('left');
       shiftBalance('left');
       $('.projects-ul').animate({ left: '+=295' }, 200);

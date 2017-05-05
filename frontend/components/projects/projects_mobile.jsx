@@ -2,21 +2,36 @@ import React from 'react';
 
 const ProjectsScrollMobile = ({ projectLis }) => {
   const scrollBalance = { left: 0, right: 10 };
-
-  const scrollRight = () => {
-    if (scrollBalance.right > 0) {
-      $('.projects-ul').animate({ left: '-=295' }, 200);
+  const shouldFreeze = { left: false, right: false };
+  const toggleFreeze = dir => {
+    shouldFreeze[dir] = true;
+    setTimeout(() => { shouldFreeze[dir] = false; }, 350);
+  };
+  const shiftBalance = dir => {
+    if (dir === 'right') {
       scrollBalance.right--;
       scrollBalance.left++;
+    }
+    else {
+      scrollBalance.right++;
+      scrollBalance.left--;
+    }
+  };
+
+  const scrollRight = () => {
+    if (!shouldFreeze.right) {
+      toggleFreeze('right');
+      shiftBalance('right');
+      $('.projects-ul').animate({ left: '-=295' }, 200);
       $('.mobile-circle-box-left').fadeIn(); }
-    if (scrollBalance.right <= 1) { $('.mobile-circle-box-right').fadeOut(); }
+    if (scrollBalance.right <= 2) { $('.mobile-circle-box-right').fadeOut(); }
   };
 
   const scrollLeft = () => {
-    if (scrollBalance.left > 0) {
+    if (!shouldFreeze.left) {
+      toggleFreeze('left');
+      shiftBalance('left');
       $('.projects-ul').animate({ left: '+=295' }, 200);
-      scrollBalance.right++;
-      scrollBalance.left--;
       $('.mobile-circle-box-right').fadeIn(); }
     if (scrollBalance.left <= 0) { $('.mobile-circle-box-left').fadeOut(); }
   };

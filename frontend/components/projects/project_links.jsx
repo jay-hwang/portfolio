@@ -5,10 +5,10 @@ const ProjectLinks = ({ project }) => {
     return (
       <div className='project-links'>
         <div className='project-link-btn'>
-          <a href={ project.github_url } className='project-link'>GitHub</a>
+          <a target='_blank' href={ project.github_url } className='project-link'>GitHub</a>
         </div>
         <div className='project-link-btn'>
-          <a href={ project.live_url } className='project-link'>Live</a>
+          <a target='_blank' href={ project.live_url } className='project-link'>Live</a>
         </div>
       </div>
     );
@@ -17,7 +17,7 @@ const ProjectLinks = ({ project }) => {
     return (
       <div className='project-links'>
         <div className='project-link-btn'>
-          <a href={ project.github_url } className='project-link'>GitHub</a>
+          <a target='_blank' href={ project.github_url } className='project-link'>GitHub</a>
         </div>
       </div>
     );

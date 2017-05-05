@@ -24,7 +24,7 @@ const ProjectsScrollMobile = ({ projectLis }) => {
       shiftBalance('right');
       $('.projects-ul').animate({ left: '-=295' }, 200);
       $('.mobile-circle-box-left').fadeIn(); }
-    if (scrollBalance.right <= 2) { $('.mobile-circle-box-right').fadeOut(); }
+    if (scrollBalance.right <= 1) { $('.mobile-circle-box-right').fadeOut(); }
   };
 
   const scrollLeft = () => {

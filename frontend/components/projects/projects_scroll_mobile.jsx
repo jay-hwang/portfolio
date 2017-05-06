@@ -3,6 +3,7 @@ import React from 'react';
 const ProjectsScrollMobile = ({ projectLis }) => {
   const scrollBalance = { left: 0, right: 10 };
   const shouldFreeze = { left: false, right: false };
+  // const animatePx = $('.project').width();
   const toggleFreeze = dir => {
     shouldFreeze[dir] = true;
     setTimeout(() => { shouldFreeze[dir] = false; }, 350);
@@ -22,7 +23,8 @@ const ProjectsScrollMobile = ({ projectLis }) => {
     if (!shouldFreeze.right) {
       toggleFreeze('right');
       shiftBalance('right');
-      $('.projects-ul').animate({ left: '-=295' }, 200);
+      let animatePx = $('.project-li').width();
+      $('.projects-ul').animate({ left: `-=${animatePx}` }, 200);
       $('.mobile-circle-box-left').fadeIn(); }
     if (scrollBalance.right <= 1) { $('.mobile-circle-box-right').fadeOut(); }
   };
@@ -31,7 +33,8 @@ const ProjectsScrollMobile = ({ projectLis }) => {
     if (!shouldFreeze.left && scrollBalance.left > 0) {
       toggleFreeze('left');
       shiftBalance('left');
-      $('.projects-ul').animate({ left: '+=295' }, 200);
+      let animatePx = $('.project-li').width();
+      $('.projects-ul').animate({ left: `+=${animatePx}` }, 200);
       $('.mobile-circle-box-right').fadeIn(); }
     if (scrollBalance.left <= 0) { $('.mobile-circle-box-left').fadeOut(); }
   };

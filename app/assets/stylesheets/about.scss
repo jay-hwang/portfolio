@@ -1,22 +1,6 @@
-// Mobile CSS
-.about-img-mobile {
-  width: 80vw;
-  height: 55vw;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.about-p-mobile {
-  width: 80vw;
-  min-height: 400px;
-}
-
-// Desktop CSS
-
 .about {
   width: 100%;
   min-height: 570px;
-  // height: auto;
   padding: 40px 0;
   height: auto;
   background-color: #f5f5f5;
@@ -29,33 +13,10 @@
 
 #about-img {
   background: url('https://res.cloudinary.com/ddgtwtbre/image/upload/v1493579446/IMG_6326_pjkyzo.jpg') no-repeat center center;
-  // background: url('https://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.about-img-desktop {
-  width: 420px;
-  height: 420px;
-  background-color: #777;
-  margin-right: 40px;
-  margin-top: 150px;
-  position: absolute;
-  top: -20px;
-  left: 120px;
-  left: 10vw;
-}
-
-.about-p-desktop {
-  width: 550px;
-  height: 350px;
-  margin-top: 150px;
-  position: absolute;
-  top: -20px;
-  left: 600px;
-  // left: 50vw;
 }
 
 .about-title {
@@ -90,4 +51,52 @@
   cursor: pointer;
   background-color: #999;
   transition: all .2s ease-in;
+}
+
+// For Mobile
+@media only screen and (max-width: 600px) {
+  .about-img {
+    width: 80vw;
+    height: 55vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .about-p {
+    width: 80vw;
+    min-height: 400px;
+  }
+}
+
+// For Tablets
+@media only screen and (min-width: 601px) {
+// @media screen and (max-width: 760px) {
+  .desktop { display: none !important; }
+  .tablet  { display: flex !important; }
+  .mobile  { display: none !important; }
+}
+
+// For Desktop
+@media screen and (min-width: 950px) {
+  .about-img-desktop {
+    width: 420px;
+    height: 420px;
+    background-color: #777;
+    margin-right: 40px;
+    margin-top: 150px;
+    position: absolute;
+    top: -20px;
+    left: 120px;
+    left: 10vw;
+  }
+
+  .about-p-desktop {
+    width: 550px;
+    height: 350px;
+    margin-top: 150px;
+    position: absolute;
+    top: -20px;
+    left: 600px;
+    // left: 50vw;
+  }
+
 }

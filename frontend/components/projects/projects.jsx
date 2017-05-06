@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from './project';
-import ProjectsScrollMobile from './projects_mobile';
-import ProjectsScrollDesktop from './projects_desktop';
+import ProjectsScrollMobile from './projects_scroll_mobile';
+import ProjectsScrollDesktop from './projects_scroll_desktop';
 
 const Projects = ({ projects }) => {
   let id = null;

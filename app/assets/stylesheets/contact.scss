@@ -17,17 +17,12 @@
   line-height: 20px;
 }
 
-.contact-text-mobile {
-  width: 80%;
-}
-
 .contact-text-desktop {
   width: 450px;
 };
 
 .contact-icons {
   max-width: 600px;
-  // width: 200px;
   width: 80%;
   min-height: 120px;
 
@@ -57,4 +52,26 @@
   font-size: 14px;
   color: #555;
 
+}
+
+// For Mobile
+@media only screen and (max-width: 600px) {
+  .contact-text {
+    width: 80%;
+  }
+}
+
+// For Tablets
+@media only screen and (min-width: 601px) {
+// @media screen and (max-width: 760px) {
+  .desktop { display: none !important; }
+  .tablet  { display: flex !important; }
+  .mobile  { display: none !important; }
+}
+
+// For Desktop
+@media screen and (min-width: 950px) {
+  .desktop { display: flex !important; }
+  .tablet  { display: none !important; }
+  .mobile  { display: none !important; }
 }

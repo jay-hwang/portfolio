@@ -51,7 +51,6 @@
 .contact-icon-text {
   font-size: 14px;
   color: #555;
-
 }
 
 // For Mobile
@@ -64,14 +63,11 @@
 // For Tablets
 @media only screen and (min-width: 601px) {
 // @media screen and (max-width: 760px) {
-  .desktop { display: none !important; }
-  .tablet  { display: flex !important; }
-  .mobile  { display: none !important; }
+  .contact-icons {
+    flex-direction: row;
+  }
 }
 
 // For Desktop
 @media screen and (min-width: 950px) {
-  .desktop { display: flex !important; }
-  .tablet  { display: none !important; }
-  .mobile  { display: none !important; }
 }

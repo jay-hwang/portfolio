@@ -3,7 +3,6 @@ import React from 'react';
 const ProjectsScrollMobile = ({ projectLis }) => {
   const scrollBalance = { left: 0, right: 10 };
   const shouldFreeze = { left: false, right: false };
-  // const animatePx = $('.project').width();
   const toggleFreeze = dir => {
     shouldFreeze[dir] = true;
     setTimeout(() => { shouldFreeze[dir] = false; }, 350);

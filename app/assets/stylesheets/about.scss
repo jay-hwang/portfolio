@@ -53,18 +53,30 @@
   transition: all .2s ease-in;
 }
 
+.about-img {
+  width: 80vw;
+  height: 55vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.about-p {
+  width: 80vw;
+  min-height: 400px;
+}
+
 // For Mobile
 @media only screen and (max-width: 600px) {
-  .about-img {
-    width: 80vw;
-    height: 55vw;
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
-  .about-p {
-    width: 80vw;
-    min-height: 400px;
-  }
+  // .about-img {
+  //   width: 80vw;
+  //   height: 55vw;
+  //   margin: 0 auto;
+  //   margin-bottom: 30px;
+  // }
+  // .about-p {
+  //   width: 80vw;
+  //   min-height: 400px;
+  // }
 }
 
 // For Tablets

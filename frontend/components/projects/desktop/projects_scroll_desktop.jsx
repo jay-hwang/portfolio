@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectsScroll from '../projects_scroll';
 
 const ProjectsScrollDesktop = ({ projectLis }) => {
   const scrollBalance = { left: 0, right: 4 };

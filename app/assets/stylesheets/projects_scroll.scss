@@ -73,13 +73,9 @@
     width: 50px;
     border-radius: 5%;
     background-color: #111;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
   }
 
   .arrow-img {
-    // display:none !important;
     height: 25px;
     width: 15px;
   }
@@ -95,10 +91,47 @@
 // For Tablets
 @media only screen and (min-width: 601px) {
 // @media screen and (max-width: 760px) {
+  .right-circle {
+    right: -19vw;
+  }
+  .left-circle {
+    left: -19vw;
+  }
+}
 
+@media only screen and (min-width: 650px) {
+  .right-circle {
+    right: -17vw;
+  }
+  .left-circle {
+    left: -17vw;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .right-circle {
+    right: -15vw;
+  }
+  .left-circle {
+    left: -15vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .right-circle {
+    right: -14vw;
+  }
+  .left-circle {
+    left: -14vw;
+  }
 }
 
 // For Desktop
-@media screen and (min-width: 950px) {
-
+@media screen and (min-width: 1000px) {
+  .right-circle {
+    right: -8vw;
+  }
+  .left-circle {
+    left: -8vw;
+  }
 }

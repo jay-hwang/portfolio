@@ -28,8 +28,6 @@ const ProjectsScrollMobile = ({ projectLis }) => {
       $('.projects-ul').animate({ left: `-=${animatePx}` }, 200);
       $('.left-arrow-box').fadeIn(); }
     if (scrollBalance.right <= 0) { $('.right-arrow-box').fadeOut(); }
-    //   $('.mobile-circle-box-left').fadeIn(); }
-    // if (scrollBalance.right <= 1) { $('.mobile-circle-box-right').fadeOut(); }
   };
 
   const scrollLeft = () => {
@@ -41,12 +39,10 @@ const ProjectsScrollMobile = ({ projectLis }) => {
       $('.projects-ul').animate({ left: `+=${animatePx}` }, 200);
       $('.right-arrow-box').fadeIn(); }
     if (scrollBalance.left <= 0) { $('.left-arrow-box').fadeOut(); }
-    //   $('.mobile-circle-box-right').fadeIn(); }
-    // if (scrollBalance.left <= 0) { $('.mobile-circle-box-left').fadeOut(); }
   };
 
   return (
-    <div>
+    <div className='mobile'>
       <ProjectsScroll
         projectLis={ projectLis }
         scrollRight={ scrollRight }

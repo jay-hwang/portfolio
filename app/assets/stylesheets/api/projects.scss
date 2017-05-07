@@ -45,11 +45,7 @@
 
 .project {
   width: 90vw;
-  // max-width: 400px;
-  // min-height: 575px;
-  // max-height: 900px;
-  // height: auto;
-
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +58,6 @@
 .project-img {
   // height: 250px;
   height: 50vw;
-  // max-height: 300px;
   width: 100%;
 }
 
@@ -167,14 +162,23 @@
 // For Tablets
 @media only screen and (min-width: 601px) {
 // @media screen and (max-width: 760px) {
-
-
-
+  .project {
+    width: 70vw;
+  }
+  .projects-window {
+    width: 70vw;
+  }
 }
 
 // For Desktop
-@media screen and (min-width: 950px) {
-
-
-
+@media screen and (min-width: 1000px) {
+  .project {
+    width: 40vw;
+  }
+  .projects-window {
+    width: 80vw;
+  }
+  .project-img {
+    max-height: 300px;
+  }
 }

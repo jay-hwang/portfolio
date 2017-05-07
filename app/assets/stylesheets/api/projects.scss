@@ -95,7 +95,7 @@
 .stack-title {
   margin-bottom: 10px;
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -170,7 +170,6 @@
   }
 }
 
-// For Desktop
 @media screen and (min-width: 1000px) {
   .project {
     width: 40vw;
@@ -179,6 +178,37 @@
     width: 80vw;
   }
   .project-img {
-    max-height: 300px;
+    max-height: 330px;
   }
 }
+
+// For Desktop
+@media screen and (min-width: 1200px) {
+  .project {
+    width: 28vw;
+  }
+  .projects-window {
+    width: 85vw;
+  }
+  .project-img {
+    max-height: 250px;
+  }
+}
+
+// @media screen and (min-width: 1600px) {
+//   .project-img {
+//     max-height: 350px;
+//   }
+// }
+
+// @media screen and (min-width: 1500px) {
+//   .project {
+//     width: 22vw;
+//   }
+//   .projects-window {
+//     width: 88vw;
+//   }
+//   .project-img {
+//     max-height: 300px;
+//   }
+// }

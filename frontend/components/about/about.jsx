@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <section className='about'>
-      <div className='about-img' id='about-img'></div>
+      <div className='about-img transparent' id='about-img'></div>
 
       <div className='about-p'>
         <span className='about-title'>Music Composer turned Software Engineer</span>

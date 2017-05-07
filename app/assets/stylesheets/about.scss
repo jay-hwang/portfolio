@@ -55,8 +55,9 @@
 
 .about-img {
   width: 80vw;
-  // height: 55vw;
   height: 100%;
+  max-width: 700px;
+  max-height: 450px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -64,8 +65,8 @@
 .about-p {
   width: 80vw;
   min-height: 400px;
-  // padding: 0 10px;
-  padding-right: 30px;
+  max-width: 700px;
+  padding-right: 40px;
 }
 
 // For Mobile
@@ -92,25 +93,14 @@
 
 // For Desktop
 @media screen and (min-width: 1200px) {
-  // .about-img-desktop {
-  //   width: 420px;
-  //   height: 420px;
-  //   background-color: #777;
-  //   margin-right: 40px;
-  //   margin-top: 150px;
-  //   position: absolute;
-  //   top: -20px;
-  //   left: 120px;
-  //   left: 10vw;
-  // }
-  //
-  // .about-p-desktop {
-  //   width: 550px;
-  //   height: 350px;
-  //   margin-top: 150px;
-  //   position: absolute;
-  //   top: -20px;
-  //   left: 600px;
-  // }
-
+  .about p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .see-skills {
+    font-size: 16px;
+  }
+  .about-p {
+    max-height: 450px;
+  }
 }

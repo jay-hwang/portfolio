@@ -41,24 +41,6 @@ const ProjectsScrollDesktop = ({ projectLis }) => {
     if (scrollBalance.left <= 0) { $('.left-arrow-box').fadeOut(); }
   };
 
-  // const scrollRight = () => {
-  //   if (scrollBalance.right > 0) {
-  //     $('.projects-ul').animate({ left: '-=740' }, 200);
-  //     scrollBalance.right--;
-  //     scrollBalance.left++;
-  //     $('.left-arrow-box').fadeIn(); }
-  //   if (scrollBalance.right <= 0) { $('.right-arrow-box').fadeOut(); }
-  // };
-  //
-  // const scrollLeft = () => {
-  //   if (scrollBalance.left > 0) {
-  //     $('.projects-ul').animate({ left: '+=740' }, 200);
-  //     scrollBalance.left--;
-  //     scrollBalance.right++;
-  //     $('.right-arrow-box').fadeIn(); }
-  //   if (scrollBalance.left <= 0) { $('.left-arrow-box').fadeOut(); }
-  // };
-
   return (
     <div className='desktop'>
       <ProjectsScroll

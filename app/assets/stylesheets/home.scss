@@ -45,3 +45,9 @@
   height: 17px;
   width: 30px;
 }
+
+@media screen and (min-width: 1100px) {
+  .home-intro, .typed-cursor {
+    font-size: 90px;
+  }
+}

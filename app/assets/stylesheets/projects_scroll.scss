@@ -57,7 +57,7 @@
 }
 
 // For Mobile
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .arrow-box {
     height: 100%;
     width: 10vw;
@@ -85,21 +85,49 @@
   .right-circle {
     right: 10vw;
   }
-
 }
 
 // For Tablets
-@media only screen and (min-width: 601px) {
-// @media screen and (max-width: 760px) {
+@media only screen and (min-width: 451px) {
   .right-circle {
-    right: -19vw;
+    right: -24vw;
   }
   .left-circle {
-    left: -19vw;
+    left: -24vw;
+  }
+  .arrow-img {
+    height: 30px;
+    width: 18px;
   }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 480px) {
+  .right-circle {
+    right: -23vw;
+  }
+  .left-circle {
+    left: -23vw;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  .right-circle {
+    right: -21vw;
+  }
+  .left-circle {
+    left: -21vw;
+  }
+}
+@media only screen and (min-width: 560px) {
+  .right-circle {
+    right: -20vw;
+  }
+  .left-circle {
+    left: -20vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
   .right-circle {
     right: -17vw;
   }
@@ -108,7 +136,7 @@
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 630px) {
   .right-circle {
     right: -15vw;
   }
@@ -117,7 +145,7 @@
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 700px) {
   .right-circle {
     right: -14vw;
   }
@@ -126,8 +154,34 @@
   }
 }
 
-// For Desktop
-@media screen and (min-width: 1000px) {
+@media only screen and (min-width: 750px) {
+  .right-circle {
+    right: -13vw;
+  }
+  .left-circle {
+    left: -13vw;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .right-circle {
+    right: -12vw;
+  }
+  .left-cicrle {
+    left: -12vw;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .right-circle {
+    right: -11vw;
+  }
+  .left-circle {
+    left: -11vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .right-circle {
     right: -8vw;
   }
@@ -136,7 +190,35 @@
   }
 }
 
+// For Desktop
+@media screen and (min-width: 1000px) {
+  .right-circle {
+    right: -7vw;
+  }
+  .left-circle {
+    left: -7vw;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .right-circle {
+    right: -6vw;
+  }
+  .left-circle {
+    left: -6vw;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .right-circle {
+    right: -5vw;
+  }
+  .left-circle {
+    left: -5vw;
+  }
+}
+
+@media screen and (min-width: 1350px) {
   .right-circle {
     right: -4vw;
   }
@@ -144,15 +226,6 @@
     left: -4vw;
   }
 }
-//
-// @media screen and (min-width: 1350px) {
-//   .right-circle {
-//     right: -6vw;
-//   }
-//   .left-circle {
-//     left: -6vw;
-//   }
-// }
 //
 // @media screen and (min-width: 1400px) {
 //   .right-circle {

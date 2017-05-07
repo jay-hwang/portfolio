@@ -1,5 +1,6 @@
 // For Mobile
 @media only screen and (max-width: 600px) {
+  .desktop-large { display: none !important; }
   .desktop { display: none !important; }
   .tablet  { display: none !important; }
   .mobile  { display: flex !important; }
@@ -7,15 +8,23 @@
 
 // For Tablets
 @media only screen and (min-width: 601px) {
-// @media screen and (max-width: 760px) {
+  .desktop-large { display: none !important; }
   .desktop { display: none !important; }
   .tablet  { display: flex !important; }
   .mobile  { display: none !important; }
 }
 
-// For Desktop
-@media screen and (min-width: 1400px) {
+  // For Desktop
+@media screen and (min-width: 1399px) {
+  .desktop-large { display: none !important; }
   .desktop { display: flex !important; }
+  .tablet  { display: none !important; }
+  .mobile  { display: none !important; }
+}
+
+@media screen and (min-width: 1400px) {
+  .desktop-large { display: flex !important; }
+  .desktop { display: none !important; }
   .tablet  { display: none !important; }
   .mobile  { display: none !important; }
 }

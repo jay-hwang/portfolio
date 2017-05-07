@@ -31,11 +31,8 @@
 
 .projects-ul {
   position: absolute;
-  // background: rgba(0,0,0,0.3);
   top: 0;
   left: 0vw;
-  // left: 33%;
-  // right: 33%;
   display: flex;
 }
 
@@ -56,7 +53,7 @@
 }
 
 .project-img {
-  // height: 250px;
+  max-height: 300px;
   height: 50vw;
   width: 100%;
 }
@@ -151,26 +148,27 @@
 }
 
 // For Mobile
+@media only screen and (min-width: 450px) {
+  .project {
+    width: 75vw;
+  }
+  .projects-window {
+    width: 75vw;
+  }
+  .project-img {
+    max-height: 250px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  // .project {
-  //   // width: 275px;
-  //   width: 85vw;
-  //   min-height: 575px;
-  // }
+  #projects-title {
+    font-size: 28px;
+    margin-top: 20px;
+  }
 }
 
 // For Tablets
 @media only screen and (min-width: 601px) {
-// @media screen and (max-width: 760px) {
-  .project {
-    width: 70vw;
-  }
-  .projects-window {
-    width: 70vw;
-  }
-}
-
-@media screen and (min-width: 1000px) {
   .project {
     width: 40vw;
   }
@@ -178,12 +176,24 @@
     width: 80vw;
   }
   .project-img {
-    max-height: 330px;
+    max-height: 175px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .project-img {
+    max-height: 200px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .project-img {
+    max-height: 250px;
   }
 }
 
 // For Desktop
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .project {
     width: 28vw;
   }
@@ -191,7 +201,31 @@
     width: 85vw;
   }
   .project-img {
+    max-height: 175px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-img {
+    max-height: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-img {
     max-height: 250px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .project {
+    width: 21vw;
+  }
+  .projects-window {
+    width: 85vw;
+  }
+  .project-img {
+    max-height: 200px;
   }
 }
 

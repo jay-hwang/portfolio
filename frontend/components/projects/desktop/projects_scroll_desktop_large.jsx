@@ -1,8 +1,8 @@
 import React from 'react';
 import ProjectsScroll from '../projects_scroll';
 
-const ProjectsScrollMobile = ({ projectLis }) => {
-  const scrollBalance = { left: 0, right: 9 };
+const ProjectsScrollDesktopLarge = ({ projectLis }) => {
+  const scrollBalance = { left: 0, right: 2 };
   const shouldFreeze = { left: false, right: false };
   const toggleFreeze = dir => {
     shouldFreeze[dir] = true;
@@ -23,8 +23,8 @@ const ProjectsScrollMobile = ({ projectLis }) => {
     if (!shouldFreeze.right) {
       toggleFreeze('right');
       shiftBalance('right');
-      let animatePx = $('.project-li').width();
-      // let animatePx = $('.projects-window').width();
+      // let animatePx = $('.project-li').width();
+      let animatePx = $('.projects-window').width() + 30;
       $('.projects-ul').animate({ left: `-=${animatePx}` }, 200);
       $('.left-arrow-box').fadeIn(); }
     if (scrollBalance.right <= 0) { $('.right-arrow-box').fadeOut(); }
@@ -34,15 +34,15 @@ const ProjectsScrollMobile = ({ projectLis }) => {
     if (!shouldFreeze.left && scrollBalance.left > 0) {
       toggleFreeze('left');
       shiftBalance('left');
-      let animatePx = $('.project-li').width();
-      // let animatePx = $('.projects-window').width();
+      // let animatePx = $('.project-li').width();
+      let animatePx = $('.projects-window').width() + 30;
       $('.projects-ul').animate({ left: `+=${animatePx}` }, 200);
       $('.right-arrow-box').fadeIn(); }
     if (scrollBalance.left <= 0) { $('.left-arrow-box').fadeOut(); }
   };
 
   return (
-    <div className='mobile'>
+    <div className='desktop-large'>
       <ProjectsScroll
         projectLis={ projectLis }
         scrollRight={ scrollRight }
@@ -51,4 +51,4 @@ const ProjectsScrollMobile = ({ projectLis }) => {
   );
 };
 
-export default ProjectsScrollMobile;
+export default ProjectsScrollDesktopLarge;

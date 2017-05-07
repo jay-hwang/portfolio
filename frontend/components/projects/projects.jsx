@@ -3,6 +3,7 @@ import Project from './project';
 import ProjectsScrollMobile from './mobile/projects_scroll_mobile';
 import ProjectsScrollTablet from './tablet/projects_scroll_tablet';
 import ProjectsScrollDesktop from './desktop/projects_scroll_desktop';
+import ProjectsScrollDesktopLarge from './desktop/projects_scroll_desktop_large';
 
 const Projects = ({ projects }) => {
   let id = null;
@@ -21,6 +22,7 @@ const Projects = ({ projects }) => {
       <ProjectsScrollMobile projectLis={ projectLis } />
       <ProjectsScrollTablet projectLis={ projectLis } />
       <ProjectsScrollDesktop projectLis={ projectLis } />
+      <ProjectsScrollDesktopLarge projectLis={ projectLis } />
     </section>
   );
 };

@@ -17,7 +17,8 @@
 
 #projects-title {
   color: #111;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .projects-window {
@@ -30,9 +31,11 @@
 
 .projects-ul {
   position: absolute;
+  // background: rgba(0,0,0,0.3);
   top: 0;
-  left: 0;
-
+  left: 0vw;
+  // left: 33%;
+  // right: 33%;
   display: flex;
 }
 
@@ -41,9 +44,11 @@
 }
 
 .project {
-  width: 350px;
-  min-height: 575px;
-  height: auto;
+  width: 90vw;
+  // max-width: 400px;
+  // min-height: 575px;
+  // max-height: 900px;
+  // height: auto;
 
   display: flex;
   flex-direction: column;
@@ -52,17 +57,12 @@
   border-radius: 2px;
   background-color: #f5f5f5;
   margin-right: 10px;
-  margin-left: 10px;
 }
-
-// #project-mobile {
-//   width: 275px;
-//   min-height: 575px;
-// }
 
 .project-img {
   // height: 250px;
   height: 50vw;
+  // max-height: 300px;
   width: 100%;
 }
 
@@ -89,6 +89,7 @@
 }
 
 .stack {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -156,11 +157,11 @@
 
 // For Mobile
 @media only screen and (max-width: 600px) {
-  .project {
-    // width: 275px;
-    width: 85vw;
-    min-height: 575px;
-  }
+  // .project {
+  //   // width: 275px;
+  //   width: 85vw;
+  //   min-height: 575px;
+  // }
 }
 
 // For Tablets

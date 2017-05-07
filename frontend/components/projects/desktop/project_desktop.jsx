@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectLinks from './project_links';
+import ProjectLinks from '../project_links';
 
 const ProjectDesktop = ({ project, projectStack }) => {
   return (

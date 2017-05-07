@@ -74,44 +74,38 @@ document.addEventListener('DOMContentLoaded', () => {
 $(window).load(() => {
   // Animates Home Component arrow bounce
     const animateArrowBounce = () => {
-      $('.arrow-bounce').animate({ bottom: 0 }, 400);
-      setTimeout(() => {
-        $('.arrow-bounce').animate({ bottom: 45 }, 400);
-      }, 400);
-      setTimeout(() => {
-        $('.arrow-bounce').animate({ bottom: 0 }, 400);
-      }, 400);
-      setTimeout(() => {
-        $('.arrow-bounce').animate({ bottom: 20 }, 400);
-      }, 400);
-      setTimeout(() => {
-        $('.arrow-bounce').animate({ bottom: 10 }, 400);
-      }, 400);
+      $('.arrow-bounce').animate({ bottom: 0 }, 400)
+                        .animate({ bottom: 45 }, 400)
+                        .animate({ bottom: 0 }, 400)
+                        .animate({ bottom: 20 }, 400)
+                        .animate({ bottom: 10 }, 400);
     };
-    animateArrowBounce();
-    setInterval(() => {
-      animateArrowBounce();
-    }, 3500);
   //
 
   // Animates Projects Scroll Arrow Image
+    const getArrow = () => $('.arrow-img');
     const animateArrowGrowth = () => {
-      $('.arrow-img').animate({ height: 34, width: 18 }, 300);
-      setTimeout(() => {
-        $('.arrow-img').animate({ height: 55, width: 33 }, 300);
-      }, 300);
-      setTimeout(() => {
-        $('.arrow-img').animate({ height: 34, width: 18 }, 300);
-      }, 300);
-      setTimeout(() => {
-        $('.arrow-img').animate({ height: 45, width: 25 }, 300);
-      }, 300);
+      let $arrowImg = getArrow();
+      const h = $arrowImg.height();
+      const w = $arrowImg.width();
+      const h10 = h * .2;
+      const w10 = w * .2;
+      $arrowImg.animate({ height: h - h10, width: w - w10 }, 300)
+               .animate({ height: h + h10, width: w + w10 }, 300)
+               .animate({ height: h - h10, width: w - w10 }, 300)
+               .animate({ height: h      , width: w       }, 300);
     };
-    animateArrowGrowth();
     setInterval(() => {
-      animateArrowGrowth();
     }, 2500);
   //
+
+  // Repeats arrow animation
+  animateArrowBounce();
+  animateArrowGrowth();
+  setInterval(() => {
+    animateArrowBounce();
+    animateArrowGrowth();
+  }, 3500);
 
   // Changes Home Component background img
     let homeImgUrls = [

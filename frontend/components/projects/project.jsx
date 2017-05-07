@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectMobile from './project_mobile';
+import ProjectMobile from './mobile/project_mobile';
 import ProjectLinks from './project_links';
 
 

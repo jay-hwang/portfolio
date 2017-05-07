@@ -17,10 +17,12 @@ const ProjectsScroll = ({ projectLis, scrollLeft, scrollRight }) => (
     </div>
 
     <div className='right-arrow-box arrow-box'>
-      <div className='right-circle arrow-circle'
-        onClick={ scrollRight }>
-        <img className='arrow-img'
-          src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493511005/arrow_r5mjhk.png' />
+      <div className='content'>
+        <div className='right-circle arrow-circle'
+          onClick={ scrollRight }>
+          <img className='arrow-img'
+            src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493511005/arrow_r5mjhk.png' />
+        </div>
       </div>
     </div>
   </div>

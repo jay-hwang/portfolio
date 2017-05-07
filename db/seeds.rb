@@ -13,13 +13,12 @@ User.create({
 
 Project.create({
   user_id: 1,
-  title: "Tackling Trafficking",
-  description: "A blog-site dedicated to fighting Human Trafficking by raising awareness and support for victims.
-  Applies responsive-design, employing media queries to allow access across all devices.
-  Improved load-time by utilizing 3rd party cloud storage.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
-  github_url: "https://github.com/jay-hwang/tackling_trafficking",
-  live_url: "http://www.tacklingtrafficking.xyz",
+  title: "Couchbnb",
+  description: "RESTful, single-page web application emulating Airbnb's functionality. Users can host and book homes for vacation or travel.
+  Utilizes Google Maps API to create a geo-location based search engine.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481593854/Screen_Shot_2016-12-12_at_5.49.25_PM_mdgdkg.png",
+  github_url: "https://github.com/jay-hwang/couchbnb",
+  live_url: "http://www.couchbnb.xyz/#/splash",
   stack: "Ruby on Rails, Postgres, JavaScript, React.js, Redux, CSS"
 })
 
@@ -36,6 +35,18 @@ Project.create({
 
 Project.create({
   user_id: 1,
+  title: "Tackling Trafficking",
+  description: "A blog-site dedicated to fighting Human Trafficking by raising awareness and support for victims.
+  Applies responsive-design, employing media queries to allow access across all devices.
+  Improved load-time by utilizing 3rd party cloud storage.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
+  github_url: "https://github.com/jay-hwang/tackling_trafficking",
+  live_url: "http://www.tacklingtrafficking.xyz",
+  stack: "Ruby on Rails, Postgres, JavaScript, React.js, Redux, CSS"
+})
+
+Project.create({
+  user_id: 1,
   title: "Algorithms & Data Structures",
   description: "A collection of hand rolled algorithms and data structures
   Includes implementations of Static Arrays, Dynamic Arrays, Hash Maps, Linked Lists, LRU Caches, Binary Search Trees, Heaps, Heap Sort, Quick Sort, Merge Sort and Topological Sort.",
@@ -43,17 +54,6 @@ Project.create({
   github_url: "https://github.com/jay-hwang/algorithms-data-structures",
   live_url: "",
   stack: "Ruby"
-})
-
-Project.create({
-  user_id: 1,
-  title: "Couchbnb",
-  description: "RESTful, single-page web application emulating Airbnb's functionality. Users can host and book homes for vacation or travel.
-  Utilizes Google Maps API to create a geo-location based search engine.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481593854/Screen_Shot_2016-12-12_at_5.49.25_PM_mdgdkg.png",
-  github_url: "https://github.com/jay-hwang/couchbnb",
-  live_url: "http://www.couchbnb.xyz/#/splash",
-  stack: "Ruby on Rails, Postgres, JavaScript, React.js, Redux, CSS"
 })
 
 Project.create({
@@ -96,6 +96,16 @@ Project.create({
 
 Project.create({
   user_id: 1,
+  title: "LRU Cache",
+  description: "Hand-rolled implementation of an LRU Cache. Features custom rendition of Hash Map and Linked List.
+  Implemented hashing function to hash various data types into a deterministic hash.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png",
+  github_url: "https://github.com/jay-hwang/lru_cache",
+  stack: "Ruby"
+})
+
+Project.create({
+  user_id: 1,
   title: "Site-Blocker",
   description: "Spending too much time watching Netflix or browsing FaceBook? Use Site-Blocker, a Google Chrome extension you can use to block any site at any time.
   Simply specify the site-url, the day(s) & time(s) you want to block the site. The extension will block the specified sites at the selected times, keeping you focused and productive.",
@@ -103,16 +113,6 @@ Project.create({
   github_url: "https://github.com/jay-hwang/site-blocker",
   live_url: "",
   stack: "JavaScript ES6, HTML, CSS"
-})
-
-Project.create({
-  user_id: 1,
-  title: "LRU Cache",
-  description: "Hand-rolled implementation of an LRU Cache. Features custom rendition of Hash Map and Linked List.
-  Implemented hashing function to hash various data types into a deterministic hash.",
-  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png",
-  github_url: "https://github.com/jay-hwang/lru_cache",
-  stack: "Ruby"
 })
 
 Project.create({

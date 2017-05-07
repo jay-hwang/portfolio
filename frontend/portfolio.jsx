@@ -62,7 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
     //
 
     // Animate project lis
-      if (y > wh + 700) {
+      let aboutHeight = $('.about').height(),
+          skillsHeight = $('.skills').height();
+      if (y > wh + aboutHeight + (skillsHeight / 3)) {
         $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
       }
     //
@@ -109,7 +111,7 @@ $(window).load(() => {
 
   // Changes Home Component background img
     let homeImgUrls = [
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493620704/Engineering-backgrounds-23_jknlfg.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494197926/3d_view_abstract_1680x1050_wallpaper_Wallpaper_HD_2560x1600_www.paperhi.com_miod8w.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',

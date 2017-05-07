@@ -9,7 +9,7 @@ const Skills = () => {
       </div>
 
       <section className='skills'>
-        <span className='title'>SKILLS</span>
+        <span className='title'>LANGUAGES & FRAMEWORKS</span>
         <div className="three-d-cube">
           <div className="cube-container">
             <div id="cube">

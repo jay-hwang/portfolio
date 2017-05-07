@@ -33,11 +33,6 @@
   transition: all .2s ease-in;
 }
 
-.arrow-circle:hover {
-  transition: all .2s ease-in;
-  background: rgba(0,0,0,0.5);
-}
-
 .left-circle {
   justify-content: flex-end;
   padding-right: 20px;
@@ -90,10 +85,10 @@
 // For Tablets
 @media only screen and (min-width: 451px) {
   .right-circle {
-    right: -24vw;
+    right: -95px;
   }
   .left-circle {
-    left: -24vw;
+    left: -95px;
   }
   .arrow-img {
     height: 30px;
@@ -101,164 +96,56 @@
   }
 }
 
-@media only screen and (min-width: 480px) {
-  .right-circle {
-    right: -23vw;
-  }
-  .left-circle {
-    left: -23vw;
-  }
-}
-
-@media only screen and (min-width: 510px) {
-  .right-circle {
-    right: -21vw;
-  }
-  .left-circle {
-    left: -21vw;
-  }
-}
-@media only screen and (min-width: 560px) {
-  .right-circle {
-    right: -20vw;
-  }
-  .left-circle {
-    left: -20vw;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .right-circle {
-    right: -17vw;
-  }
-  .left-circle {
-    left: -17vw;
-  }
-}
-
-@media only screen and (min-width: 630px) {
-  .right-circle {
-    right: -15vw;
-  }
-  .left-circle {
-    left: -15vw;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .right-circle {
-    right: -14vw;
-  }
-  .left-circle {
-    left: -14vw;
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  .right-circle {
-    right: -13vw;
-  }
-  .left-circle {
-    left: -13vw;
-  }
-}
-
 @media only screen and (min-width: 800px) {
   .right-circle {
-    right: -12vw;
-  }
-  .left-cicrle {
-    left: -12vw;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  .right-circle {
-    right: -11vw;
+    right: -85px;
   }
   .left-circle {
-    left: -11vw;
+    left: -85px;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .right-circle {
-    right: -8vw;
+    right: -70px;
   }
   .left-circle {
-    left: -8vw;
+    left: -70px;
   }
 }
 
-// For Desktop
-@media screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   .right-circle {
-    right: -7vw;
+    right: -60px;
   }
   .left-circle {
-    left: -7vw;
+    left: -60px;
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media only screen and (min-width: 1600px) {
   .right-circle {
-    right: -6vw;
+    right: -45px;
   }
   .left-circle {
-    left: -6vw;
+    left: -45px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 2200px) {
   .right-circle {
-    right: -5vw;
+    right: -30px;
   }
   .left-circle {
-    left: -5vw;
+    left: -30px;
   }
 }
 
-@media screen and (min-width: 1350px) {
+@media only screen and (min-width: 2900px) {
   .right-circle {
-    right: -4vw;
+    right: -10px;
   }
   .left-circle {
-    left: -4vw;
+    left: -10px;
   }
 }
-//
-// @media screen and (min-width: 1400px) {
-//   .right-circle {
-//     right: -4vw;
-//   }
-//   .left-circle {
-//     left: -4vw;
-//   }
-// }
-//
-// @media screen and (min-width: 1500px) {
-//   .right-circle {
-//     right: -3vw;
-//   }
-//   .left-circle {
-//     left: -3vw;
-//   }
-// }
-//
-// @media screen and (min-width: 1650px) {
-//   .right-circle {
-//     right: -2vw;
-//   }
-//   .left-circle {
-//     left: -2vw;
-//   }
-// }
-//
-// @media screen and (min-width: 1800px) {
-//   .right-circle {
-//     right: -1vw;
-//   }
-//   .left-circle {
-//     left: -1vw;
-//   }
-// }

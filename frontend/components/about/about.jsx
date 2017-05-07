@@ -1,7 +1,4 @@
 import React from 'react';
-import AboutMobile from './mobile/about_mobile';
-import AboutTablet from './tablet/about_tablet';
-import AboutDesktop from './desktop/about_desktop';
 
 const About = () => {
   const wh = $(window).height();

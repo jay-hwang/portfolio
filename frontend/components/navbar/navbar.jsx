@@ -32,7 +32,7 @@ const Navbar = () => {
         <span className='self-name'>Jay Hwang</span>
       </div>
 
-      <ul className='navbar-links desktop'>
+      <ul className='navbar-links'>
         <li className='navbar-link' onClick={ homeClick } id='home-nav'>
           Home
         </li>

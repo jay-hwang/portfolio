@@ -16,16 +16,15 @@
 }
 
 .insta-projects {
-  width: 80%;
-  // min-height: 75vh;
-  // background-color: lightgrey;
+  width: 91.5vw;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
 }
 
 .insta-project {
-  width: 75vw;
-  height: 75vw;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  width: 30vw;
+  height: 30vw;
 }
 
 .insta-project-img {
@@ -120,10 +119,16 @@
   width: 100%;
 }
 
+.project-desc-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-desc {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 1px;
+  margin-bottom: 7px;
 }
 
 .stack {

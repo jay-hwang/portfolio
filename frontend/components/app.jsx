@@ -21,7 +21,7 @@ class App extends React.Component {
         <Home />
         <About />
         <Skills />
-        <InstaProjectsContainer />
+        <ProjectsContainer />
         <Contact />
         <Footer />
       </div>

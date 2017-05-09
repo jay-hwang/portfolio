@@ -2,6 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.insta-projects-section {
+  width: 100%;
+  min-height: 75vh;
+  background-color: #eaeaea;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  z-index: 10;
+}
+
+.insta-projects {
+  width: 80%;
+  // min-height: 75vh;
+  // background-color: lightgrey;
+}
+
+.insta-project {
+  width: 75vw;
+  height: 75vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.insta-project-img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.view-more-btn {
+  width: 75vw;
+  max-width: 300px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+
 .projects {
   width: 100%;
   height: 100%;

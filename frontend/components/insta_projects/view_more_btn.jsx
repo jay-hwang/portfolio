@@ -16,7 +16,7 @@ const ViewMoreBtn = () => {
 
   return (
     <button className='view-more-btn' onClick={ handleClick }>
-      View More Projects
+      { state.text }
     </button>
   );
 };

@@ -111,19 +111,18 @@ $(window).load(() => {
 
   // Changes Home Component background img
     let homeImgUrls = [
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494197926/3d_view_abstract_1680x1050_wallpaper_Wallpaper_HD_2560x1600_www.paperhi.com_miod8w.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg'
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg'
     ];
     let i = 0;
     setInterval(() => {
         $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
         i++;
-        if (i > 4) { i = 0; }
-    // }, 3881.5 );
-  }, 4000);
+        if (i > 3) { i = 0; }
+    }, 3881.5 );
+  // }, 4000);
   //
 
   // Home Component typing animation
@@ -132,9 +131,7 @@ $(window).load(() => {
           "Hello! I'm Jay",
           "I'm a software engineer",
           "I live in San Francisco",
-          "I enjoy writing music",
-          "And love to travel"//,
-          // "            "
+          "And love to write music"
       ],
       typeSpeed: 10,
       loop: true,

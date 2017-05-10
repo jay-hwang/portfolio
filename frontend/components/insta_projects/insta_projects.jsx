@@ -1,5 +1,6 @@
 import React from 'react';
 import InstaProject from './insta_project';
+import InstaProjectDetail from './insta_project_detail';
 import ViewMoreBtn from './view_more_btn';
 
 const InstaProjects = ({ projects }) => {
@@ -15,12 +16,15 @@ const InstaProjects = ({ projects }) => {
       projectLis = projectLis1;
     } else if (i < 6) {
       projectLis = projectLis2;
-    } else {
+    } else if (i < 9) {
       projectLis = projectLis3;
+    } else {
+      projectLis = [];
     }
     projectLis.push(
       <li key={key} className='insta-project-li' id={id}>
         <InstaProject project={projects[key]} />
+        <InstaProjectDetail project={ projects[key] } />
       </li>
     );
   });
@@ -28,15 +32,21 @@ const InstaProjects = ({ projects }) => {
   return (
     <section className='insta-projects-section'>
       <h3 className='title' id='projects-title'>PROJECTS</h3>
-      <ul className='insta-projects'>
-        { projectLis1 }
-      </ul>
-      <ul className='insta-projects display-none' id='projectLis1'>
-        { projectLis2 }
-      </ul>
-      <ul className='insta-projects display-none' id='projectLis2'>
-        { projectLis3 }
-      </ul>
+      <div className='insta-projects-box'>
+        <ul className='insta-projects'>
+          { projectLis1 }
+        </ul>
+      </div>
+      <div className='insta-projects-box display-none' id='projectLis1'>
+        <ul className='insta-projects'>
+          { projectLis2 }
+        </ul>
+      </div>
+      <div className='insta-projects-box display-none' id='projectLis2'>
+        <ul className='insta-projects'>
+          { projectLis3 }
+        </ul>
+      </div>
       <ViewMoreBtn />
     </section>
   );

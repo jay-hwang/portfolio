@@ -4,27 +4,30 @@ import ProjectsScrollMobile from './mobile/projects_scroll_mobile';
 import ProjectsScrollTablet from './tablet/projects_scroll_tablet';
 import ProjectsScrollDesktop from './desktop/projects_scroll_desktop';
 import ProjectsScrollDesktopLarge from './desktop/projects_scroll_desktop_large';
+import Carousel from '../carousel/carousel';
 
 const Projects = ({ projects }) => {
   let id = null;
   const projectLis = Object.keys(projects).map((key, i) => {
     id = `project${i}`;
     return (
-      <li key={key} className='project-li transparent' id={id}>
+      <div key={key} className='project-li transparent' id={id}>
         <Project project={projects[key]} />
-      </li>
+      </div>
     );
   });
 
   return (
     <section className='projects'>
       <h3 className='title' id='projects-title'>PROJECTS</h3>
-      <ProjectsScrollMobile projectLis={ projectLis } />
-      <ProjectsScrollTablet projectLis={ projectLis } />
-      <ProjectsScrollDesktop projectLis={ projectLis } />
-      <ProjectsScrollDesktopLarge projectLis={ projectLis } />
+      <Carousel items={ projects } />
     </section>
   );
 };
 
 export default Projects;
+
+// <ProjectsScrollMobile projectLis={ projectLis } />
+// <ProjectsScrollTablet projectLis={ projectLis } />
+// <ProjectsScrollDesktop projectLis={ projectLis } />
+// <ProjectsScrollDesktopLarge projectLis={ projectLis } />

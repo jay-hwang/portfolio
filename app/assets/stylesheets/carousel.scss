@@ -1,0 +1,46 @@
+.carousel-container {
+  width: 100%;
+  // min-height: 250px;
+  height: auto;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2vw;
+  overflow-x: scroll;
+  // overflow: hidden;
+  // position: relative;
+}
+
+.aoeu {
+  height: 800px;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+
+}
+
+.carousel-item {
+  width: 25vw;
+  height: 25vw * .7;
+  max-width: 250px;
+  max-height: 175px;
+  // margin-right: 10px;
+  border: 1x solid #111;
+  background-color: lightgreen;
+}
+
+.arrow {
+  z-index: 10;
+  width: 50px;
+  height: 100%;
+  background-color: pink;
+}
+
+.scroll-left {
+  // float: left;
+}
+
+.scroll-right {
+  // float: right;
+}

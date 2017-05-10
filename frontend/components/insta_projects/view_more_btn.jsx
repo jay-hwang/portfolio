@@ -6,12 +6,13 @@ const ViewMoreBtn = () => {
   };
 
   const handleClick = () => {
-    if (state.clickCount < 3) {
+    if (state.clickCount < 2) {
       state.clickCount++;
       $(`#projectLis${state.clickCount}`).fadeIn();
     } else {
-      alert('should show new page of projects');
+      // alert('should show new page of projects');
     }
+    if (state.clickCount == 2) { $('.view-more-btn').fadeOut(); }
   };
 
   return (

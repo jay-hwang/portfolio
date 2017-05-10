@@ -3,11 +3,6 @@ import React from 'react';
 const Skills = () => {
   return (
     <div className='skills-box'>
-      <div className='skills-bg'>
-        <img className='skills-bg-img'
-          src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg'/>
-      </div>
-
       <section className='skills'>
         <span className='title'>LANGUAGES & FRAMEWORKS</span>
         <div className="three-d-cube">
@@ -28,3 +23,8 @@ const Skills = () => {
 };
 
 export default Skills;
+
+// <div className='skills-bg'>
+//   <img className='skills-bg-img'
+//     src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg'/>
+// </div>

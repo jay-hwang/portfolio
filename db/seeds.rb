@@ -51,10 +51,16 @@ Project.create({
   user_id: 1,
   title: "Algorithms & Data Structures",
   description: "A collection of hand rolled algorithms and data structures. Includes implementations of: <br/>
-  Dynamic Arrays, <br/>
-  LRU Caches, <br/>
-  Binary Search Trees, <br/>
-  Merge Sort, <br/>
+  Static Arrays,
+  Dynamic Arrays,
+  Hash Maps,
+  LinkedLists,
+  LRU Caches,
+  Binary Search Trees,
+  Heaps,
+  Heap Sort,
+  Quick Sort,
+  Merge Sort,
   Topological Sort.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1493431934/algo-ds_gacjfq.jpg",
   github_url: "https://github.com/jay-hwang/algorithms-data-structures",
@@ -87,12 +93,11 @@ Project.create({
   user_id: 1,
   title: "Rails Lite",
   description: "My implementation of the popular web-framework: Ruby on Rails.
-  Designed & implemnted: <br/>
-
-  HTTP request-response cycle <br/>
-  Rails' Rack Server <br/>
-  Rails' ControllerBase class <br/>
-  Cookies <br/>
+  Designed & implemented: <br/>
+  HTTP request-response cycle,
+  Rails' Rack Server,
+  Rails' ControllerBase class,
+  Cookies,
   Custom Router",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490672152/Screen_Shot_2017-03-27_at_8.34.59_PM_ylguwz.png",
   github_url: "https://github.com/jay-hwang/rails-lite",

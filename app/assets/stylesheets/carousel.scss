@@ -1,46 +1,57 @@
-.carousel-container {
+.carousel {
+  margin-top: 20px;
   width: 100%;
-  // min-height: 250px;
+  max-height: 200px;
+  position: relative;
+}
+
+.carousel-items {
+  width: 100%;
   height: auto;
   background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2vw;
-  overflow-x: scroll;
-  // overflow: hidden;
-  // position: relative;
+  padding-left: 3vw;
+  overflow: hidden;
+  position: relative;
 }
 
-.aoeu {
-  height: 800px;
-  width: 100%;
-  background-color: lightblue;
-  display: flex;
-
-}
-
-.carousel-item {
+.carousel-item-container {
   width: 25vw;
   height: 25vw * .7;
   max-width: 250px;
   max-height: 175px;
-  // margin-right: 10px;
-  border: 1x solid #111;
-  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  width: 96%;
+  height: 100%;
+  background-color: lightblue;
 }
 
 .arrow {
+  position: absolute;
+  top: 0;
   z-index: 10;
   width: 50px;
   height: 100%;
-  background-color: pink;
+  background: rgba(255,255,255,0);
+  transition: all .2s ease-in;
+}
+
+.carousel:hover .arrow {
+  transition: all .2s ease-in;
+  background: rgba(255,255,255,0.7);
 }
 
 .scroll-left {
-  // float: left;
+  left: 0;
 }
 
 .scroll-right {
-  // float: right;
+  right: 0;
 }

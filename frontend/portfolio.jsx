@@ -122,7 +122,8 @@ $(window).load(() => {
         i++;
         if (i > 3) { i = 0; }
     // }, 3881.5 );
-    }, 3940);
+    // }, 3940);
+    }, 4000);
   //
 
   // Home Component typing animation

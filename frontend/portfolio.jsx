@@ -121,8 +121,8 @@ $(window).load(() => {
         $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
         i++;
         if (i > 3) { i = 0; }
-    }, 3881.5 );
-  // }, 4000);
+    // }, 3881.5 );
+    }, 3940);
   //
 
   // Home Component typing animation
@@ -133,7 +133,7 @@ $(window).load(() => {
           "I live in San Francisco",
           "And love to write music"
       ],
-      typeSpeed: 10,
+      typeSpeed: 11,
       loop: true,
       backDelay: 2000
     });

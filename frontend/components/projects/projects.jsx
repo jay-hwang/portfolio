@@ -20,14 +20,14 @@ const Projects = ({ projects }) => {
   return (
     <section className='projects'>
       <h3 className='title' id='projects-title'>PROJECTS</h3>
-      <Carousel items={ projects } />
+
+      <ProjectsScrollMobile projectLis={ projectLis } />
+      <ProjectsScrollTablet projectLis={ projectLis } />
+      <ProjectsScrollDesktop projectLis={ projectLis } />
+      <ProjectsScrollDesktopLarge projectLis={ projectLis } />
     </section>
   );
 };
+// <Carousel items={ projects } />
 
 export default Projects;
-
-// <ProjectsScrollMobile projectLis={ projectLis } />
-// <ProjectsScrollTablet projectLis={ projectLis } />
-// <ProjectsScrollDesktop projectLis={ projectLis } />
-// <ProjectsScrollDesktopLarge projectLis={ projectLis } />

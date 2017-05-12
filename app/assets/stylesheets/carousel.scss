@@ -1,242 +1,242 @@
-$carouselHeight: 30vw * .7;
-$maxCarouselHeight: 210px;
-$maxCarouselWidth: 300px;
-
-.carousel {
-  margin-top: 20px;
-  width: 100%;
-	min-height: 200px;
-  height: auto;
-  // max-height: 400px;
-  position: relative;
-}
-
-.carousel-items {
-  min-width: 100%;
-  // height: 100%;
-  height: auto;
-  // background-color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 3vw;
-  overflow: hidden;
-  position: relative;
-  // left: 0;
-}
-
-.carousel-item-container {
-  width: 30vw;
-  height: $carouselHeight;
-  max-width: $maxCarouselWidth;
-  max-height: $maxCarouselHeight;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-item {
-  width: 96%;
-  height: 96%;
-  // background-color: lightblue;
-  position: relative;
-}
-
-.carousel-item-img-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-item-img {
-  width: 100%;
-  height: 100%;
-}
-
-.arrow {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  width: 50px;
-  height: $carouselHeight;
-  max-height: $maxCarouselHeight;
-  // height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel:hover .arrow .scroll-button {
-  transition: all .2s ease-in;
-  background: rgba(0,0,0,0.3);
-}
-
-.scroll-button {
-  cursor: pointer;
-  background: rgba(0,0,0,0);
-  transition: all .2s ease-in;
-  height: 96%;
-  width: 100%;
-}
-
-.scroll-left {
-  left: 0;
-}
-
-.scroll-right {
-  right: 0;
-}
-
-.arrow-img {
-  width: 2vw;
-  height: 4vw;
-}
-
-.carousel-item-detail-container {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5000;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0,0.3);
-}
-
-.carousel-item-detail {
-  height: 100%;
-  width: 100%;
-  background-color: #f5f5f5;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.carousel-item-detail img  {
-  // margin-top: 50px;
-  height: 33%;
-  // width: %;
-}
-
-.carousel-item-info {
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.carousel-item-info h3 {
-  font-size: 4vw;
-  font-weight: 700;
-  letter-spacing: 2px;
-  // margin-top: 10px;
-  // margin-bottom: 5px;
-}
-
-.info {
-  height: 100%;
-  width: 100%;
-  padding: 5%;
-  font-size: 2.2vw;
-  letter-spacing: 1px;
-  line-height: 22px;
-  color: #111;
-}
-
+// $carouselHeight: 30vw * .7;
+// $maxCarouselHeight: 210px;
+// $maxCarouselWidth: 300px;
 //
-// #carousel-container {
-// 	width:255px;
-// 	height:290px;
-// 	margin:0 auto;
+// .carousel {
+//   margin-top: 20px;
+//   width: 100%;
+// 	min-height: 200px;
+//   height: auto;
+//   // max-height: 400px;
+//   position: relative;
 // }
 //
-// #carousel {
-// 	overflow:hidden;
-// 	/* fix ie overflow issue */
-// 	position:relative;
-// 	width:250px;
-// 	height:250px;
-// 	border:1px solid #ccc;
-// }
-//
-// /* remove the list styles, width : item width * total items */
-// #carousel ul div {
-// 	position:relative;
-// 	left:0;
-// 	top:0;
-// 	list-style:none;
-// 	margin:0;
-// 	padding:0;
-// 	width:750px;
+// .carousel-items {
+//   min-width: 100%;
+//   // height: 100%;
+//   height: auto;
+//   // background-color: #000;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding-left: 3vw;
+//   overflow: hidden;
+//   position: relative;
+//   // left: 0;
 // }
 //
 // .carousel-item-container {
-//   background-color: pink;
-//   height: 100%;
-//   width: 100%;
+//   width: 30vw;
+//   height: $carouselHeight;
+//   max-width: $maxCarouselWidth;
+//   max-height: $maxCarouselHeight;
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
 // }
 //
 // .carousel-item {
-//   background-color: lightblue;
-//   height: 95%;
-//   width: 95;
+//   width: 96%;
+//   height: 96%;
+//   // background-color: lightblue;
+//   position: relative;
 // }
 //
-// /* width of the item, in this case I put 250x250x gif */
-// #carousel li div {
-// 	width:250px;
-// 	height:250px;
-// 	float:left;
+// .carousel-item-img-container {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
 // }
 //
-// #carousel li div {
-// 	padding:5px;
+// .carousel-item-img {
+//   width: 100%;
+//   height: 100%;
 // }
 //
-// /* Styling for prev and next buttons */
-// #carousel-buttons {
-// 	padding:0 0 5px 0;
-// 	float:right;
+// .arrow {
+//   position: absolute;
+//   top: 0;
+//   z-index: 10;
+//   width: 50px;
+//   height: $carouselHeight;
+//   max-height: $maxCarouselHeight;
+//   // height: 90%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 // }
 //
-// #carousel-buttons button {
-// 	display:block;
-// 	width:31px;
-// 	height:32px;
-// 	text-indent:-999em;
-// 	float:left;
-// 	outline:0;
+// .carousel:hover .arrow .scroll-button {
+//   transition: all .2s ease-in;
+//   background: rgba(0,0,0,0.3);
 // }
 //
-// #left {
-// 	// background:url(arrow.gif) 0 -31px no-repeat;
-//   background: rgba(125,0,120,0.5);
+// .scroll-button {
+//   cursor: pointer;
+//   background: rgba(0,0,0,0);
+//   transition: all .2s ease-in;
+//   height: 96%;
+//   width: 100%;
 // }
 //
-// #left:hover {
-// 	// background:url(arrow.gif) 0 0 no-repeat;
-//   background: rgba(125,0,120,0.5);
+// .scroll-left {
+//   left: 0;
 // }
 //
-// #right {
-// 	// background:url(arrow.gif) -32px -31px no-repeat;
-//   background: rgba(0,0,0,0.5);
+// .scroll-right {
+//   right: 0;
 // }
 //
-// #right:hover {
-// 	// background:url(arrow.gif) -32px 0 no-repeat;
-//   background: rgba(0,0,0,0.5);
+// .arrow-img {
+//   width: 2vw;
+//   height: 4vw;
 // }
 //
-// .clear {clear:both}
+// .carousel-item-detail-container {
+//   height: 100vh;
+//   width: 100vw;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 5000;
+//
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: rgba(0,0,0,0.3);
+// }
+//
+// .carousel-item-detail {
+//   height: 100%;
+//   width: 100%;
+//   background-color: #f5f5f5;
+//
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+// }
+//
+// .carousel-item-detail img  {
+//   // margin-top: 50px;
+//   height: 33%;
+//   // width: %;
+// }
+//
+// .carousel-item-info {
+//   height: 60%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+//
+// .carousel-item-info h3 {
+//   font-size: 4vw;
+//   font-weight: 700;
+//   letter-spacing: 2px;
+//   // margin-top: 10px;
+//   // margin-bottom: 5px;
+// }
+//
+// .info {
+//   height: 100%;
+//   width: 100%;
+//   padding: 5%;
+//   font-size: 2.2vw;
+//   letter-spacing: 1px;
+//   line-height: 22px;
+//   color: #111;
+// }
+//
+// //
+// // #carousel-container {
+// // 	width:255px;
+// // 	height:290px;
+// // 	margin:0 auto;
+// // }
+// //
+// // #carousel {
+// // 	overflow:hidden;
+// // 	/* fix ie overflow issue */
+// // 	position:relative;
+// // 	width:250px;
+// // 	height:250px;
+// // 	border:1px solid #ccc;
+// // }
+// //
+// // /* remove the list styles, width : item width * total items */
+// // #carousel ul div {
+// // 	position:relative;
+// // 	left:0;
+// // 	top:0;
+// // 	list-style:none;
+// // 	margin:0;
+// // 	padding:0;
+// // 	width:750px;
+// // }
+// //
+// // .carousel-item-container {
+// //   background-color: pink;
+// //   height: 100%;
+// //   width: 100%;
+// //   display: flex;
+// //   justify-content: center;
+// //   align-items: center;
+// // }
+// //
+// // .carousel-item {
+// //   background-color: lightblue;
+// //   height: 95%;
+// //   width: 95;
+// // }
+// //
+// // /* width of the item, in this case I put 250x250x gif */
+// // #carousel li div {
+// // 	width:250px;
+// // 	height:250px;
+// // 	float:left;
+// // }
+// //
+// // #carousel li div {
+// // 	padding:5px;
+// // }
+// //
+// // /* Styling for prev and next buttons */
+// // #carousel-buttons {
+// // 	padding:0 0 5px 0;
+// // 	float:right;
+// // }
+// //
+// // #carousel-buttons button {
+// // 	display:block;
+// // 	width:31px;
+// // 	height:32px;
+// // 	text-indent:-999em;
+// // 	float:left;
+// // 	outline:0;
+// // }
+// //
+// // #left {
+// // 	// background:url(arrow.gif) 0 -31px no-repeat;
+// //   background: rgba(125,0,120,0.5);
+// // }
+// //
+// // #left:hover {
+// // 	// background:url(arrow.gif) 0 0 no-repeat;
+// //   background: rgba(125,0,120,0.5);
+// // }
+// //
+// // #right {
+// // 	// background:url(arrow.gif) -32px -31px no-repeat;
+// //   background: rgba(0,0,0,0.5);
+// // }
+// //
+// // #right:hover {
+// // 	// background:url(arrow.gif) -32px 0 no-repeat;
+// //   background: rgba(0,0,0,0.5);
+// // }
+// //
+// // .clear {clear:both}

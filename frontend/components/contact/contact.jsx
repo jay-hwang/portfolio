@@ -7,8 +7,8 @@ const Contact = () => (
     <h3 className='title' id='dark-title'>GET IN TOUCH</h3>
 
     <div className='contact-text'>
-      <p>I'm looking for new opportunities and would love to chat.</p>
-      <p>If you're interested in working together, please reach out!</p>
+      <p>Fellow music nerd? Company recruiter? Just want to drop a line?</p>
+      <p>Feel free to reach out!</p>
     </div>
 
     <div className='contact-icons'>

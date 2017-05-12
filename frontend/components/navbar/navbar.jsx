@@ -4,6 +4,8 @@ const Navbar = () => {
   const wh = $(window).height();
   const showHamburgerMenu  = () => $('.hamburger-menu').fadeIn();
   const closeHamburgerMenu = () => $('.hamburger-menu').fadeOut();
+  // const aboutHeight = $('.about').height() + 10;
+  // const skillsHeight = $('.skills').height();
   const homeClick     = () => {
     closeHamburgerMenu();
     $("body").animate({ scrollTop: 0         }, 700);
@@ -19,11 +21,16 @@ const Navbar = () => {
   };
   const projectsClick = () => {
     closeHamburgerMenu();
-    $("body").animate({ scrollTop: wh + 1198 }, 700);
+    let aboutHeight = $('.about').height() + 10;
+    let skillsHeight = $('.skills').height() + 50;
+    $("body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
   };
   const contactClick  = () => {
     closeHamburgerMenu();
-    $("body").animate({ scrollTop: wh + 1930 }, 700);
+    let about = $('.about').height() + 10;
+    let skills = $('.skills').height() + 50;
+    let projects = $('.projects').height();
+    $("body").animate({ scrollTop: wh + about + skills + projects }, 700);
   };
 
   return (

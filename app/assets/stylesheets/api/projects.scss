@@ -1,6 +1,6 @@
-// // Place all the styles related to the api/projects controller here.
-// // They will automatically be included in application.css.
-// // You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the api/projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 // .insta-projects-section {
 //   width: 100%;
 //   min-height: 75vh;
@@ -56,278 +56,281 @@
 //   height: 100vh;
 //   background-color: lightgreen;
 // }
-//
-// ///////////////////////////////////////////////////////////////////////////////
-//
-// $projects-height: 100vh;
-// .projects {
-//   width: 100%;
-//   height: $projects-height;
-//
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//
-//   background-color: #f5f5f5;
-//
-//   z-index: 10;
+
+///////////////////////////////////////////////////////////////////////////////
+
+$projects-height: 100vh;
+.projects {
+  width: 100%;
+  height: $projects-height;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // background-color: #f5f5f5;
+  background-color: #fff;
+
+  z-index: 10;
+}
+
+#projects-title {
+  color: #111;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.projects-window {
+  width: 75vw;
+  min-height: 500px;
+  // height: 700px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.projects-ul {
+  position: absolute;
+  top: 0;
+  left: 0vw;
+  display: flex;
+}
+
+.project-li {
+  margin-left: 50px;
+}
+
+.project {
+  width: 75vw;
+  // height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  // background-color: #fff;
+  margin-right: 10px;
+}
+
+.project-img {
+  max-height: 300px;
+  height: 50vw;
+  width: 100%;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  // max-height: 280px;
+  height: 170px;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.project-desc-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-desc {
+  font-size: 13px;
+  line-height: 17px;
+  // letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.stack {
+  display: none !important;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.stack-title {
+  display: none !important;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.project-stack {
+  height: 25px;
+
+  border-radius: 1px;
+  padding: 5px 10px;
+  margin: 3px;
+
+  background-color: #fff;
+  box-shadow: 0 0 5px #999;
+
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.project-links {
+  display: flex;
+  // width: 300px;
+  width: 100%;
+  justify-content: center;
+  // margin-bottom: 20px;
+}
+
+.project-link-btn {
+  margin: 20px 1%;
+  height: 40px;
+  width: 40%;
+  max-width: 125px;
+  border: 1px solid #111;
+  background-color: #fff;
+  transition: all .2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  // color: #fff;
+  color: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in;
+}
+
+.project-link-btn:hover {
+  transition: all .2s ease-in;
+  background-color: #555;
+  cursor: pointer;
+}
+
+.project-link-btn:hover .project-link {
+  transition: all .2s ease-in;
+  color: #fff;
+}
+
+
+// For Mobile
+@media only screen and (min-width: 450px) {
+  .project {
+    width: 75vw;
+  }
+  .projects-window {
+    width: 75vw;
+  }
+  .project-img {
+    max-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #projects-title {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .stack-title, .stack {
+    display: none;
+  }
+}
+
+// For Tablets
+@media only screen and (min-width: 501px) {
+  .project {
+    width: 35vw;
+  }
+  .projects-window {
+    width: 75vw;
+  }
+  .project-img {
+    max-height: 150px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .project-img {
+    max-height: 200px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .project-img {
+    max-height: 250px;
+  }
+}
+
+// For Desktop
+@media screen and (min-width: 900px) {
+  .project {
+    width: 28vw;
+  }
+  .projects-window {
+    width: 85vw;
+  }
+  .project-img {
+    max-height: 175px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-img {
+    max-height: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-img {
+    max-height: 250px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .project {
+    width: 21vw;
+  }
+  .projects-window {
+    width: 85vw;
+  }
+  .project-img {
+    max-height: 200px;
+  }
+}
+
+// @media screen and (min-width: 1600px) {
+//   .project-img {
+//     max-height: 350px;
+//   }
 // }
-//
-// #projects-title {
-//   color: #111;
-//   margin-bottom: 10px;
-//   font-size: 30px;
-// }
-//
-// .projects-window {
-//   width: 75vw;
-//   min-height: 500px;
-//   // height: 700px;
-//   overflow-x: hidden;
-//   position: relative;
-// }
-//
-// .projects-ul {
-//   position: absolute;
-//   top: 0;
-//   left: 0vw;
-//   display: flex;
-// }
-//
-// .project-li {
-//   margin-left: 50px;
-// }
-//
-// .project {
-//   width: 75vw;
-//   // height: 700px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//
-//   border-radius: 2px;
-//   // background-color: #f5f5f5;
-//   background-color: #fff;
-//   margin-right: 10px;
-// }
-//
-// .project-img {
-//   max-height: 300px;
-//   height: 50vw;
-//   width: 100%;
-// }
-//
-// .project-info {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   padding: 10px 20px;
-//   // max-height: 280px;
-//   height: 170px;
-// }
-//
-// .project-name {
-//   font-weight: 700;
-//   font-size: 18px;
-//   letter-spacing: 1px;
-//   text-align: center;
-//   margin-bottom: 10px;
-//   width: 100%;
-// }
-//
-// .project-desc-box {
-//   display: flex;
-//   flex-direction: column;
-// }
-//
-// .project-desc {
-//   font-size: 13px;
-//   line-height: 17px;
-//   // letter-spacing: 1px;
-//   margin-bottom: 3px;
-// }
-//
-// .stack {
-//   width: 100%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 20px;
-// }
-//
-// .stack-title {
-//   margin-bottom: 10px;
-//   color: #333;
-//   font-size: 18px;
-//   font-weight: 700;
-//   letter-spacing: 1px;
-// }
-//
-// .project-stack {
-//   height: 25px;
-//
-//   border-radius: 1px;
-//   padding: 5px 10px;
-//   margin: 3px;
-//
-//   background-color: #fff;
-//   box-shadow: 0 0 5px #999;
-//
-//   color: #111;
-//   font-size: 13px;
-//   font-weight: 700;
-//   letter-spacing: 1px;
-// }
-//
-// .project-links {
-//   display: flex;
-//   // width: 300px;
-//   width: 100%;
-//   justify-content: center;
-//   // margin-bottom: 20px;
-// }
-//
-// .project-link-btn {
-//   margin: 20px 1%;
-//   height: 40px;
-//   width: 40%;
-//   max-width: 125px;
-//   border: 1px solid #111;
-//   background-color: #fff;
-//   transition: all .2s ease-in;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-//
-// .project-link {
-//   font-size: 15px;
-//   font-weight: 700;
-//   letter-spacing: 1px;
-//   // color: #fff;
-//   color: #111;
-//
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   transition: all .2s ease-in;
-// }
-//
-// .project-link-btn:hover {
-//   transition: all .2s ease-in;
-//   background-color: #555;
-//   cursor: pointer;
-// }
-//
-// .project-link-btn:hover .project-link {
-//   transition: all .2s ease-in;
-//   color: #fff;
-// }
-//
-//
-// // For Mobile
-// @media only screen and (min-width: 450px) {
+
+// @media screen and (min-width: 1500px) {
 //   .project {
-//     width: 75vw;
+//     width: 22vw;
 //   }
 //   .projects-window {
-//     width: 75vw;
+//     width: 88vw;
 //   }
 //   .project-img {
-//     max-height: 250px;
+//     max-height: 300px;
 //   }
 // }
-//
-// @media only screen and (max-width: 500px) {
-//   #projects-title {
-//     font-size: 28px;
-//     margin-top: 20px;
-//   }
-// }
-//
-// @media only screen and (max-width: 900px) {
-//   .stack-title, .stack {
-//     display: none;
-//   }
-// }
-//
-// // For Tablets
-// @media only screen and (min-width: 501px) {
-//   .project {
-//     width: 35vw;
-//   }
-//   .projects-window {
-//     width: 75vw;
-//   }
-//   .project-img {
-//     max-height: 150px;
-//   }
-// }
-//
-// @media only screen and (min-width: 700px) {
-//   .project-img {
-//     max-height: 200px;
-//   }
-// }
-//
-// @media only screen and (min-width: 800px) {
-//   .project-img {
-//     max-height: 250px;
-//   }
-// }
-//
-// // For Desktop
-// @media screen and (min-width: 900px) {
-//   .project {
-//     width: 28vw;
-//   }
-//   .projects-window {
-//     width: 85vw;
-//   }
-//   .project-img {
-//     max-height: 175px;
-//   }
-// }
-//
-// @media screen and (min-width: 1000px) {
-//   .project-img {
-//     max-height: 200px;
-//   }
-// }
-//
-// @media screen and (min-width: 1200px) {
-//   .project-img {
-//     max-height: 250px;
-//   }
-// }
-//
-// @media screen and (min-width: 1400px) {
-//   .project {
-//     width: 21vw;
-//   }
-//   .projects-window {
-//     width: 85vw;
-//   }
-//   .project-img {
-//     max-height: 200px;
-//   }
-// }
-//
-// // @media screen and (min-width: 1600px) {
-// //   .project-img {
-// //     max-height: 350px;
-// //   }
-// // }
-//
-// // @media screen and (min-width: 1500px) {
-// //   .project {
-// //     width: 22vw;
-// //   }
-// //   .projects-window {
-// //     width: 88vw;
-// //   }
-// //   .project-img {
-// //     max-height: 300px;
-// //   }
-// // }

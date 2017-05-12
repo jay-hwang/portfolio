@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectsScroll from '../projects_scroll';
 
 const ProjectsScrollTablet = ({ projectLis }) => {
-  const scrollBalance = { left: 0, right: 4 };
+  const scrollBalance = { left: 0, right: 3 };
   const shouldFreeze = { left: false, right: false };
   const toggleFreeze = dir => {
     shouldFreeze[dir] = true;

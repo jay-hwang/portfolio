@@ -1,22 +1,22 @@
 .carousel {
   margin-top: 20px;
   width: 100%;
-	height: 200px;
-  max-height: 200px;
+	min-height: 200px;
+  max-height: 400px;
   position: relative;
 }
 
 .carousel-items {
-  width: 100%;
-	height: 200px;
-  // height: auto;
-  background-color: #000;
+  min-width: 100%;
+  height: 100%;
+  // background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 3vw;
   overflow: hidden;
-  position: relative;
+  // position: relative;
+  // left: 0;
 }
 
 .carousel-item-container {
@@ -32,7 +32,21 @@
 .carousel-item {
   width: 96%;
   height: 96%;
-  background-color: lightblue;
+  // background-color: lightblue;
+  position: relative;
+}
+
+.carousel-item-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item-img {
+  width: 100%;
+  height: 100%;
 }
 
 .arrow {
@@ -40,14 +54,25 @@
   top: 0;
   z-index: 10;
   width: 50px;
-  height: 100%;
-  background: rgba(255,255,255,0);
-  transition: all .2s ease-in;
+  height: 25vw * .7;
+  max-height: 175px;
+  // height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel:hover .arrow {
+.carousel:hover .arrow .scroll-button {
   transition: all .2s ease-in;
-  background: rgba(255,255,255,0.7);
+  background: rgba(0,0,0,0.3);
+}
+
+.scroll-button {
+  cursor: pointer;
+  background: rgba(0,0,0,0);
+  transition: all .2s ease-in;
+  height: 96%;
+  width: 100%;
 }
 
 .scroll-left {
@@ -56,6 +81,11 @@
 
 .scroll-right {
   right: 0;
+}
+
+.arrow-img {
+  width: 2vw;
+  height: 4vw;
 }
 
 //

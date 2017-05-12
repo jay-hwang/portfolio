@@ -4,7 +4,7 @@ import ContactDesktop from './desktop/contact_desktop';
 
 const Contact = () => (
   <div className='contact-container'>
-    <h3 className='title' id='projects-title'>GET IN TOUCH</h3>
+    <h3 className='title' id='dark-title'>GET IN TOUCH</h3>
 
     <div className='contact-text'>
       <p>I'm looking for new opportunities and would love to chat.</p>

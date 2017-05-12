@@ -4,7 +4,10 @@ const CarouselItem = ({ item }) => {
   return (
     <div className='carousel-item-container'>
       <div className='carousel-item'>
-        { item.title }
+        <div className='carousel-item-img-container'>
+          <img className='carousel-item-img'
+            src={ item.image_url }/>
+        </div>
       </div>
     </div>
   );

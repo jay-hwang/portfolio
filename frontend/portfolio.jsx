@@ -102,12 +102,12 @@ $(window).load(() => {
   //
 
   // Repeats arrow animation
-  animateArrowBounce();
-  animateArrowGrowth();
-  setInterval(() => {
-    animateArrowBounce();
-    animateArrowGrowth();
-  }, 3500);
+  // animateArrowBounce();
+  // animateArrowGrowth();
+  // setInterval(() => {
+  //   animateArrowBounce();
+  //   animateArrowGrowth();
+  // }, 3500);
 
   // Changes Home Component background img
     let homeImgUrls = [

@@ -22,7 +22,7 @@ class Carousel extends React.Component {
   }
 
   vw() {
-    return $('.carousel-item-container').width() * 4 * .75;
+    return $('.carousel-item-container').width() * 4 * .667;
   }
 
   rotateRight() {

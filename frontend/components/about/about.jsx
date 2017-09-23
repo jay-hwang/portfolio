@@ -15,11 +15,16 @@ const About = () => {
         <span className='about-title'>Music Composer turned Software Engineer</span>
 
         <p>
-          I chose to pursue programming because I want to apply my skills to contribute to solving humanitarian & social issues to move the world forward. Over the past 3 years, I've developed various projects in my leisure, ranging from a blog dedicated to fighting human trafficking to an automated job application script. I love to create and bring ideas to life.
+          I chose to pursue programming because I wanted to tap into technology's potential to contribute to solving humanitarian & social issues.
+          I've had the honor of working on truly impactful, innovative projects, ranging from a blog dedicated to fighting human trafficking, to launching some of the first server-less, decentralized applications utilizing Blockchains & <a href="https://www.blockstack.org" target="_blank">Blockstack</a>.
         </p>
 
         <p>
-          When I'm not busy telling computers what to do, you can find me writing music or exploring the world on a motorcycle. I love traveling and learning about the various forms of arts different cultures cultivated over time - especially music.
+          When I'm not busy telling computers what to do, you can find me writing/playing music with friends, carving twisty mountain roads on a crotch rocket or taking apart electronics to see how they work.
+        </p>
+
+        <p>
+          Lately, I've found myself being drawn into the world of Blockchains & Cryptocurrencies.
         </p>
 
         <button className='see-skills' onClick={ skillsClick }>

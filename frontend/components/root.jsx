@@ -8,9 +8,7 @@ import {
 } from '../actions/project_actions';
 
 const Root = ({ store }) => {
-  const _getProjects = () => {
-    store.dispatch(requestProjects());
-  };
+  const _getProjects = () => store.dispatch(requestProjects());
 
   return (
     <Provider store={store}>
@@ -19,7 +17,6 @@ const Root = ({ store }) => {
           path='/'
           onEnter={_getProjects}
           component={App}>
-
         </Route>
       </Router>
     </Provider>

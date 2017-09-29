@@ -15,15 +15,6 @@ const Contact = () => (
           src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493489180/Screen_Shot_2017-04-29_at_10.53.53_AM_zetwdp.png' />
         <span className='contact-icon-text'>jayhwang0121@gmail.com</span>
       </div>
-
-      {/*
-        <div>
-          <img className='contact-icon' id='contact-icon--2'
-            src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493489180/Screen_Shot_2017-04-29_at_10.53.51_AM_arb6jt.png' />
-          <span className='contact-icon-text'>San Francisco, US</span>
-        </div>
-      */}
-
     </div>
   </div>
 );

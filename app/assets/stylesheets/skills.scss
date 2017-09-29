@@ -191,33 +191,13 @@
   from { transform: rotateX(-90deg) translateZ(150px)}
   to { transform: rotateX(-90deg) translateZ(240px)}
 }
-//
-// .see-skills {
-//   padding: 14px 20px;
-//   margin-top: 40px;
-//   border: 1px solid $see-skills-color;
-//   border-radius: 30px;
-//
-//   color: #333;
-//   font-size: 17px;
-//   transition: all .2s ease-in;
-//   background-color: #fff;
-// }
-//
-// .see-skills:hover {
-//   color: #fff;
-//   cursor: pointer;
-//   background-color: $see-skills-color;
-//   transition: all .2s ease-in;
-// }
-
 
 #view-projects-btn {
   height: 50px;
   width: 175px;
 
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: calc(50vw - 87.5px);
 
   color: #fff;

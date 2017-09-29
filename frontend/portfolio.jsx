@@ -32,21 +32,22 @@ document.addEventListener('DOMContentLoaded', () => {
     //
 
     // Toggles Active Navbar link
-      const clearActive = () => $('.navbar-link').removeClass('active');
-      if (y > wh + 1600) {
-        clearActive();
+      const removeActive = () => $('.navbar-link').removeClass('active');
+
+      if (y > (wh * 3 + 200)) {
+        removeActive();
         $('#contact-nav').addClass('active');
       }
-      else if (y > wh + 900) {
-        clearActive();
+      else if (y > (wh * 3) - 500) {
+        removeActive();
         $('#projects-nav').addClass('active');
       }
-      else if (y > wh + 400) {
-        clearActive();
+      else if (y > (wh * 2) - 300) {
+        removeActive();
         $('#skills-nav').addClass('active');
       }
       else if (y > wh - 70) {
-        clearActive();
+        removeActive();
         $('#about-nav').addClass('active');
       }
     //
@@ -66,6 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
           skillsHeight = $('.skills').height();
       if (y > wh + aboutHeight + (skillsHeight / 3)) {
         $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
+      }
+    //
+
+    // Animate contact icons
+      let projectsHeight = $('.projects').height();
+      if (y > wh + aboutHeight + skillsHeight + (projectsHeight / 9)) {
+        $('#contact-icon').animate({ opacity: 1 }, 500);
       }
     //
   });

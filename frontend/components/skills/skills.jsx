@@ -1,6 +1,13 @@
 import React from 'react';
 
 const Skills = () => {
+  const projectsClick = () => {
+    const wh = $(window).height();
+    let aboutHeight = $('.about').height() + 10;
+    let skillsHeight = $('.skills').height() + 50;
+    $("body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
+  };
+
   return (
     <div className='skills-box'>
       <section className='skills'>
@@ -18,6 +25,10 @@ const Skills = () => {
           </div>
         </div>
       </section>
+
+      <button id="view-projects-btn" onClick={projectsClick}>
+        View Projects
+      </button>
     </div>
   );
 };

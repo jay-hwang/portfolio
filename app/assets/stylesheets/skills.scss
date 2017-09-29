@@ -18,6 +18,7 @@
 }
 
 .skills {
+  height: calc(100vh - 70px);
   width: 100%;
   background: rgba(0,0,0,0);
   perspective: 1000px;
@@ -27,14 +28,14 @@
 }
 
 .three-d-cube {
-  height: 540px;
+  height: 740px;
   text-align: center;
-  padding-top: 170px;
+  padding-top: 200px;
 }
 
 .cube-container {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   position: relative;
   -webkit-perspective: 800px;
   margin: auto;
@@ -46,7 +47,7 @@
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
+  transform: translateZ(-150px);
   animation: rotate 20s infinite linear;
 }
 
@@ -54,8 +55,8 @@
   margin: 0;
   display: block;
   position: absolute;
-  width: 196px;
-  height: 196px;
+  width: 296px;
+  height: 296px;
   opacity: 0.3;
 
   font-size: 30px;
@@ -67,64 +68,93 @@
 
 
 #cube .front {
-  transform: rotateY(0deg) translateZ(100px);
+  transform: rotateY(0deg) translateZ(150px);
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cube .back {
-  transform: rotateX(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(150px);
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cube .left {
-  transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(150px);
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cube .right {
-  transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(150px);
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cube .top {
-  transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(150px);
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cube .bottom {
-  transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(150px);
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cube:hover .front {
-  animation: expand-front 0.5s linear;
+  animation: expand-front 0.9s linear;
   animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 #cube:hover .back {
-  animation: expand-back 0.5s linear;
+  animation: expand-back 0.9s linear;
   -webkit-animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 #cube:hover .left {
-  animation: expand-left 0.5s linear;
+  animation: expand-left 0.9s linear;
   animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 #cube:hover .right {
-  animation: expand-right 0.5s linear;
+  animation: expand-right 0.9s linear;
   animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 #cube:hover .top {
-  animation: expand-top 0.5s linear;
+  animation: expand-top 0.9s linear;
   animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 #cube:hover .bottom {
-  animation: expand-bottom 0.5s linear;
+  animation: expand-bottom 0.9s linear;
   animation-fill-mode: forwards;
-
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 @keyframes rotate {
@@ -133,31 +163,75 @@
 }
 
 @keyframes expand-front {
-  from { transform: rotateY(0) translateZ(100px); }
-  to { transform: rotateY(0) translateZ(200px); }
+  from { transform: rotateY(0) translateZ(150px); }
+  to { transform: rotateY(0) translateZ(240px); }
 }
 
 @keyframes expand-back {
-  from { transform: rotateY(180deg) translateZ(100px)}
-  to { transform: rotateY(180deg) translateZ(200px)}
+  from { transform: rotateY(180deg) translateZ(150px)}
+  to { transform: rotateY(180deg) translateZ(240px)}
 }
 
 @keyframes expand-left {
-  from { transform: rotateY(90deg) translateZ(100px)}
-  to { transform: rotateY(90deg) translateZ(200px)}
+  from { transform: rotateY(90deg) translateZ(150px)}
+  to { transform: rotateY(90deg) translateZ(240px)}
 }
 
 @keyframes expand-right {
-  from { transform: rotateY(-90deg) translateZ(100px)}
-  to { transform: rotateY(-90deg) translateZ(200px)}
+  from { transform: rotateY(-90deg) translateZ(150px)}
+  to { transform: rotateY(-90deg) translateZ(240px)}
 }
 
 @keyframes expand-top {
-  from { transform: rotateX(90deg) translateZ(100px)}
-  to { transform: rotateX(90deg) translateZ(200px)}
+  from { transform: rotateX(90deg) translateZ(150px)}
+  to { transform: rotateX(90deg) translateZ(240px)}
 }
 
 @keyframes expand-bottom {
-  from { transform: rotateX(-90deg) translateZ(100px)}
-  to { transform: rotateX(-90deg) translateZ(200px)}
+  from { transform: rotateX(-90deg) translateZ(150px)}
+  to { transform: rotateX(-90deg) translateZ(240px)}
+}
+//
+// .see-skills {
+//   padding: 14px 20px;
+//   margin-top: 40px;
+//   border: 1px solid $see-skills-color;
+//   border-radius: 30px;
+//
+//   color: #333;
+//   font-size: 17px;
+//   transition: all .2s ease-in;
+//   background-color: #fff;
+// }
+//
+// .see-skills:hover {
+//   color: #fff;
+//   cursor: pointer;
+//   background-color: $see-skills-color;
+//   transition: all .2s ease-in;
+// }
+
+
+#view-projects-btn {
+  height: 50px;
+  width: 175px;
+
+  position: absolute;
+  bottom: 20px;
+  left: calc(50vw - 87.5px);
+
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all .2s ease-in;
+
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+
+#view-projects-btn:hover {
+  background-color: #fff;
+  color: #333;
 }

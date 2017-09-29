@@ -12,7 +12,7 @@ const About = () => {
       <div className='about-img transparent' id='about-img'></div>
 
       <div className='about-p'>
-        <span className='about-title'>Music Composer turned Software Engineer</span>
+        <span className='about-title'>From Music Composer to Software Engineer</span>
 
         <p>
           I chose to pursue programming because I wanted to tap into technology's potential to contribute to solving humanitarian & social issues.

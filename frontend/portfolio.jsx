@@ -69,6 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
       }
     //
+
+    // Animate contact icons
+      let projectsHeight = $('.projects').height();
+      if (y > wh + aboutHeight + skillsHeight + (projectsHeight / 9)) {
+        $('#contact-icon').animate({ opacity: 1 }, 500);
+      }
+    //
   });
 
   ReactDOM.render(<Root store={store} />, main);

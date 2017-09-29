@@ -4,20 +4,18 @@ const Navbar = () => {
   const wh = $(window).height();
   const showHamburgerMenu  = () => $('.hamburger-menu').fadeIn();
   const closeHamburgerMenu = () => $('.hamburger-menu').fadeOut();
-  // const aboutHeight = $('.about').height() + 10;
-  // const skillsHeight = $('.skills').height();
-  const homeClick     = () => {
+  const homeClick = () => {
     closeHamburgerMenu();
-    $("body").animate({ scrollTop: 0         }, 700);
+    $("body").animate({ scrollTop: 0 }, 700);
   };
-  const aboutClick    = () => {
+  const aboutClick = () => {
     closeHamburgerMenu();
-    $("body").animate({ scrollTop: wh - 70   }, 700);
+    $("body").animate({ scrollTop: wh - 70 }, 700);
   };
-  const skillsClick   = () => {
+  const skillsClick = () => {
     closeHamburgerMenu();
     let aboutHeight = $('.about').height() + 10;
-    $("body").animate({ scrollTop: wh + aboutHeight  }, 700);
+    $("body").animate({ scrollTop: wh + aboutHeight }, 700);
   };
   const projectsClick = () => {
     closeHamburgerMenu();

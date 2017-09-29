@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggles Active Navbar link
       const removeActive = () => $('.navbar-link').removeClass('active');
 
-      if (y > (wh * 3)) {
+      if (y > (wh * 3 + 200)) {
         removeActive();
         $('#contact-nav').addClass('active');
       }

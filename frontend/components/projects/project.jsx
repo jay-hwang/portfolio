@@ -13,10 +13,12 @@ const Project = ({ project }) => {
   const projectDesc = project.description.split('<br/>').map((desc, i) => (
     <p className='project-desc' key={i} >- { desc }</p>
   ));
-  
+
   return (
     <div className='project' id='project-mobile'>
-      <img src={ project.image_url } className='project-img' />
+      <div className='project-img'
+        style={{ backgroundImage: `url(${project.image_url})` }}>
+      </div>
 
       <div className='project-info'>
         <h3 className='project-name'>{ project.title }</h3>

@@ -3,7 +3,7 @@ import Connect from '../connect/connect';
 
 const Home = () => {
   const arrowBounceClick = () => {
-    $("body").animate({ scrollTop: $(window).height() - 70}, 700);
+    $("html, body").animate({ scrollTop: $(window).height() - 70}, 700);
   };
 
   return (

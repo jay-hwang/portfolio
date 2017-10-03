@@ -6,29 +6,29 @@ const Navbar = () => {
   const closeHamburgerMenu = () => $('.hamburger-menu').fadeOut();
   const homeClick = () => {
     closeHamburgerMenu();
-    $("body").animate({ scrollTop: 0 }, 700);
+    $("html, body").animate({ scrollTop: 0 }, 700);
   };
   const aboutClick = () => {
     closeHamburgerMenu();
-    $("body").animate({ scrollTop: wh - 70 }, 700);
+    $("html, body").animate({ scrollTop: wh - 70 }, 700);
   };
   const skillsClick = () => {
     closeHamburgerMenu();
     let aboutHeight = $('.about').height() + 10;
-    $("body").animate({ scrollTop: wh + aboutHeight }, 700);
+    $("html, body").animate({ scrollTop: wh + aboutHeight }, 700);
   };
   const projectsClick = () => {
     closeHamburgerMenu();
     let aboutHeight = $('.about').height() + 10;
     let skillsHeight = $('.skills').height() + 50;
-    $("body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
+    $("html, body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
   };
   const contactClick  = () => {
     closeHamburgerMenu();
     let about = $('.about').height() + 10;
     let skills = $('.skills').height() + 50;
     let projects = $('.projects').height();
-    $("body").animate({ scrollTop: wh + about + skills + projects }, 700);
+    $("html, body").animate({ scrollTop: wh + about + skills + projects }, 700);
   };
 
   return (

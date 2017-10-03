@@ -4,7 +4,7 @@ const About = () => {
   const wh = $(window).height();
   const skillsClick = () => {
     let aboutHeight = $('.about').height() + 10;
-    $("body").animate({ scrollTop: wh + aboutHeight  }, 700);
+    $("html, body").animate({ scrollTop: wh + aboutHeight  }, 700);
   };
 
   return (

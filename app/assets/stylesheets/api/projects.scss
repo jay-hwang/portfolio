@@ -77,12 +77,12 @@ $projects-height: 100vh;
 #projects-title {
   color: #111;
   margin-bottom: 20px;
-  font-size: 30px;
 }
 
 .projects-window {
   width: 75vw;
-  min-height: 500px;
+  // min-height: 500px;
+  height: 50vh;
   // height: 700px;
   overflow-x: hidden;
   position: relative;

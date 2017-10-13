@@ -30,7 +30,8 @@
 .three-d-cube {
   height: 740px;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 20vh;
+  transition: all .1s ease-in;
 }
 
 .cube-container {
@@ -47,7 +48,7 @@
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transform: translateZ(-150px);
+  transform: translateZ(-126px);
   animation: rotate 20s infinite linear;
 }
 
@@ -55,8 +56,8 @@
   margin: 0;
   display: block;
   position: absolute;
-  width: 296px;
-  height: 296px;
+  width: 250px;
+  height: 250px;
   opacity: 0.3;
 
   font-size: 30px;
@@ -66,9 +67,8 @@
   line-height: 200px;
 }
 
-
 #cube .front {
-  transform: rotateY(0deg) translateZ(150px);
+  transform: rotateY(0deg) translateZ(126px);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -76,7 +76,7 @@
 }
 
 #cube .back {
-  transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(126px);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@
 }
 
 #cube .left {
-  transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(126px);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -92,7 +92,7 @@
 }
 
 #cube .right {
-  transform: rotateY(-90deg) translateZ(150px);
+  transform: rotateY(-90deg) translateZ(126px);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@
 }
 
 #cube .top {
-  transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(126px);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -108,7 +108,7 @@
 }
 
 #cube .bottom {
-  transform: rotateX(-90deg) translateZ(150px);
+  transform: rotateX(-90deg) translateZ(126px);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -163,33 +163,33 @@
 }
 
 @keyframes expand-front {
-  from { transform: rotateY(0) translateZ(150px); }
-  to { transform: rotateY(0) translateZ(240px); }
+  from { transform: rotateY(0) translateZ(126px); }
+  to { transform: rotateY(0) translateZ(220px); }
 }
 
 @keyframes expand-back {
-  from { transform: rotateY(180deg) translateZ(150px)}
-  to { transform: rotateY(180deg) translateZ(240px)}
+  from { transform: rotateY(180deg) translateZ(126px)}
+  to { transform: rotateY(180deg) translateZ(220px)}
 }
 
 @keyframes expand-left {
-  from { transform: rotateY(90deg) translateZ(150px)}
-  to { transform: rotateY(90deg) translateZ(240px)}
+  from { transform: rotateY(90deg) translateZ(126px)}
+  to { transform: rotateY(90deg) translateZ(220px)}
 }
 
 @keyframes expand-right {
-  from { transform: rotateY(-90deg) translateZ(150px)}
-  to { transform: rotateY(-90deg) translateZ(240px)}
+  from { transform: rotateY(-90deg) translateZ(126px)}
+  to { transform: rotateY(-90deg) translateZ(220px)}
 }
 
 @keyframes expand-top {
-  from { transform: rotateX(90deg) translateZ(150px)}
-  to { transform: rotateX(90deg) translateZ(240px)}
+  from { transform: rotateX(90deg) translateZ(126px)}
+  to { transform: rotateX(90deg) translateZ(220px)}
 }
 
 @keyframes expand-bottom {
-  from { transform: rotateX(-90deg) translateZ(150px)}
-  to { transform: rotateX(-90deg) translateZ(240px)}
+  from { transform: rotateX(-90deg) translateZ(126px)}
+  to { transform: rotateX(-90deg) translateZ(220px)}
 }
 
 #view-projects-btn {
@@ -214,4 +214,70 @@
 #view-projects-btn:hover {
   background-color: #fff;
   color: #333;
+}
+
+// Shorter height screens
+@media screen and (max-height: 700px) {
+  #cube {
+    transform: translateZ(-99px);
+  }
+
+  #cube figure {
+    height: 196px ;
+    width: 196px ;
+  }
+
+  #cube .front {
+    transform: rotateY(0deg) translateZ(99px);
+  }
+
+  #cube .back {
+    transform: rotateY(180deg) translateZ(99px);
+  }
+
+  #cube .left {
+    transform: rotateY(90deg) translateZ(99px);
+  }
+
+  #cube .right {
+    transform: rotateY(-90deg) translateZ(99px);
+  }
+
+  #cube .top {
+    transform: rotateX(90deg) translateZ(99px);
+  }
+
+  #cube .bottom {
+    transform: rotateX(-90deg) translateZ(99px);
+  }
+
+  @keyframes expand-front {
+    from { transform: rotateY(0) translateZ(99px); }
+    to { transform: rotateY(0) translateZ(190px); }
+  }
+
+  @keyframes expand-back {
+    from { transform: rotateY(180deg) translateZ(99px)}
+    to { transform: rotateY(180deg) translateZ(190px)}
+  }
+
+  @keyframes expand-left {
+    from { transform: rotateY(90deg) translateZ(99px)}
+    to { transform: rotateY(90deg) translateZ(190px)}
+  }
+
+  @keyframes expand-right {
+    from { transform: rotateY(-90deg) translateZ(99px)}
+    to { transform: rotateY(-90deg) translateZ(190px)}
+  }
+
+  @keyframes expand-top {
+    from { transform: rotateX(90deg) translateZ(99px)}
+    to { transform: rotateX(90deg) translateZ(190px)}
+  }
+
+  @keyframes expand-bottom {
+    from { transform: rotateX(-90deg) translateZ(99px)}
+    to { transform: rotateX(-90deg) translateZ(190px)}
+  }
 }

@@ -7,8 +7,10 @@
   box-sizing: border-box;
   background-color: #fff;
   z-index: 10;
-  height: calc(100vh - 420px);
-  max-height: 505px;
+  // height: calc(100vh - 420px);
+  min-height: 30vh;
+  height: auto;
+  // max-height: 505px;
 }
 
 .contact-text {
@@ -18,6 +20,7 @@
   text-align: center;
   color: #555;
   font-size: 15px;
+  font-size: 1em;
   letter-spacing: 1px;
   line-height: 20px;
 }
@@ -54,7 +57,9 @@
 }
 
 .contact-icon-text {
-  font-size: 15px;
+  // font-size: 15px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
   color: #555;
 }
 

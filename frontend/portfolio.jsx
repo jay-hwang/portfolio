@@ -34,22 +34,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggles Active Navbar link
       const removeActive = () => $('.navbar-link').removeClass('active');
 
-      if (y > (wh * 3 + 200)) {
+      // Without About Component
+      if (y > (wh * 2)) {
         removeActive();
         $('#contact-nav').addClass('active');
       }
-      else if (y > (wh * 3) - 500) {
+      else if (y > (wh * 2) - 300) {
         removeActive();
         $('#projects-nav').addClass('active');
       }
-      else if (y > (wh * 2) - 300) {
+      else if (y >= wh - 71) {
         removeActive();
         $('#skills-nav').addClass('active');
-      }
-      else if (y > wh - 70) {
+        // $('#about-nav').addClass('active');
+      } else {
         removeActive();
-        $('#about-nav').addClass('active');
+        $('#home-nav').addClass('active');
       }
+
+      // With About Component
+      // if (y > (wh * 3 + 200)) {
+      //   removeActive();
+      //   $('#contact-nav').addClass('active');
+      // }
+      // else if (y > (wh * 3) - 500) {
+      //   removeActive();
+      //   $('#projects-nav').addClass('active');
+      // }
+      // else if (y > (wh * 2) - 300) {
+      //   removeActive();
+      //   $('#skills-nav').addClass('active');
+      // }
+      // else if (y > wh - 70) {
+      //   removeActive();
+      //   $('#about-nav').addClass('active');
+      // }
     //
 
     // Animate about components

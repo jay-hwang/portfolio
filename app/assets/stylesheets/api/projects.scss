@@ -63,6 +63,9 @@ $projects-height: 100vh;
 .projects {
   width: 100%;
   // height: $projects-height;
+  min-height: 400px;
+  height: auto;
+  max-height: 800px;
 
   display: flex;
   flex-direction: column;
@@ -81,7 +84,7 @@ $projects-height: 100vh;
 
 .projects-window {
   width: 75vw;
-  min-height: 500px;
+  min-height: 530px;
   height: auto;
   max-height: 600px;
   overflow-x: hidden;
@@ -99,6 +102,7 @@ $projects-height: 100vh;
 
 .project-li {
   margin-left: 50px;
+  height: 100%;
 }
 
 .project {

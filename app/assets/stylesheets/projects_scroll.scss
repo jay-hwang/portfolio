@@ -1,7 +1,8 @@
 .projects-scroll {
   position: relative;
-  // min-height: 600px;
-  height: auto;
+  min-height: 400px;
+  height: 100%;
+  max-height: 600px;
 }
 
 .arrow-box {

@@ -18,7 +18,7 @@ Project.create({
   Users can host and book homes for vacation or travel. <br/>
   Utilizes Google Maps API to create a geo-location based search engine.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481593854/Screen_Shot_2016-12-12_at_5.49.25_PM_mdgdkg.png",
-  github_url: "https://github.com/jay-hwang/couchbnb",
+  github_url: "https://github.com/jay-ithiel/couchbnb",
   live_url: "http://www.couchbnb.xyz/#/splash",
   stack: "Ruby on Rails, Postgres, JavaScript, React.js, Redux, CSS"
 })
@@ -30,8 +30,8 @@ Project.create({
   Features a mystery UFO that drops power-up items, upgrading the player's ship. <br/>
   Leverages Object-Oriented Design & inheritance to maintain DRY code and manageability.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1481593853/Screen_Shot_2016-12-12_at_5.49.38_PM_mrrvq7.png",
-  github_url: "https://github.com/jay-hwang/space_invaders/",
-  live_url: "https://jay-hwang.github.io/space_invaders/",
+  github_url: "https://github.com/jay-ithiel/space_invaders/",
+  live_url: "https://jay-ithiel.github.io/space_invaders/",
   stack: "Vanilla JavaScript, HTML5 Canvas, CSS"
 })
 
@@ -42,7 +42,7 @@ Project.create({
   Applies responsive-design, employing media queries to allow access across all devices. <br/>
   Improved load-time by utilizing 3rd party cloud storage.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659985/tackling-trafficking-in-india-_december-2013_-lg_u0htds.jpg",
-  github_url: "https://github.com/jay-hwang/tackling_trafficking",
+  github_url: "https://github.com/jay-ithiel/tackling_trafficking",
   live_url: "http://www.tacklingtrafficking.xyz",
   stack: "Ruby on Rails, Postgres, JavaScript, React.js, Redux, CSS"
 })
@@ -63,7 +63,7 @@ Project.create({
   Merge Sort,
   Topological Sort.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1493431934/algo-ds_gacjfq.jpg",
-  github_url: "https://github.com/jay-hwang/algorithms-data-structures",
+  github_url: "https://github.com/jay-ithiel/algorithms-data-structures",
   live_url: "",
   stack: "Ruby"
 })
@@ -74,7 +74,7 @@ Project.create({
   description: "An automated job application script, built with Ruby & Selenium. <br/>
   Implements keyword matching algorithm to filter and query specified data.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490671817/Screen_Shot_2017-03-27_at_8.29.50_PM_jwbfso.png",
-  github_url: "https://github.com/jay-hwang/pabang",
+  github_url: "https://github.com/jay-ithiel/pabang",
   stack: "Ruby, Selenium"
 })
 
@@ -85,7 +85,7 @@ Project.create({
   Implemented key ActiveRecord functionality, including attr_accessor, attr_reader, attr_writer, ::all, ::find. <br/>
   Features ActiveRecord::Associations",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661548/activerecord_qfxxgm.jpg",
-  github_url: "https://github.com/jay-hwang/active-record",
+  github_url: "https://github.com/jay-ithiel/active-record",
   stack: "Ruby"
 })
 
@@ -100,7 +100,7 @@ Project.create({
   Cookies,
   Custom Router",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490672152/Screen_Shot_2017-03-27_at_8.34.59_PM_ylguwz.png",
-  github_url: "https://github.com/jay-hwang/rails-lite",
+  github_url: "https://github.com/jay-ithiel/rails-lite",
   live_url: "",
   stack: "Ruby"
 })
@@ -112,7 +112,7 @@ Project.create({
   Use Site-Blocker, a Google Chrome extension you can use to block any site at any time. <br/>
   The extension will block the specified sites at the selected times, keeping you focused and productive.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490659657/Screen_Shot_2017-03-27_at_5.01.48_PM_stdtny.png",
-  github_url: "https://github.com/jay-hwang/site-blocker",
+  github_url: "https://github.com/jay-ithiel/site-blocker",
   live_url: "",
   stack: "JavaScript ES6, HTML, CSS"
 })
@@ -124,7 +124,7 @@ Project.create({
   Utilizes Breadth-First-Search for dynamic tile traversal. <br/>
   Coming soon for browsers!",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490658805/minesweeper_v0mzel.png",
-  github_url: "https://github.com/jay-hwang/minesweeper",
+  github_url: "https://github.com/jay-ithiel/minesweeper",
   stack: "Ruby"
 })
 
@@ -135,7 +135,7 @@ Project.create({
   Features custom rendition of Hash Map and Linked List. <br/>
   Implemented hashing function to hash various data types into a deterministic hash.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png",
-  github_url: "https://github.com/jay-hwang/lru_cache",
+  github_url: "https://github.com/jay-ithiel/lru_cache",
   stack: "Ruby"
 })
 

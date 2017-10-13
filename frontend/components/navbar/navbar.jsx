@@ -10,20 +10,20 @@ const Navbar = () => {
   };
   const aboutClick = () => {
     closeHamburgerMenu();
-    $("html, body").animate({ scrollTop: wh - 70 }, 700);
+    $("html, body").animate({ scrollTop: wh - 60 }, 700);
   };
   const skillsClick = () => {
     closeHamburgerMenu();
     let aboutHeight = $('.about').height() + 10;
     // $("html, body").animate({ scrollTop: wh + aboutHeight }, 700);
-    $("html, body").animate({ scrollTop: wh - 70 }, 700);
+    $("html, body").animate({ scrollTop: wh - 60 }, 700);
   };
   const projectsClick = () => {
     closeHamburgerMenu();
     let aboutHeight = $('.about').height() + 10;
     let skillsHeight = $('.skills').height() + 50;
     // $("html, body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
-    $("html, body").animate({ scrollTop: wh + skillsHeight - 70 }, 700);
+    $("html, body").animate({ scrollTop: wh + skillsHeight - 60 }, 700);
   };
 
   const contactClick  = () => {

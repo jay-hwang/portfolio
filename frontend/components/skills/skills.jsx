@@ -4,7 +4,7 @@ const Skills = () => {
   const projectsClick = () => {
     const wh = $(window).height();
     let skillsHeight = $('.skills').height() + 50;
-    $("html, body").animate({ scrollTop: wh + skillsHeight - 70 }, 700);
+    $("html, body").animate({ scrollTop: wh + skillsHeight - 60 }, 700);
   };
 
   return (

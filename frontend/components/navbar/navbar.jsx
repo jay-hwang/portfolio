@@ -79,9 +79,11 @@ const Navbar = () => {
             Home
           </li>
 
-          <li className='navbar-link active' onClick={ aboutClick } id='about-nav'>
-            About
-          </li>
+          {/*
+            <li className='navbar-link active' onClick={ aboutClick } id='about-nav'>
+              About
+            </li>
+          */}
 
           <li className='navbar-link' onClick={ skillsClick } id='skills-nav'>
             Skills

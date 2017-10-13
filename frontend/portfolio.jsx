@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animate project lis
       let aboutHeight = $('.about').height(),
           skillsHeight = $('.skills').height();
-      if (y > wh + aboutHeight + (skillsHeight / 3)) {
+      if (y > wh + (skillsHeight / 3)) {
         $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
       }
     //
 
     // Animate contact icons
       let projectsHeight = $('.projects').height();
-      if (y > wh + aboutHeight + skillsHeight + (projectsHeight / 9)) {
-        $('#contact-icon').animate({ opacity: 1 }, 500);
+      if (y > wh + skillsHeight + (projectsHeight / 5)) {
+        $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
       }
     //
   });

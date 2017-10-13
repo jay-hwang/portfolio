@@ -34,22 +34,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggles Active Navbar link
       const removeActive = () => $('.navbar-link').removeClass('active');
 
-      if (y > (wh * 3 + 200)) {
+      // Without About Component
+      if (y > (wh * 2)) {
         removeActive();
         $('#contact-nav').addClass('active');
       }
-      else if (y > (wh * 3) - 500) {
+      else if (y > (wh * 2) - 300) {
         removeActive();
         $('#projects-nav').addClass('active');
       }
-      else if (y > (wh * 2) - 300) {
+      else if (y >= wh - 71) {
         removeActive();
         $('#skills-nav').addClass('active');
-      }
-      else if (y > wh - 70) {
+        // $('#about-nav').addClass('active');
+      } else {
         removeActive();
-        $('#about-nav').addClass('active');
+        $('#home-nav').addClass('active');
       }
+
+      // With About Component
+      // if (y > (wh * 3 + 200)) {
+      //   removeActive();
+      //   $('#contact-nav').addClass('active');
+      // }
+      // else if (y > (wh * 3) - 500) {
+      //   removeActive();
+      //   $('#projects-nav').addClass('active');
+      // }
+      // else if (y > (wh * 2) - 300) {
+      //   removeActive();
+      //   $('#skills-nav').addClass('active');
+      // }
+      // else if (y > wh - 70) {
+      //   removeActive();
+      //   $('#about-nav').addClass('active');
+      // }
     //
 
     // Animate about components
@@ -65,15 +84,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animate project lis
       let aboutHeight = $('.about').height(),
           skillsHeight = $('.skills').height();
-      if (y > wh + aboutHeight + (skillsHeight / 3)) {
+      if (y > wh + (skillsHeight / 3)) {
         $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
       }
     //
 
     // Animate contact icons
       let projectsHeight = $('.projects').height();
-      if (y > wh + aboutHeight + skillsHeight + (projectsHeight / 9)) {
-        $('#contact-icon').animate({ opacity: 1 }, 500);
+      if (y > wh + skillsHeight + (projectsHeight / 5)) {
+        $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
       }
     //
   });

@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   padding: 40px 0;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 60px);
   height: auto;
   background-color: #f7f7f7;
   position: relative;
@@ -82,7 +82,8 @@ $see-skills-color: #333;
     padding-right: 0;
   }
   .about p {
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: .8em;
     line-height: 25px;
   }
 }
@@ -105,7 +106,8 @@ $see-skills-color: #333;
 // For Desktop
 @media screen and (min-width: 1200px) {
   .about p {
-    font-size: 17px;
+    // font-size: 14px;
+    font-size: .95em;
     line-height: 25px;
   }
   .see-skills {

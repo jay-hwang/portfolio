@@ -13,7 +13,7 @@ const App = () => (
   <div className='root-container'>
     <Navbar/>
     <Home/>
-    <About/>
+    {/* <About/> */}
     <Skills/>
     <ProjectsContainer/>
     <Contact/>

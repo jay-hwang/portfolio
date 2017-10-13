@@ -19,7 +19,7 @@ const About = () => {
         </p>
 
         <p>
-          When I'm not busy telling computers what to do, you can find me playing music or carving mountains on a motorcycle. I also enjoy taking apart machines & electronics to see how they work.
+          When I'm not busy telling computers what to do, you can find me playing music or riding a motorcycle
         </p>
 
         <p>

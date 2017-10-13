@@ -10,25 +10,29 @@ const Navbar = () => {
   };
   const aboutClick = () => {
     closeHamburgerMenu();
-    $("html, body").animate({ scrollTop: wh - 70 }, 700);
+    $("html, body").animate({ scrollTop: wh - 60 }, 700);
   };
   const skillsClick = () => {
     closeHamburgerMenu();
     let aboutHeight = $('.about').height() + 10;
-    $("html, body").animate({ scrollTop: wh + aboutHeight }, 700);
+    // $("html, body").animate({ scrollTop: wh + aboutHeight }, 700);
+    $("html, body").animate({ scrollTop: wh - 60 }, 700);
   };
   const projectsClick = () => {
     closeHamburgerMenu();
     let aboutHeight = $('.about').height() + 10;
     let skillsHeight = $('.skills').height() + 50;
-    $("html, body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
+    // $("html, body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
+    $("html, body").animate({ scrollTop: wh + skillsHeight - 60 }, 700);
   };
+
   const contactClick  = () => {
     closeHamburgerMenu();
-    let about = $('.about').height() + 10;
+    // let about = $('.about').height() + 10;
     let skills = $('.skills').height() + 50;
     let projects = $('.projects').height();
-    $("html, body").animate({ scrollTop: wh + about + skills + projects }, 700);
+    // $("html, body").animate({ scrollTop: wh + about + skills + projects }, 700);
+    $("html, body").animate({ scrollTop: wh + skills + projects }, 700);
   };
 
   return (
@@ -39,12 +43,14 @@ const Navbar = () => {
 
       <ul className='navbar-links'>
         <li className='navbar-link' onClick={ homeClick } id='home-nav'>
-          Home
-        </li>
-
-        <li className='navbar-link active' onClick={ aboutClick } id='about-nav'>
           About
         </li>
+
+        {/*
+          <li className='navbar-link active' onClick={ aboutClick } id='about-nav'>
+            About
+          </li>
+        */}
 
         <li className='navbar-link' onClick={ skillsClick } id='skills-nav'>
           Skills
@@ -73,9 +79,11 @@ const Navbar = () => {
             Home
           </li>
 
-          <li className='navbar-link active' onClick={ aboutClick } id='about-nav'>
-            About
-          </li>
+          {/*
+            <li className='navbar-link active' onClick={ aboutClick } id='about-nav'>
+              About
+            </li>
+          */}
 
           <li className='navbar-link' onClick={ skillsClick } id='skills-nav'>
             Skills

@@ -3,9 +3,8 @@ import React from 'react';
 const Skills = () => {
   const projectsClick = () => {
     const wh = $(window).height();
-    let aboutHeight = $('.about').height() + 10;
     let skillsHeight = $('.skills').height() + 50;
-    $("html, body").animate({ scrollTop: wh + aboutHeight + skillsHeight }, 700);
+    $("html, body").animate({ scrollTop: wh + skillsHeight - 60 }, 700);
   };
 
   return (

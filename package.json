@@ -28,17 +28,17 @@
   "scripts": {
     "postinstall": "./node_modules/.bin/webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack -w"
+    "start": "webpack -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jay-hwang/portfolio.git"
+    "url": "git+https://github.com/jay-ithiel/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jay-hwang/portfolio/issues"
+    "url": "https://github.com/jay-ithiel/portfolio/issues"
   },
-  "homepage": "https://github.com/jay-hwang/portfolio#readme"
+  "homepage": "https://github.com/jay-ithiel/portfolio#readme"
 }

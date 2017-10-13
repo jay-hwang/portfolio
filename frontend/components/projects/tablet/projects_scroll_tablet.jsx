@@ -44,7 +44,8 @@ const ProjectsScrollTablet = ({ projectLis }) => {
       <ProjectsScroll
         projectLis={ projectLis }
         scrollRight={ scrollRight }
-        scrollLeft={ scrollLeft } />
+        scrollLeft={ scrollLeft }
+      />
     </div>
   );
 };

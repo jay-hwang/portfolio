@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
 
+  setInterval(function() {
+    http.get("http://jayportfolio.herokuapp.com");
+  }, 300000); // every 5 minutes (300000)
+
   let y, top;
   $(window).scroll(function() {
     const wh = $(window).height();

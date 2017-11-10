@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='logo'>
-        <span className='self-name'>Jay Hwang</span>
+        <span className='self-name'>Jay Ithiel</span>
       </div>
 
       <ul className='navbar-links'>

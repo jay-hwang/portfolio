@@ -143,7 +143,7 @@ $(window).load(() => {
   // Changes Home Component background img
     let homeImgUrls = [
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
+      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg'
     ];
@@ -151,7 +151,7 @@ $(window).load(() => {
     setInterval(() => {
         $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
         i++;
-        if (i > 3) { i = 0; }
+        if (i > 2) { i = 0; }
     // }, 3881.5 );
     // }, 3940);
     }, 4000);
@@ -162,8 +162,9 @@ $(window).load(() => {
       strings: [
           "Hello! I'm Jay",
           "I'm a software engineer",
-          "I live in San Francisco",
-          "And love to write music"
+          "I tell computers what to do",
+          // "I live in San Francisco",
+          // "And love to write music"
       ],
       typeSpeed: 11,
       loop: true,

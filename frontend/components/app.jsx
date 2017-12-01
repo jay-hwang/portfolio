@@ -11,6 +11,13 @@ import Footer from './footer/footer';
 
 const App = () => (
   <div className='root-container'>
+    <div id='loadScreen'>
+      <div className='loader'>
+        <div id='largeBox'></div>
+        <div id='smallBox'></div>
+      </div>
+    </div>
+    
     <Navbar/>
     <Home/>
     {/* <About/> */}

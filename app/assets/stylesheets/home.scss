@@ -8,31 +8,35 @@
   justify-content: center;
   align-items: center;
 
-  background-image: url('https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg');
+  // background-image: url('https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg');
+  background-image: url('https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   transition: background .2s ease-in-out;
 }
 
+$typedFontSize: 6vw;
+
 .home-intro {
-  font-size: 8vw;
-  // font-size: 3em;
-  font-weight: 900;
+  font-size: $typedFontSize;
+  // font-weight: 900;
+  font-weight: 700;
+  letter-spacing: .1em;
   color: #fff;
   height: 70px;
 }
 
-#home-intro-text {
-  font-size: 1.5vw;
-  font-weight: 700;
+#home-name {
+  font-size: 10vw;
   color: #fff;
-  // height: 50px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .typed-cursor {
-  font-size: 8vw;
-  // font-size: 1em;
+  font-size: $typedFontSize;
   font-weight: 900;
   color: #fff;
   height: 70px;
@@ -57,12 +61,20 @@
 
 @media screen and (min-width: 800px) {
   .home-intro, .typed-cursor {
-    font-size: 3em;
+    font-size: 2em;
+  }
+
+  #home-name {
+    font-size: 4em;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .home-intro, .typed-cursor {
-    font-size: 4em;
+    font-size: 3em;
+  }
+
+  #home-name {
+    font-size: 5em;
   }
 }

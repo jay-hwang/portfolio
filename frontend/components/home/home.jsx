@@ -11,12 +11,8 @@ const Home = () => {
       <div className='veil'></div>
 
       <div className='z1'>
-        {/*
-          <p id='home-intro-text'>
-            <strike>Professional</strike> Food Critic. Musician. Software Engineer.
-          </p>
-          <h1><span className='home-intro'>Jay Ithiel</span></h1>
-        */}
+        <h1 id='home-name'>JAY ITHIEL</h1>
+
         <h1><span className='home-intro'></span></h1>
         <Connect />
         <div className='arrow-bounce-box' onClick={ arrowBounceClick }>

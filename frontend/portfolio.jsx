@@ -42,12 +42,12 @@ $(window).load(() => {
 
   // Changes Home Component background img
     let homeImgUrls = [
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
-      'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
-      'http://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg'
+      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
+      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
+      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
     ];
     let i = 0;
     let len = homeImgUrls.length - 1;
@@ -55,27 +55,21 @@ $(window).load(() => {
         $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
         i++;
         if (i > len) { i = 0; }
-    }, 3750 );
-    // }, 4000);
+    // }, 3750 );
+    }, 4000);
   //
 
   // Home Component typing animation
     // $("#home-intro-text").typed({
     $(".home-intro").typed({
       strings: [
-          // "Musician",
-          // "Humanitarian",
-          // "Software Engineer",
-          "Hello! I'm Jay",
-          "I'm a software engineer",
-          // "I write music",
-          // "Creativity is my passion"
-          // "I live in San Francisco",
-          // "And love to write music"
+        "Software Engineer",
+        "Music Producer",
+        "Recovering Food Addict"
       ],
       typeSpeed: 11,
       loop: true,
-      backDelay: 2000
+      backDelay: 2300
     });
     setInterval(() => {
       $('.typed-cursor').fadeOut(350);

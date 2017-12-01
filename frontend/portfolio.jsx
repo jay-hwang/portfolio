@@ -43,15 +43,18 @@ $(window).load(() => {
   // Changes Home Component background img
     let homeImgUrls = [
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
-      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
+      'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
+      'http://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg'
     ];
     let i = 0;
+    let len = homeImgUrls.length - 1;
     setInterval(() => {
         $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
         i++;
-        if (i > 2) { i = 0; }
+        if (i > len) { i = 0; }
     }, 3750 );
     // }, 4000);
   //
@@ -65,7 +68,8 @@ $(window).load(() => {
           // "Software Engineer",
           "Hello! I'm Jay",
           "I'm a software engineer",
-          "I talk to computers"
+          // "I write music",
+          // "Creativity is my passion"
           // "I live in San Francisco",
           // "And love to write music"
       ],
@@ -81,10 +85,7 @@ $(window).load(() => {
     }, 700);
   //
 
-
-
   $("#loadScreen").fadeOut()
-  // setTimeout(() => $("#loadScreen").fadeOut(), 700);
 });
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -3,9 +3,93 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => { $("#loadScreen").fadeOut(); }, 2500);
 
+$(window).load(() => {
+  // Animates Home Component arrow bounce
+    const animateArrowBounce = () => {
+      $('.arrow-bounce').animate({ bottom: 0 }, 400)
+                        .animate({ bottom: 45 }, 400)
+                        .animate({ bottom: 0 }, 400)
+                        .animate({ bottom: 20 }, 400)
+                        .animate({ bottom: 10 }, 400);
+    };
+  //
+
+  // Animates Projects Scroll Arrow Image
+    const getArrow = () => $('.arrow-img');
+    const animateArrowGrowth = () => {
+      let $arrowImg = getArrow();
+      const h = $arrowImg.height();
+      const w = $arrowImg.width();
+      const h10 = h * .2;
+      const w10 = w * .2;
+      $arrowImg.animate({ height: h - h10, width: w - w10 }, 300)
+               .animate({ height: h + h10, width: w + w10 }, 300)
+               .animate({ height: h - h10, width: w - w10 }, 300)
+               .animate({ height: h      , width: w       }, 300);
+    };
+    setInterval(() => {
+    }, 2500);
+  //
+
+  // Repeats arrow animation
+  animateArrowBounce();
+  // animateArrowGrowth();
+  setInterval(() => {
+    animateArrowBounce();
+    // animateArrowGrowth();
+  }, 3500);
+
+  // Changes Home Component background img
+    let homeImgUrls = [
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
+      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg'
+    ];
+    let i = 0;
+    setInterval(() => {
+        $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
+        i++;
+        if (i > 2) { i = 0; }
+    }, 3750 );
+    // }, 4000);
+  //
+
+  // Home Component typing animation
+    // $("#home-intro-text").typed({
+    $(".home-intro").typed({
+      strings: [
+          // "Musician",
+          // "Humanitarian",
+          // "Software Engineer",
+          "Hello! I'm Jay",
+          "I'm a software engineer",
+          "I talk to computers"
+          // "I live in San Francisco",
+          // "And love to write music"
+      ],
+      typeSpeed: 11,
+      loop: true,
+      backDelay: 2000
+    });
+    setInterval(() => {
+      $('.typed-cursor').fadeOut(350);
+      setTimeout(() => {
+        $('.typed-cursor').fadeIn(350);
+      }, 350);
+    }, 700);
+  //
+
+
+
+  $("#loadScreen").fadeOut()
+  // setTimeout(() => $("#loadScreen").fadeOut(), 700);
+});
+
+///////////////////////////////////////////////////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', () => {
   const main = document.getElementById('root');
 
   let store;
@@ -16,9 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
 
-  setInterval(function() {
-    http.get("http://jayportfolio.herokuapp.com");
-  }, 300000); // every 5 minutes (300000)
+  // setInterval(function() {
+  //   http.get("http://jayportfolio.herokuapp.com");
+  // }, 300000); // every 5 minutes (300000)
 
   let y, top;
   $(window).scroll(function() {
@@ -104,79 +188,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   ReactDOM.render(<Root store={store} />, main);
-});
-
-$(window).load(() => {
-  // Animates Home Component arrow bounce
-    const animateArrowBounce = () => {
-      $('.arrow-bounce').animate({ bottom: 0 }, 400)
-                        .animate({ bottom: 45 }, 400)
-                        .animate({ bottom: 0 }, 400)
-                        .animate({ bottom: 20 }, 400)
-                        .animate({ bottom: 10 }, 400);
-    };
-  //
-
-  // Animates Projects Scroll Arrow Image
-    const getArrow = () => $('.arrow-img');
-    const animateArrowGrowth = () => {
-      let $arrowImg = getArrow();
-      const h = $arrowImg.height();
-      const w = $arrowImg.width();
-      const h10 = h * .2;
-      const w10 = w * .2;
-      $arrowImg.animate({ height: h - h10, width: w - w10 }, 300)
-               .animate({ height: h + h10, width: w + w10 }, 300)
-               .animate({ height: h - h10, width: w - w10 }, 300)
-               .animate({ height: h      , width: w       }, 300);
-    };
-    setInterval(() => {
-    }, 2500);
-  //
-
-  // Repeats arrow animation
-  animateArrowBounce();
-  // animateArrowGrowth();
-  setInterval(() => {
-    animateArrowBounce();
-    // animateArrowGrowth();
-  }, 3500);
-
-  // Changes Home Component background img
-    let homeImgUrls = [
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
-      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493588104/baker-beach-ggb_xf6kxv.jpg',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg'
-    ];
-    let i = 0;
-    setInterval(() => {
-        $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
-        i++;
-        if (i > 2) { i = 0; }
-    // }, 3881.5 );
-    // }, 3940);
-    }, 4000);
-  //
-
-  // Home Component typing animation
-    $(".home-intro").typed({
-      strings: [
-          "Hello! I'm Jay",
-          "I'm a software engineer",
-          "I tell computers what to do",
-          // "I live in San Francisco",
-          // "And love to write music"
-      ],
-      typeSpeed: 11,
-      loop: true,
-      backDelay: 2000
-    });
-    setInterval(() => {
-      $('.typed-cursor').fadeOut(350);
-      setTimeout(() => {
-        $('.typed-cursor').fadeIn(350);
-      }, 350);
-    }, 700);
-  //
 });

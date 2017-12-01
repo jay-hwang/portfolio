@@ -4,6 +4,8 @@ import Root from './components/root';
 import configureStore from './store/store';
 
 document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => { $("#loadScreen").fadeOut(); }, 2500);
+
   const main = document.getElementById('root');
 
   let store;

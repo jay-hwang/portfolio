@@ -42,12 +42,12 @@ $(window).load(() => {
 
   // Changes Home Component background img
     let homeImgUrls = [
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
-      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
-      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
-      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
+      'http://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
+      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
+      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
     ];
     let i = 0;
     let len = homeImgUrls.length - 1;
@@ -63,13 +63,12 @@ $(window).load(() => {
     // $("#home-intro-text").typed({
     $(".home-intro").typed({
       strings: [
-        "Software Engineer",
-        "Music Producer",
-        "Recovering Food Addict"
+        "Hello! I'm Jay",
+        "I'm a software engineer"
       ],
       typeSpeed: 11,
       loop: true,
-      backDelay: 2300
+      backDelay: 2150
     });
     setInterval(() => {
       $('.typed-cursor').fadeOut(350);

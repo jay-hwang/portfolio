@@ -1,33 +1,31 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import Project from './project';
-import ProjectsScrollMobile from './mobile/projects_scroll_mobile';
-import ProjectsScrollTablet from './tablet/projects_scroll_tablet';
-import ProjectsScrollDesktop from './desktop/projects_scroll_desktop';
-import ProjectsScrollDesktopLarge from './desktop/projects_scroll_desktop_large';
-import Carousel from '../carousel/carousel';
 
 const Projects = ({ projects }) => {
   let id = null;
   const projectLis = Object.keys(projects).map((key, i) => {
     id = `project${i}`;
     return (
-      <div key={key} className='project-li transparent' id={id}>
+      <li key={key} className='wow fadeInUp' data-wow-offset="-20" data-wow-duration="1s" data-wow-delay="0.3s" id={id}>
         <Project project={projects[key]} />
-      </div>
+      </li>
     );
   });
 
   return (
     <section className='projects'>
       <h3 className='title' id='projects-title'>PROJECTS</h3>
-
-      <ProjectsScrollMobile projectLis={ projectLis } />
-      <ProjectsScrollTablet projectLis={ projectLis } />
-      <ProjectsScrollDesktop projectLis={ projectLis } />
-      <ProjectsScrollDesktopLarge projectLis={ projectLis } />
+      <ul className='projects-ul'>
+        { projectLis }
+      </ul>
     </section>
   );
 };
-// <Carousel items={ projects } />
 
-export default Projects;
+const mapStateToProps = state => ({
+  projects: state.projects.index
+});
+
+export default connect(mapStateToProps, null)(Projects);

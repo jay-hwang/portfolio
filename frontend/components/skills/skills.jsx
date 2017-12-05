@@ -14,12 +14,12 @@ const Skills = () => {
         <div className="three-d-cube">
           <div className="cube-container">
             <div id="cube">
-              <figure className="front">Rails</figure>
+              <figure className="front">Ruby on Rails</figure>
               <figure className="back">SQL</figure>
               <figure className="right">JavaScript</figure>
               <figure className="left">ReactJS</figure>
-              <figure className="top">Python</figure>
-              <figure className="bottom">HTML / CSS</figure>
+              <figure className="top">HTML5</figure>
+              <figure className="bottom">CSS3</figure>
             </div>
           </div>
         </div>

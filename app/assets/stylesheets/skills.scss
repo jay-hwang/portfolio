@@ -1,6 +1,7 @@
+$dark: #1f1f1f;
 .skills-box {
   position: relative;
-  background-color: #222;
+  background-color: $dark;
 }
 
 .skills-bg {
@@ -32,6 +33,10 @@
   text-align: center;
   padding-top: 20vh;
   transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
 }
 
 .cube-container {
@@ -204,6 +209,9 @@
   font-size: 17px;
   cursor: pointer;
   transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
 
   background-color: transparent;
   box-sizing: border-box;
@@ -213,7 +221,7 @@
 
 #view-projects-btn:hover {
   background-color: #fff;
-  color: #333;
+  color: #222;
 }
 
 // Shorter height screens

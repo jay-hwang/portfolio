@@ -45,7 +45,7 @@
   letter-spacing: 1.5px;
 }
 
-$see-skills-color: #333;
+$see-skills-color: #222;
 
 .see-skills {
   padding: 14px 20px;
@@ -53,9 +53,12 @@ $see-skills-color: #333;
   border: 1px solid $see-skills-color;
   border-radius: 30px;
 
-  color: #333;
+  color: #222;
   font-size: 17px;
   transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
   background-color: #fff;
 }
 

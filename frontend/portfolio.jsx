@@ -15,39 +15,20 @@ $(window).load(() => {
     };
   //
 
-  // Animates Projects Scroll Arrow Image
-    const getArrow = () => $('.arrow-img');
-    const animateArrowGrowth = () => {
-      let $arrowImg = getArrow();
-      const h = $arrowImg.height();
-      const w = $arrowImg.width();
-      const h10 = h * .2;
-      const w10 = w * .2;
-      $arrowImg.animate({ height: h - h10, width: w - w10 }, 300)
-               .animate({ height: h + h10, width: w + w10 }, 300)
-               .animate({ height: h - h10, width: w - w10 }, 300)
-               .animate({ height: h      , width: w       }, 300);
-    };
-    setInterval(() => {
-    }, 2500);
-  //
-
-  // Repeats arrow animation
+  // Repeats arrow bounce animation
   animateArrowBounce();
-  // animateArrowGrowth();
   setInterval(() => {
     animateArrowBounce();
-    // animateArrowGrowth();
   }, 3500);
 
   // Changes Home Component background img
     let homeImgUrls = [
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
-      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
-      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
-      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
-      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1494307445/engineer_wel7wz.png',
+      'http://res.cloudinary.com/ddgtwtbre/image/upload/v1481423849/portfolio_background2_i4tzx5.jpg',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
+      'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
+      // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
+      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
     ];
     let i = 0;
     let len = homeImgUrls.length - 1;
@@ -55,21 +36,18 @@ $(window).load(() => {
         $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
         i++;
         if (i > len) { i = 0; }
-    // }, 3750 );
     }, 4000);
   //
 
   // Home Component typing animation
-    // $("#home-intro-text").typed({
     $(".home-intro").typed({
       strings: [
-        "Software Engineer",
-        "Music Producer",
-        "Recovering Food Addict"
+        "Hello! I'm Jay",
+        "I'm a software engineer"
       ],
       typeSpeed: 11,
       loop: true,
-      backDelay: 2300
+      backDelay: 2150
     });
     setInterval(() => {
       $('.typed-cursor').fadeOut(350);
@@ -94,10 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-
-  // setInterval(function() {
-  //   http.get("http://jayportfolio.herokuapp.com");
-  // }, 300000); // every 5 minutes (300000)
 
   let y, top;
   $(window).scroll(function() {
@@ -132,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         removeActive();
         $('#skills-nav').addClass('active');
         // $('#about-nav').addClass('active');
-      } else {
+      }
+      else {
         removeActive();
         $('#home-nav').addClass('active');
       }
@@ -157,27 +132,28 @@ document.addEventListener('DOMContentLoaded', () => {
     //
 
     // Animate about components
-      if (y > wh / 2 - 200) {
-        $('.about-img-scrollIn').removeClass('transparent');
-        $('.about-img').animate({ top: -80, opacity: 1 }, 500);
-        setTimeout(() => {
-          $('.about-p').animate({ top: -80, opacity: 1 }, 500);
-        }, 300);
-      }
+      // if (y > wh / 2 - 200) {
+      //   $('.about-img-scrollIn').removeClass('transparent');
+      //   $('.about-img').animate({ top: -80, opacity: 1 }, 500);
+      //   setTimeout(() => {
+      //     $('.about-p').animate({ top: -80, opacity: 1 }, 500);
+      //   }, 300);
+      // }
     //
 
-    // Animate project lis
-      let aboutHeight = $('.about').height(),
-          skillsHeight = $('.skills').height();
-      if (y > wh + (skillsHeight / 3)) {
-        $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
-      }
-    //
 
     // Animate contact icons
+      let aboutHeight = $('.about').height();
+      let skillsHeight = $('.skills').height();
       let projectsHeight = $('.projects').height();
-      if (y > wh + skillsHeight + (projectsHeight / 5)) {
+      if (y > skillsHeight + projectsHeight + (wh / 2.5)) {
         $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
+        setTimeout(() => {
+          $('#contact-icon2').animate({ top: -25, opacity: 1 }, 500);
+        }, 325);
+        setTimeout(() => {
+          $('#contact-icon3').animate({ top: -25, opacity: 1 }, 500);
+        }, 750);
       }
     //
   });

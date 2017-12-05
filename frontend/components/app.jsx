@@ -5,7 +5,7 @@ import Navbar from './navbar/navbar';
 import Home from './home/home';
 import About from './about/about';
 import Skills from './skills/skills';
-import ProjectsContainer from './projects/projects_container';
+import Projects from './projects/projects';
 import Contact from './contact/contact';
 import Footer from './footer/footer';
 
@@ -17,12 +17,12 @@ const App = () => (
         <div id='smallBox'></div>
       </div>
     </div>
-    
+
     <Navbar/>
     <Home/>
     {/* <About/> */}
     <Skills/>
-    <ProjectsContainer/>
+    <Projects/>
     <Contact/>
     <Footer/>
   </div>

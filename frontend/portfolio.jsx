@@ -43,7 +43,7 @@ $(window).load(() => {
     $(".home-intro").typed({
       strings: [
         "Hello! I'm Jay",
-        "I'm a software engineer"
+        "Software Engineer & Music Producer"
       ],
       typeSpeed: 11,
       loop: true,
@@ -150,10 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
         $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
         setTimeout(() => {
           $('#contact-icon2').animate({ top: -25, opacity: 1 }, 500);
-        }, 325);
+        }, 250);
         setTimeout(() => {
           $('#contact-icon3').animate({ top: -25, opacity: 1 }, 500);
-        }, 750);
+        }, 500);
       }
     //
   });

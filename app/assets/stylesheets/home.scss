@@ -54,14 +54,17 @@ $typedFontSize: 6vw;
 }
 
 .arrow-bounce {
-  position: absolute;
-  bottom: 10px;
   height: 17px;
   width: 30px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
   transition: all ease-in-out;
-  -webkit-transition: all ease-in;
-  -moz-transition: all ease-in;
-  -o-transition: all ease-in;
+  -webkit-transition: all ease-in-out;
+  -moz-transition: all ease-in-out;
+  -o-transition: all ease-in-out;
 }
 
 @media screen and (min-width: 800px) {

@@ -15,29 +15,10 @@ $(window).load(() => {
     };
   //
 
-  // Animates Projects Scroll Arrow Image
-    const getArrow = () => $('.arrow-img');
-    const animateArrowGrowth = () => {
-      let $arrowImg = getArrow();
-      const h = $arrowImg.height();
-      const w = $arrowImg.width();
-      const h10 = h * .2;
-      const w10 = w * .2;
-      $arrowImg.animate({ height: h - h10, width: w - w10 }, 300)
-               .animate({ height: h + h10, width: w + w10 }, 300)
-               .animate({ height: h - h10, width: w - w10 }, 300)
-               .animate({ height: h      , width: w       }, 300);
-    };
-    setInterval(() => {
-    }, 2500);
-  //
-
-  // Repeats arrow animation
+  // Repeats arrow bounce animation
   animateArrowBounce();
-  // animateArrowGrowth();
   setInterval(() => {
     animateArrowBounce();
-    // animateArrowGrowth();
   }, 3500);
 
   // Changes Home Component background img
@@ -55,12 +36,10 @@ $(window).load(() => {
         $('.home').css('background-image', `url('${homeImgUrls[i]}')`);
         i++;
         if (i > len) { i = 0; }
-    // }, 3750 );
     }, 4000);
   //
 
   // Home Component typing animation
-    // $("#home-intro-text").typed({
     $(".home-intro").typed({
       strings: [
         "Hello! I'm Jay",
@@ -93,10 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-
-  // setInterval(function() {
-  //   http.get("http://jayportfolio.herokuapp.com");
-  // }, 300000); // every 5 minutes (300000)
 
   let y, top;
   $(window).scroll(function() {
@@ -131,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         removeActive();
         $('#skills-nav').addClass('active');
         // $('#about-nav').addClass('active');
-      } else {
+      }
+      else {
         removeActive();
         $('#home-nav').addClass('active');
       }
@@ -156,20 +132,22 @@ document.addEventListener('DOMContentLoaded', () => {
     //
 
     // Animate about components
-      if (y > wh / 2 - 200) {
-        $('.about-img-scrollIn').removeClass('transparent');
-        $('.about-img').animate({ top: -80, opacity: 1 }, 500);
-        setTimeout(() => {
-          $('.about-p').animate({ top: -80, opacity: 1 }, 500);
-        }, 300);
-      }
+      // if (y > wh / 2 - 200) {
+      //   $('.about-img-scrollIn').removeClass('transparent');
+      //   $('.about-img').animate({ top: -80, opacity: 1 }, 500);
+      //   setTimeout(() => {
+      //     $('.about-p').animate({ top: -80, opacity: 1 }, 500);
+      //   }, 300);
+      // }
     //
 
     // Animate project lis
-      let aboutHeight = $('.about').height(),
-          skillsHeight = $('.skills').height();
-      if (y > wh + (skillsHeight / 3)) {
-        $('.project-li').animate({ marginLeft: 0, opacity: 1 }, 500);
+      // let aboutHeight = $('.about').height();
+      // if y > homeHeight + skillsHeight - half window height
+      //
+      let skillsHeight = $('.skills').height();
+      if (y > wh + (skillsHeight / 10)) {
+        $('.project-li').animate({ marginBottom: 0, opacity: 1 }, 1500);
       }
     //
 

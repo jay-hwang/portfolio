@@ -33,6 +33,10 @@ $dark: #1f1f1f;
   text-align: center;
   padding-top: 20vh;
   transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
 }
 
 .cube-container {
@@ -204,7 +208,10 @@ $dark: #1f1f1f;
   color: #fff;
   font-size: 17px;
   cursor: pointer;
-  transition: all .15s ease-in;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
 
   background-color: transparent;
   box-sizing: border-box;

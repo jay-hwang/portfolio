@@ -54,7 +54,10 @@ $light-font: #eee;
   justify-content: center;
   align-items: center;
 
-  transition: filter .15s ease-in;
+  transition: all .15s ease-in;
+  -webkit-transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  -o-transition: all .15s ease-in;
 }
 
 .app-content {
@@ -85,7 +88,10 @@ $light-font: #eee;
 
 .blur {
   filter: blur(4px);
-  transition: filter .15s ease-in;
+  transition: all .15s ease-in;
+  -webkit-transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  -o-transition: all .15s ease-in;
 }
 
 .hide {

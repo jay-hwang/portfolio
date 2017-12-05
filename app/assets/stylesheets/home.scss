@@ -8,19 +8,20 @@
   justify-content: center;
   align-items: center;
 
-  // background-image: url('https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg');
   background-image: url('https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  transition: background .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
 }
 
 $typedFontSize: 6vw;
 
 .home-intro {
   font-size: $typedFontSize;
-  // font-weight: 900;
   font-weight: 700;
   letter-spacing: .1em;
   color: #fff;
@@ -57,6 +58,10 @@ $typedFontSize: 6vw;
   bottom: 10px;
   height: 17px;
   width: 30px;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
 }
 
 @media screen and (min-width: 800px) {

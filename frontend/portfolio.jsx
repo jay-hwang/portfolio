@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let aboutHeight = $('.about').height();
       let skillsHeight = $('.skills').height();
       let projectsHeight = $('.projects').height();
-      if (y > skillsHeight + projectsHeight + (wh / 2)) {
+      if (y > skillsHeight + projectsHeight + (wh / 2.5)) {
         $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
         setTimeout(() => {
           $('#contact-icon2').animate({ top: -25, opacity: 1 }, 500);

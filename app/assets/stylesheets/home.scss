@@ -20,25 +20,30 @@
 
 $typedFontSize: 6vw;
 
-.home-intro {
-  font-size: $typedFontSize;
-  font-weight: 700;
-  letter-spacing: .1em;
-  color: #fff;
-  height: 70px;
-}
-
 #home-name {
   font-size: 10vw;
   color: #fff;
   text-align: center;
-  font-weight: 900;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.skinny {
+  font-weight: 300;
+  margin-right: .3em;
+}
+
+.home-intro {
+  font-size: $typedFontSize;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: #fff;
+  height: 70px;
 }
 
 .typed-cursor {
   font-size: $typedFontSize;
-  font-weight: 900;
+  font-weight: 700;
   color: #fff;
   height: 70px;
 }
@@ -76,7 +81,7 @@ $typedFontSize: 6vw;
 
 @media screen and (min-width: 1200px) {
   .home-intro, .typed-cursor {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   #home-name {

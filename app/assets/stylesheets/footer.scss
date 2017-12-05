@@ -7,4 +7,22 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
+  position: relative;
+}
+
+#credit {
+  position: absolute;
+  bottom: 3vh;
+  right: 2vw;
+
+  font-size: 14px;
+  color: #eee;
+}
+
+#credit a {
+  color: #75d48e;
+}
+
+#credit a:hover {
+  text-decoration: underline;
 }

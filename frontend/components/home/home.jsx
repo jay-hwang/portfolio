@@ -11,10 +11,7 @@ const Home = () => {
       <div className='veil'></div>
 
       <div className='z1'>
-        <h1 id='home-name'>
-          <span className='skinny'>JAY</span>
-          ITHIEL
-        </h1>
+        <h1 id='home-name'>JAY ITHIEL</h1>
 
         <h1><span className='home-intro'></span></h1>
         <Connect />

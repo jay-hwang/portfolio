@@ -30,7 +30,7 @@ $typedFontSize: 6vw;
 
 .home-intro {
   font-size: $typedFontSize;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: .05em;
   color: #fff;
   height: 70px;
@@ -58,10 +58,10 @@ $typedFontSize: 6vw;
   bottom: 10px;
   height: 17px;
   width: 30px;
-  transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
+  transition: all ease-in-out;
+  -webkit-transition: all ease-in;
+  -moz-transition: all ease-in;
+  -o-transition: all ease-in;
 }
 
 @media screen and (min-width: 800px) {
@@ -76,7 +76,7 @@ $typedFontSize: 6vw;
 
 @media screen and (min-width: 1200px) {
   .home-intro, .typed-cursor {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 
   #home-name {

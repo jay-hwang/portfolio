@@ -28,7 +28,6 @@ $(window).load(() => {
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493491092/Screen_Shot_2017-04-27_at_6.21.58_PM_ngf33c.png',
       'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493857064/grand-canyon_pmefu7.jpg',
       // 'https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg',
-      // 'http://res.cloudinary.com/ddgtwtbre/image/upload/v1493856732/IMG_6523-long_g3ob6n.jpg',
     ];
     let i = 0;
     let len = homeImgUrls.length - 1;
@@ -42,19 +41,19 @@ $(window).load(() => {
   // Home Component typing animation
     $(".home-intro").typed({
       strings: [
-        "Hello! I'm Jay",
-        "Software Engineer & Music Producer"
+        "Hi! I'm Jay",
+        "Software Engineer and Music Producer",
       ],
-      typeSpeed: 11,
+      typeSpeed: 12,
       loop: true,
-      backDelay: 2150
+      backDelay: 2500
     });
     setInterval(() => {
-      $('.typed-cursor').fadeOut(350);
+      $('.typed-cursor').fadeOut(600);
       setTimeout(() => {
-        $('.typed-cursor').fadeIn(350);
-      }, 350);
-    }, 700);
+        $('.typed-cursor').fadeIn(600);
+      }, 600);
+    }, 1200);
   //
 
   $("#loadScreen").fadeOut()
@@ -147,13 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
       let skillsHeight = $('.skills').height();
       let projectsHeight = $('.projects').height();
       if (y > skillsHeight + projectsHeight + (wh / 2.5)) {
-        $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
+        $('#contact-icon3').animate({ top: -25, opacity: 1 }, 500);
+        setTimeout(() => {
+          $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
+        }, 200);
         setTimeout(() => {
           $('#contact-icon2').animate({ top: -25, opacity: 1 }, 500);
-        }, 250);
-        setTimeout(() => {
-          $('#contact-icon3').animate({ top: -25, opacity: 1 }, 500);
-        }, 500);
+        }, 400);
       }
     //
   });

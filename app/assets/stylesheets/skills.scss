@@ -1,6 +1,7 @@
+$dark: #1f1f1f;
 .skills-box {
   position: relative;
-  background-color: #222;
+  background-color: $dark;
 }
 
 .skills-bg {
@@ -203,7 +204,7 @@
   color: #fff;
   font-size: 17px;
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all .15s ease-in;
 
   background-color: transparent;
   box-sizing: border-box;

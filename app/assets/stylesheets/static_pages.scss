@@ -1,6 +1,5 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$light-font: #eee;
+
 .root-container {
   width: 100%;
   overflow: hidden;
@@ -16,11 +15,10 @@
 }
 
 .title {
-  // font-size: 25px;
   font-size: 1.6em;
   font-weight: 900;
   letter-spacing: 1px;
-  color: #fff;
+  color: $light-font;
   margin-top: 40px;
 }
 
@@ -132,11 +130,6 @@ $dark: #1f1f1f;
   position: fixed;
   top: 0;
   left: 0;
-
-  // width: 100vw;
-  // height: 100vh;
-  //
-  // background-color: rgba(0,0,0,0.8);
   z-index: 10000000000;
 
   background-color: $dark;

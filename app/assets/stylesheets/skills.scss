@@ -121,42 +121,42 @@ $dark: #1f1f1f;
 }
 
 #cube:hover .front {
-  animation: expand-front 0.9s linear;
+  animation: expand-front 1s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
 
 #cube:hover .back {
-  animation: expand-back 0.9s linear;
+  animation: expand-back 1s linear;
   -webkit-animation-fill-mode: forwards;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
 
 #cube:hover .left {
-  animation: expand-left 0.9s linear;
+  animation: expand-left 1s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
 
 #cube:hover .right {
-  animation: expand-right 0.9s linear;
+  animation: expand-right 1s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
 
 #cube:hover .top {
-  animation: expand-top 0.9s linear;
+  animation: expand-top 1s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
 
 #cube:hover .bottom {
-  animation: expand-bottom 0.9s linear;
+  animation: expand-bottom 1s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 2;
   animation-direction: alternate;

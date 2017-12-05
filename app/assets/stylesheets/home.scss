@@ -33,14 +33,20 @@ $typedFontSize: 6vw;
   font-weight: 400;
   letter-spacing: .05em;
   color: #fff;
-  height: 70px;
+  // height: 70px;
+  text-align: center;
+  // display: inline-block;
+  // margin: 0;
+
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .typed-cursor {
   font-size: $typedFontSize;
   font-weight: 700;
   color: #fff;
-  height: 70px;
+  // height: 70px;
 }
 
 .arrow-bounce-box {

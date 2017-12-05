@@ -8,7 +8,7 @@ const Projects = ({ projects }) => {
   const projectLis = Object.keys(projects).map((key, i) => {
     id = `project${i}`;
     return (
-      <li key={key} className='project-li transparent' id={id}>
+      <li key={key} className='wow fadeInUp' data-wow-offset="-20" data-wow-duration="1s" data-wow-delay="0.3s" id={id}>
         <Project project={projects[key]} />
       </li>
     );

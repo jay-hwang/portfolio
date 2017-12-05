@@ -142,13 +142,13 @@ document.addEventListener('DOMContentLoaded', () => {
     //
 
     // Animate project lis
-      // let aboutHeight = $('.about').height();
+      let aboutHeight = $('.about').height();
       // if y > homeHeight + skillsHeight - half window height
       //
       let skillsHeight = $('.skills').height();
-      if (y > wh + (skillsHeight / 10)) {
-        $('.project-li').animate({ marginBottom: 0, opacity: 1 }, 1500);
-      }
+      // if (y > wh + (skillsHeight / 10)) {
+      //   $('.project-li').animate({ marginBottom: 0, opacity: 1 }, 1500);
+      // }
     //
 
     // Animate contact icons

@@ -141,20 +141,19 @@ document.addEventListener('DOMContentLoaded', () => {
       // }
     //
 
-    // Animate project lis
-      let aboutHeight = $('.about').height();
-      // if y > homeHeight + skillsHeight - half window height
-      //
-      let skillsHeight = $('.skills').height();
-      // if (y > wh + (skillsHeight / 10)) {
-      //   $('.project-li').animate({ marginBottom: 0, opacity: 1 }, 1500);
-      // }
-    //
 
     // Animate contact icons
+      let aboutHeight = $('.about').height();
+      let skillsHeight = $('.skills').height();
       let projectsHeight = $('.projects').height();
-      if (y > wh + skillsHeight + (projectsHeight / 5)) {
+      if (y > skillsHeight + projectsHeight + (wh / 2)) {
         $('#contact-icon').animate({ top: -25, opacity: 1 }, 500);
+        setTimeout(() => {
+          $('#contact-icon2').animate({ top: -25, opacity: 1 }, 500);
+        }, 325);
+        setTimeout(() => {
+          $('#contact-icon3').animate({ top: -25, opacity: 1 }, 500);
+        }, 750);
       }
     //
   });

@@ -1,5 +1,11 @@
 $light-font: #eee;
 
+#dark-title { color: #111; }
+.hide { visibility: hidden; }
+.display-none { display: none; }
+.transparent { opacity: 0; }
+.flex-direction-column { flex-direction: column; }
+
 .root-container {
   width: 100%;
   overflow: hidden;
@@ -24,10 +30,6 @@ $light-font: #eee;
   letter-spacing: 1px;
   color: $light-font;
   margin-top: 40px;
-}
-
-#dark-title {
-  color: #111;
 }
 
 .veil {
@@ -98,22 +100,6 @@ $light-font: #eee;
   -o-transition: all .15s ease-in;
 }
 
-.hide {
-  visibility: hidden;
-}
-
-.display-none {
-  display: none;
-}
-
-.transparent {
-  opacity: 0;
-}
-
-.flex-direction-column {
-  flex-direction: column;
-}
-
 .exit {
   height: 27px;
   width: 27px;
@@ -128,8 +114,6 @@ $light-font: #eee;
   right: 10px;
   cursor: pointer;
 }
-
-
 
 $cubeSize: 3em;
 $light: #ECECEC;

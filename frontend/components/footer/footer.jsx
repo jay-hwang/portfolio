@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className='footer'>
       <Connect />
       <h4 id='credit'>
-        Designed & Developed by <a target="_blank" href='https://github.com/jay-ithiel'>Jay Ithiel</a>
+        Designed & Developed by <a target="_blank" href='https://github.com/jay-ithiel/portfolio'>Jay Ithiel</a>
       </h4>
     </footer>
   );

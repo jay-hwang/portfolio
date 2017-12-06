@@ -41,7 +41,7 @@ $(window).load(() => {
   // Home Component typing animation
     $(".home-intro").typed({
       strings: [
-        "Hi! I'm Jay",
+        "Hello World! I'm Jay",
         "Software Engineer and Music Producer",
       ],
       typeSpeed: 12,

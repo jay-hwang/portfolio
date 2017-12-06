@@ -139,6 +139,7 @@ Project.create({
   Coming soon for browsers!",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490658805/minesweeper_v0mzel.png",
   github_url: "https://github.com/jay-ithiel/minesweeper",
+  live_url: "",
   stack: "Ruby"
 })
 
@@ -150,6 +151,7 @@ Project.create({
   Implemented hashing function to hash various data types into a deterministic hash.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1490661634/LRU-Cache-650x296_yrwxsm.png",
   github_url: "https://github.com/jay-ithiel/lru_cache",
+  live_url: "",
   stack: "Ruby"
 })
 
@@ -160,6 +162,7 @@ Project.create({
     Responsive React/Rails app.",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1512593105/portfolio_image_nuinqp.png",
   github_url: "https://github.com/jay-ithiel/portfolio",
+  live_url: "http://www.jayithiel.com",
   stack: "JavaScript, HTML, CSS, ReactJS, Ruby on Rails, Postgres",
 });
 

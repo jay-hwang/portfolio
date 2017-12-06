@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -21,7 +22,7 @@
 $typedFontSize: 7.5vw;
 
 #home-name {
-  font-size: 10vw;
+  font-size: 12vw;
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -68,27 +69,20 @@ $typedFontSize: 7.5vw;
 }
 
 @media screen and (min-width: 430px) {
-  .home-intro, .typed-cursor {
-    font-size: 2em;
-  }
+  .home-intro, .typed-cursor { font-size: 2em; }
+  #home-name { font-size: 10.5vw; }
+}
+
+@media screen and (min-width: 550px) {
+  #home-name { font-size: 9vw; }
 }
 
 @media screen and (min-width: 800px) {
-  .home-intro, .typed-cursor {
-    font-size: 2em;
-  }
-
-  #home-name {
-    font-size: 4em;
-  }
+  .home-intro, .typed-cursor { font-size: 2em; }
+  #home-name { font-size: 4em; }
 }
 
 @media screen and (min-width: 1200px) {
-  .home-intro, .typed-cursor {
-    font-size: 2.5em;
-  }
-
-  #home-name {
-    font-size: 5em;
-  }
+  .home-intro, .typed-cursor { font-size: 2.5em; }
+  #home-name { font-size: 5em; }
 }

@@ -44,9 +44,9 @@ $(window).load(() => {
         "Hello World! I'm Jay",
         "Software Engineer and Music Producer",
       ],
-      typeSpeed: 12,
+      typeSpeed: 7,
       loop: true,
-      backDelay: 2500
+      backDelay: 2200
     });
     setInterval(() => {
       $('.typed-cursor').fadeOut(600);
@@ -139,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
       //   }, 300);
       // }
     //
-
 
     // Animate contact icons
       let aboutHeight = $('.about').height();

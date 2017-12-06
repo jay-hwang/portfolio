@@ -29,13 +29,12 @@ Project.create({
   user_id: 1,
   title: "Space Invaders",
   description: "Web based, browser-version of the classic arcade game: Space Invaders. <br/>
-  Features a mystery UFO that drops power-up items, upgrading the player's spaceship. <br/>
-  Built custom physics engine to handle object movement & collisions <br/>
-  Leveraged Object-Oriented Design principles to maintain DRY code.",
+    Features a mystery UFO that drops power-up items, upgrading the player's spaceship. <br/>
+    <a target='_blank' href='https://jay-ithiel.github.io/space_invaders/'>Click here</a> to play!",
   image_url: "http://res.cloudinary.com/ddgtwtbre/image/upload/c_scale,w_1203/v1511172914/bbbbb_hw0auu.png",
   github_url: "https://github.com/jay-ithiel/space_invaders/",
   live_url: "https://jay-ithiel.github.io/space_invaders/",
-  stack: "Vanilla JavaScript, HTML5 Canvas, CSS"
+  stack: "JavaScript, HTML5 Canvas, CSS"
 })
 
 Project.create({
@@ -153,6 +152,16 @@ Project.create({
   github_url: "https://github.com/jay-ithiel/lru_cache",
   stack: "Ruby"
 })
+
+Project.create({
+  user_id: 1,
+  title: "jayithiel.com",
+  description: "My portfolio website. <br/>
+    Responsive React/Rails app.",
+  image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/v1512593105/portfolio_image_nuinqp.png",
+  github_url: "https://github.com/jay-ithiel/portfolio",
+  stack: "JavaScript, HTML, CSS, ReactJS, Ruby on Rails, Postgres",
+});
 
 
 # Project.create({

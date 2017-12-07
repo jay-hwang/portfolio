@@ -5,12 +5,8 @@ const ProjectLinks = ({ project }) => {
   let liveLinkClassName = project.live_url ? 'project-link-btn' : 'display-none';
   return (
     <div className='project-links'>
-      <div className='project-link-btn'>
-        <a target='_blank' href={ project.github_url } className='project-link'>GitHub</a>
-      </div>
-      <div className={ liveLinkClassName }>
-        <a target='_blank' href={ project.live_url } className='project-link'>Live</a>
-      </div>
+      <a target='_blank' href={ project.github_url } className='project-link-btn'>GitHub</a>
+      <a target='_blank' href={ project.live_url } className={ liveLinkClassName }>Live</a>
     </div>
   );
 };

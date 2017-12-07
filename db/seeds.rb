@@ -21,7 +21,7 @@ Project.create({
   Designed & implemented custom RESTful API",
   image_url: "https://res.cloudinary.com/ddgtwtbre/image/upload/c_scale,w_1015/v1511173041/couchbnb_qdvgps.png",
   github_url: "https://github.com/jay-ithiel/couchbnb",
-  live_url: "http://www.couchbnb.xyz/#/splash",
+  live_url: "http://www.couchbnb.xyz",
   stack: "Ruby on Rails, Postgres, JavaScript, React.js, Redux, CSS"
 })
 

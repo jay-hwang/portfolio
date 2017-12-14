@@ -30,7 +30,7 @@ Project.create({
   title: "Space Invaders",
   description: "Web based, browser-version of the classic arcade game: Space Invaders. <br/>
     Features a mystery UFO that drops power-up items, upgrading the player's spaceship. <br/>
-    <a target='_blank' href='https://jay-ithiel.github.io/space_invaders/'>Click here</a> to play!",
+    Built with JavaScript & HTML5 Canvas",
   image_url: "http://res.cloudinary.com/ddgtwtbre/image/upload/c_scale,w_1203/v1511172914/bbbbb_hw0auu.png",
   github_url: "https://github.com/jay-ithiel/space_invaders/",
   live_url: "https://jay-ithiel.github.io/space_invaders/",

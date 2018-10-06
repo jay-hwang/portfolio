@@ -14,17 +14,16 @@ const Skills = () => {
         <div className="three-d-cube">
           <div className="cube-container">
             <div id="cube">
-              <figure className="front">Ruby on Rails</figure>
-              <figure className="back">SQL</figure>
-              <figure className="right">JavaScript</figure>
-              <figure className="left">ReactJS</figure>
-              <figure className="top">HTML5</figure>
-              <figure className="bottom">CSS3</figure>
+              <figure className="front">JavaScript ES6</figure>
+              <figure className="back">Solidity</figure>
+              <figure className="right">React</figure>
+              <figure className="left">Apollo</figure>
+              <figure className="top">GraphQL</figure>
+              <figure className="bottom">HTML5 & CSS3</figure>
             </div>
           </div>
         </div>
       </section>
-
       <button id="view-projects-btn" onClick={projectsClick}>
         View Projects
       </button>
@@ -34,7 +33,3 @@ const Skills = () => {
 
 export default Skills;
 
-// <div className='skills-bg'>
-//   <img className='skills-bg-img'
-//     src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493503084/nodes-connection_ttqk0n.jpg'/>
-// </div>

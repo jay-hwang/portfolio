@@ -29,7 +29,7 @@ const Contact = () => (
       <div id='contact-icon3' className='transparent'>
         <img className='contact-icon-image'
           src='https://res.cloudinary.com/ddgtwtbre/image/upload/v1493489180/Screen_Shot_2017-04-29_at_10.53.43_AM_dmscre.png' />
-        <span className='contact-icon-text'>818 456 7671</span>
+        <span className='contact-icon-text'>213 340 4295</span>
       </div>
 
     </div>
